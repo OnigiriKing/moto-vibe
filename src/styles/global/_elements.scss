@@ -1,0 +1,15 @@
+@use "./colors" as *;
+
+@mixin button-style {
+    padding: 1rem 1.2rem;
+      color: #fff;
+      background-color: $primColor;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+
+      &:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+        background-color: $primDark;
+      }
+}
+
+

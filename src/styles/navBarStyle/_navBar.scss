@@ -1,17 +1,11 @@
 @use "../global" as *;
 
-
 #nav-bar {
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 4.5rem;
-
-  a {
-    font-size: 1.1rem;
-    font-weight: 550;
-  }
 }
 
 .nav-wrapper {
@@ -32,7 +26,7 @@
 
     h3 {
       display: flex;
-      font-size: 1.5rem;
+      font-size: $h3-size;
     }
   }
 
@@ -60,15 +54,7 @@
     }
 
     a:nth-child(2) {
-      padding: 1rem 1.2rem;
-      color: #fff;
-      background-color: $primColor;
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
-
-      &:hover {
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
-        background-color: $primDark;
-      }
+      @include button-style;
     }
   }
 }
