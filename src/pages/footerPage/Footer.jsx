@@ -19,7 +19,7 @@ export default function FooterPage() {
           </div>
         </li>
         <li className="footer-about">
-          <h3>Company</h3>
+          <h3>COMPANY</h3>
           <ul>
             <li>
               <a href="#home-page">Bangkok</a>
@@ -36,10 +36,10 @@ export default function FooterPage() {
           </ul>
         </li>
         <li className="footer-work-time">
-          <h3>Working time</h3>
+          <h3>WORKING HOURS</h3>
           <p>Mon - Fri: 9:00AM - 9:00PM</p>
-          <p>Sat: 9:00AM - 19:00PM</p>
-          <p></p>
+          <p>Sat: 9:00AM - 3:00PM</p>
+          <p>Sun: Closed</p>
         </li>
         <li className="footer-sub"></li>
       </ul>

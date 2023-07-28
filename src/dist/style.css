@@ -26,7 +26,7 @@ a {
   margin-top: 1rem;
 }
 #nav-bar a {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 550;
 }
 
@@ -129,7 +129,7 @@ a {
 }
 
 .footer-about h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 .footer-about ul li {
@@ -140,6 +140,15 @@ a {
 }
 .footer-about ul a:hover {
   color: #3f84e5;
+}
+
+.footer-work-time h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer-work-time p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 #home-page {

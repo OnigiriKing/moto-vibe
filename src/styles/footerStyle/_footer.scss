@@ -51,7 +51,7 @@
       gap: 0.8rem;
       margin-bottom: 0.6rem;
       font-weight: 600;
-      font-size: $h3-size;
+      font-size: $h4-size;
 
       &:hover {
         color: $primColor;
@@ -64,7 +64,7 @@
 
 .footer-about {
     h3 {
-      font-size: $h2-size;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
     }
 
@@ -76,10 +76,22 @@
 
       a {
 
-        font-size: $h3-size;
+        font-size: $h4-size;
         &:hover {
           color: $primColor;
         }
       }
+    }
+  }
+
+  .footer-work-time {
+    h3 {
+      font-size: $h3-size;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: $h4-size;
     }
   }
