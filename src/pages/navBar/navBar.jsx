@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
-import { navSvg } from "../../svg/navSvg";
+import { navSvg, nameLogo } from "../../svg/navSvg";
+
 
 export default function NavBar() {
   return (
     <nav id="nav-bar">
       <div className="nav-wrapper">
         <div className="nav-logo">
-          <h3>
-            M<p>o</p>t<p>o</p>
-          </h3>
-          <h3>Vibe</h3>
+          {nameLogo}
           {navSvg("#3F84E5", 40).logo}
         </div>
         <div className="nav-menu">

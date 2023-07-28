@@ -5,7 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4.5rem;
+  height: 5rem;
+  margin-top: 1rem;
+
+  a {
+  font-size: $h3-size;
+  font-weight: 550;
+}
 }
 
 .nav-wrapper {
@@ -26,14 +32,14 @@
 
     h3 {
       display: flex;
-      font-size: $h3-size;
+      font-size: $h2-size;
     }
   }
 
   .nav-menu {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: $default-gap;
 
     a {
       &:hover {
