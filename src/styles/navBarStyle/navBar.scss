@@ -1,0 +1,74 @@
+@use "../global" as *;
+
+
+#nav-bar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem;
+
+  a {
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+}
+
+.nav-wrapper {
+  height: 3rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $primColor;
+    }
+
+    h3 {
+      display: flex;
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    a {
+      &:hover {
+        color: $primColor;
+      }
+    }
+  }
+
+  .login-register {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    a:first-child {
+      &:hover {
+        color: $primColor;
+      }
+    }
+
+    a:nth-child(2) {
+      padding: 1rem 1.2rem;
+      color: #fff;
+      background-color: $primColor;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+
+      &:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+        background-color: $primDark;
+      }
+    }
+  }
+}
