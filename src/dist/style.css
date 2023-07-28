@@ -21,6 +21,10 @@ a {
   justify-content: center;
   height: 4.5rem;
 }
+#nav-bar a {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
 
 .nav-wrapper {
   height: 3rem;
@@ -35,7 +39,7 @@ a {
   align-items: center;
 }
 .nav-wrapper .nav-logo p {
-  color: #3F84E5;
+  color: #3f84e5;
 }
 .nav-wrapper .nav-logo h3 {
   display: flex;
@@ -46,15 +50,21 @@ a {
   flex-direction: row;
   gap: 1.5rem;
 }
+.nav-wrapper .nav-menu a:hover {
+  color: #3f84e5;
+}
 .nav-wrapper .login-register {
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
+.nav-wrapper .login-register a:first-child:hover {
+  color: #3f84e5;
+}
 .nav-wrapper .login-register a:nth-child(2) {
   padding: 1rem 1.2rem;
   color: #fff;
-  background-color: #3F84E5;
+  background-color: #3f84e5;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
 }
 .nav-wrapper .login-register a:nth-child(2):hover {

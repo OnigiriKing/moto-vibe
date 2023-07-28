@@ -3,7 +3,7 @@ import { navSvg } from "../../svg/navSvg";
 
 export default function NavBar() {
   return (
-    <div id="nav-bar">
+    <nav id="nav-bar">
       <div className="nav-wrapper">
         <div className="nav-logo">
           <h3>
@@ -20,10 +20,10 @@ export default function NavBar() {
           <Link to={"/Contact"} children="Contact" />
         </div>
         <div className="login-register">
-          <Link children="Sign up" />
-          <Link children="Register" />
+          <Link to={"/"} children="Sign up" />
+          <Link to={"/"} children="Register" />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
