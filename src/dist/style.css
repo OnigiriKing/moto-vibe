@@ -128,7 +128,6 @@ a {
 }
 .footer-des .footer-number-email a {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
@@ -155,6 +154,9 @@ a {
   color: #3f84e5;
 }
 
+.footer-work-time {
+  padding-bottom: 1.9rem;
+}
 .footer-work-time h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -346,6 +348,17 @@ a {
 .request-wrapper .request-form div {
   display: grid;
 }
+.request-wrapper .request-form div label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.request-wrapper .request-form div select, .request-wrapper .request-form div input {
+  color: #5d5c67;
+}
+.request-wrapper .request-form div input {
+  text-align: center;
+  padding: 0.5rem 0;
+}
 .request-wrapper .request-form button {
   padding: 1rem 1.2rem;
   color: #fff;
@@ -357,4 +370,20 @@ a {
 .request-wrapper .request-form button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
+}
+
+#advantages-screen {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+#advantages-screen h2 {
+  font-size: 1.5rem;
+}
+#advantages-screen h1 {
+  font-size: 2.5rem;
 }/*# sourceMappingURL=style.css.map */

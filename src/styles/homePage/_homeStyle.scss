@@ -142,7 +142,22 @@
 
       div {
         display: grid;
+
+        label {
+          font-size: $h4-size;
+          font-weight: 600
+        }
+
+        select, input {
+          color: $grayText;
+        }
+
+        input {
+          text-align: center;
+          padding: .5rem 0;
+        }
     }
+
 
     button {
       @include button-style;
@@ -150,6 +165,30 @@
     }
 
   }
+
+}
+
+
+//! Advantages screen
+
+#advantages-screen {
+
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+
+  h2 {
+    font-size: $h2-size;
+
+  }
+  h1 {
+    font-size: $h1-size;
+  }
+
 
 }
 
