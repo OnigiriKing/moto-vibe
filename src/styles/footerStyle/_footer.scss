@@ -9,6 +9,7 @@
 
   ul {
     list-style: none;
+
   }
 }
 
@@ -93,5 +94,43 @@
     p {
       margin-bottom: 1rem;
       font-size: $h4-size;
+      line-height: 1.4rem;
+    }
+  }
+
+
+  .footer-sub {
+    display: flex;
+    flex-direction: column;
+
+    font-size: $h4-size;
+
+    h3 {
+      font-size: $h3-size;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.4rem;
+    }
+
+    input {
+       margin-bottom: .5rem;
+       border: none;
+       padding:  1rem 1.5rem;
+       background-color: $inputBg;
+       font-size: $h5-size;
+       color: $grayText;
+       line-height: 1.4rem;
+       outline: none;
+       
+    }
+    
+    button {
+       @include button-style;
+       cursor: pointer;
+       border: none;
+       font-size: $h5-size;
     }
   }

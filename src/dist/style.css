@@ -70,6 +70,7 @@ a {
   color: #fff;
   background-color: #3f84e5;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
 }
 .nav-wrapper .login-register a:nth-child(2):hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
@@ -149,6 +150,45 @@ a {
 .footer-work-time p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.footer-sub {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+.footer-sub h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer-sub p {
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+.footer-sub input {
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: #ececec;
+  font-size: 1rem;
+  color: #5d5c67;
+  line-height: 1.4rem;
+  outline: none;
+}
+.footer-sub button {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+.footer-sub button:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
 }
 
 #home-page {

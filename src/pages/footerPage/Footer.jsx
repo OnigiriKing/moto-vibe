@@ -41,7 +41,12 @@ export default function FooterPage() {
           <p>Sat: 9:00AM - 3:00PM</p>
           <p>Sun: Closed</p>
         </li>
-        <li className="footer-sub"></li>
+        <li className="footer-sub">
+          <h3>SUBSCRIBE</h3>
+          <p>Subscribe your Email address for latest news & updates.</p>
+          <input placeholder="Enter Email Address"/>
+          <button>Submit</button>
+        </li>
       </ul>
     </footer>
   );
