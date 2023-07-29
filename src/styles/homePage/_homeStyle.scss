@@ -1,4 +1,31 @@
+@use "../global" as *;
 
 #home-page {
-    height: 80vh;
+  height: 80vh;
+}
+
+.custom-shape {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(181% + 1.3px);
+    height: 700px;
+    transform: rotateY(180deg);
+  }
+
+  .shape-fill {
+    fill: #3f84e52c;
+  }
+}
+
+.welcome-screen {
+    display: flex;
+    flex-direction: row;
 }

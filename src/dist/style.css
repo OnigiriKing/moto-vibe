@@ -199,4 +199,28 @@ a {
 
 #home-page {
   height: 80vh;
+}
+
+.custom-shape {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape svg {
+  position: relative;
+  display: block;
+  width: calc(181% + 1.3px);
+  height: 700px;
+  transform: rotateY(180deg);
+}
+.custom-shape .shape-fill {
+  fill: rgba(63, 132, 229, 0.1725490196);
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
