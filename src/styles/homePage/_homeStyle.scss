@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
   z-index: 1;
 }
 
@@ -29,6 +30,8 @@
 .welcome-des {
   width: 40rem;
   margin-left: 3rem;
+  position: relative;
+  z-index: 2;
 
   h3 {
     font-size: $h3-size;
@@ -48,6 +51,10 @@
   p {
     margin: 2rem 0;
     color: $grayText;
+
+    @media(max-width: 1050px) {
+      width: 28rem;
+    }
   }
 }
 
@@ -84,9 +91,14 @@
 }
 
 .welcome-img {
+  position: absolute;
+  left: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+
   img {
-    position: absolute;
     width: 40%;
-    right: 8rem;
+    margin-right: 6rem;
   }
 }

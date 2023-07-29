@@ -19,9 +19,9 @@ export default function Welcome() {
             <a>Learn More {homeSvg(20).arrow}</a>
           </div>
         </div>
-        {/* <div className="welcome-img ">
+        <div className="welcome-img ">
           <img src={bikeImg} />
-        </div> */}
+        </div>
       </div>
     </div>
   );
