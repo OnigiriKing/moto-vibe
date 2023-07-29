@@ -11,26 +11,69 @@
   height: 80vh;
   display: flex;
   align-items: center;
-  max-width: 80rem;
+  max-width: 83rem;
   margin: 0 2rem;
   position: relative;
   width: 100%;
 }
 
 .welcome-des {
-  width: 30rem;
+  width: 40rem;
   margin-left: 3rem;
 
   h3 {
     font-size: $h3-size;
+    margin-bottom: 1rem;
   }
 
   h1 {
     font-size: $h1-size;
+    display: inline;
+    line-height: 3rem;
+
+    strong {
+      color: $primColor;
+    }
   }
 
   p {
+    margin: 2rem 0;
     color: $grayText;
+  }
+
+}
+
+
+.welcome-links {
+    display: flex;
+    gap: 1.5rem;
+
+  a {
+    display: flex;
+    text-align: center;
+    gap: .3rem;
+    font-size: $h4-size;
+    font-weight: 600;
+  }
+
+  a:nth-child(1) {
+    @include button-style;
+  }
+
+  a:nth-child(2) {
+    @include button-style;
+    background-color: #000;
+    border: #000 2px solid;
+
+    path {
+        transition: all 0s;
+    }
+
+    &:hover {
+        color: #000;
+        background-color: #FFFF;
+    }
+
   }
 }
 

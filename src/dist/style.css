@@ -208,24 +208,74 @@ a {
   height: 80vh;
   display: flex;
   align-items: center;
-  max-width: 80rem;
+  max-width: 83rem;
   margin: 0 2rem;
   position: relative;
   width: 100%;
 }
 
 .welcome-des {
-  width: 30rem;
+  width: 40rem;
   margin-left: 3rem;
 }
 .welcome-des h3 {
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .welcome-des h1 {
   font-size: 2.5rem;
+  display: inline;
+  line-height: 3rem;
+}
+.welcome-des h1 strong {
+  color: #3f84e5;
 }
 .welcome-des p {
+  margin: 2rem 0;
   color: #5d5c67;
+}
+
+.welcome-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.welcome-links a {
+  display: flex;
+  text-align: center;
+  gap: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.welcome-links a:nth-child(1) {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+}
+.welcome-links a:nth-child(1):hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
+}
+.welcome-links a:nth-child(2) {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+  background-color: #000;
+  border: #000 2px solid;
+}
+.welcome-links a:nth-child(2):hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
+}
+.welcome-links a:nth-child(2) path {
+  transition: all 0s;
+}
+.welcome-links a:nth-child(2):hover {
+  color: #000;
+  background-color: white;
 }
 
 .welcome-img img {
