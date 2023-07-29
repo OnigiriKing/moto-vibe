@@ -46,13 +46,19 @@
   }
 
   .footer-number-email {
+
     a {
       display: flex;
       align-items: center;
-      gap: 0.8rem;
+      gap: 0.5rem;
       margin-bottom: 0.6rem;
       font-weight: 600;
       font-size: $h4-size;
+
+      path, g {
+        transition: all 0s;
+      }
+
 
       &:hover {
         color: $primColor;

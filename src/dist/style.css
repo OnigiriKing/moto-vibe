@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  transition: color 0.2s;
+  transition: all 0.2s;
+}
+* svg {
+  transition: none;
 }
 
 body {
@@ -26,7 +29,7 @@ a {
   margin-top: 1rem;
 }
 #nav-bar a {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 550;
 }
 
@@ -120,10 +123,13 @@ a {
 .footer-des .footer-number-email a {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
   font-size: 1.1rem;
+}
+.footer-des .footer-number-email a path, .footer-des .footer-number-email a g {
+  transition: all 0s;
 }
 .footer-des .footer-number-email a:hover {
   color: #3f84e5;
