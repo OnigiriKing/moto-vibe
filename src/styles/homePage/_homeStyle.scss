@@ -1,31 +1,44 @@
 @use "../global" as *;
 
 #home-page {
-  height: 80vh;
-}
-
-.custom-shape {
-  position: absolute;
-  top: -4rem;
-  left: 0;
-  width: 100%;
   overflow: hidden;
-  line-height: 0;
-
-  svg {
-    position: relative;
-    display: block;
-    width: calc(181% + 1.3px);
-    height: 700px;
-    transform: rotateY(180deg);
-  }
-
-  .shape-fill {
-    fill: #3f84e52c;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-screen {
-    display: flex;
-    flex-direction: row;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.welcome-des {
+  width: 30rem;
+  margin-left: 3rem;
+
+  h3 {
+    font-size: $h3-size;
+  }
+
+  h1 {
+    font-size: $h1-size;
+  }
+
+  p {
+    color: $grayText;
+  }
+}
+
+.welcome-img {
+  img {
+    position: absolute;
+    width: 40%;
+    right: 8rem;
+    top: 4rem;
+  }
 }
