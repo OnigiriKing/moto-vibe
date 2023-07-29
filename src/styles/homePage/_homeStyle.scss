@@ -3,17 +3,26 @@
 #home-page {
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .welcome-screen {
+  height: 74vh;
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.welcome-wrapper {
   height: 80vh;
   display: flex;
   align-items: center;
   max-width: 83rem;
   margin: 0 2rem;
-  position: relative;
   width: 100%;
 }
 
@@ -40,18 +49,16 @@
     margin: 2rem 0;
     color: $grayText;
   }
-
 }
 
-
 .welcome-links {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 
   a {
     display: flex;
     text-align: center;
-    gap: .3rem;
+    gap: 0.3rem;
     font-size: $h4-size;
     font-weight: 600;
   }
@@ -66,14 +73,13 @@
     border: #000 2px solid;
 
     path {
-        transition: all 0s;
+      transition: all 0s;
     }
 
     &:hover {
-        color: #000;
-        background-color: #FFFF;
+      color: #000;
+      background-color: #ffff;
     }
-
   }
 }
 
@@ -82,6 +88,5 @@
     position: absolute;
     width: 40%;
     right: 8rem;
-    top: 4rem;
   }
 }
