@@ -116,24 +116,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .request-wrapper {
-  width: 100%;
   height: auto;
+  width: 100%;
   margin: 0 5rem;
   padding: 5rem;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
 
   h2 {
     font-size: $h2-size;
+    margin-bottom: 1rem;
   }
 
   .request-form {
+    grid-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;grid-template-rows: auto auto auto;
 
-    width: 100%;
-    height: 100%;
+
+      div {
+        display: grid;
+    }
+
+    button {
+      @include button-style;
+      border: none;
+    }
+
   }
 
 }
