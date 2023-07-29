@@ -307,8 +307,33 @@ a {
   display: flex;
   justify-content: flex-end;
   z-index: 1;
+  margin-right: 0.5rem;
 }
 .welcome-img img {
   width: 40%;
-  margin-right: 6rem;
+  margin-right: 5rem;
+}
+
+#home-request {
+  width: 100%;
+  height: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.request-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 5rem;
+  padding: 5rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.request-wrapper h2 {
+  font-size: 1.5rem;
+}
+.request-wrapper .request-form {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
