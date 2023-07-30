@@ -15,7 +15,7 @@ export default function Welcome() {
             Hub
           </p>
           <div className="welcome-links">
-            <a href="#">Book Bike {homeSvg(20).check}</a>
+            <a href="#home-request">Book Bike {homeSvg(20).check}</a>
             <a>Learn More {homeSvg(20).arrow}</a>
           </div>
         </div>
