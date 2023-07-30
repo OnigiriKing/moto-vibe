@@ -15,47 +15,51 @@ export function Models() {
         model: "150i",
         deposit: "$100",
         gearbox: "Automatic",
-        tank: "5.5L",
-        weight: "107KG",
-        img: { hondaBike },
+        tank: "5.5 L",
+        weight: "107 KG",
+        img: hondaBike,
       },
       Chetak: {
-        price: "10",
-        model: "150i",
+        price: "12",
+        model: "Smart",
         deposit: "$100",
         gearbox: "Automatic",
-        tank: "5.5L",
-        weight: "107KG",
-        img: { chetakBike },
+        tank: "60 Ah",
+        weight: "100KG",
+        img: chetakBike,
       },
       Sym: {
-        price: "10",
-        model: "150i",
+        price: "8",
+        model: "Symphony",
         deposit: "$100",
         gearbox: "Automatic",
-        tank: "5.5L",
-        weight: "107KG",
-        img: { symBike },
+        tank: "5.4 L",
+        weight: "123KG",
+        img: symBike,
       },
       Yadea: {
-        price: "10",
-        model: "150i",
-        deposit: "$100",
+        price: "15",
+        model: "G5S ",
+        deposit: "$150",
         gearbox: "Automatic",
-        tank: "5.5L",
-        weight: "107KG",
-        img: { yadeaBike },
+        tank: "50 Ah",
+        weight: "81KG",
+        img: yadeaBike,
       },
       Yamaha: {
-        price: "10",
-        model: "150i",
-        deposit: "$100",
+        price: "12",
+        model: "Fazzio",
+        deposit: "$120",
         gearbox: "Automatic",
-        tank: "5.5L",
-        weight: "107KG",
-        img: { yamahaBike },
+        tank: "5.1L",
+        weight: "125KG",
+        img: yamahaBike,
       },
     };
+
+    console.log(bikeType)
+    console.log(bikes[bikeType])
+    console.log(bikes[bikeType].img)
 
     return (
       <div id="bike-models">
@@ -68,39 +72,64 @@ export function Models() {
           </p>
           <div className="models-wrapper">
             <div className="models-choose">
-              <button onClick={() => setType("Honda")}>Honda Click</button>
-              <button onClick={() => setType("Chetak")}>Chetak Smart</button>
-              <button onClick={() => setType("Sym")}>Scooter Sym</button>
-              <button onClick={() => setType("Yadea")}>Yadea G5S</button>
-              <button onClick={() => setType("Yamaha")}>Yamaha Fazzio</button>
+              <button
+                className={bikeType === "Honda" ? "model-active-btn" : ""}
+                onClick={() => setType("Honda")}
+              >
+                Honda Click
+              </button>
+              <button
+                className={bikeType === "Chetak" ? "model-active-btn" : ""}
+                onClick={() => setType("Chetak")}
+              >
+                Chetak Smart
+              </button>
+              <button
+                className={bikeType === "Sym" ? "model-active-btn" : ""}
+                onClick={() => setType("Sym")}
+              >
+                Scooter Sym
+              </button>
+              <button
+                className={bikeType === "Yadea" ? "model-active-btn" : ""}
+                onClick={() => setType("Yadea")}
+              >
+                Yadea G5S
+              </button>
+              <button
+                className={bikeType === "Yamaha" ? "model-active-btn" : ""}
+                onClick={() => setType("Yamaha")}
+              >
+                Yamaha Fazzio
+              </button>
             </div>
             <div className="models-img">
-              <img src={hondaBike} />
+              <img src={bikes[bikeType].img} />
             </div>
             <div className="models-table">
               <div className="bike-price">
-                <span>$10</span> / per day
+                <span>${bikes[bikeType].price}</span> / per day
               </div>
               <div className="bike-description">
                 <div className="bike-model">
                   <span>Model</span>
-                  <span>150i</span>
+                  <span>{bikes[bikeType].model}</span>
                 </div>
                 <div className="bike-model">
                   <span>Deposit</span>
-                  <span>$100</span>
+                  <span>{bikes[bikeType].deposit}</span>
                 </div>
                 <div className="bike-model">
                   <span>Gearbox</span>
-                  <span>Automatic</span>
+                  <span>{bikes[bikeType].gearbox}</span>
                 </div>
                 <div className="bike-model">
                   <span>Tank</span>
-                  <span>5.5L</span>
+                  <span>{bikes[bikeType].tank}</span>
                 </div>
                 <div className="bike-model">
                   <span>Weight</span>
-                  <span>107KG</span>
+                  <span>{bikes[bikeType].weight}</span>
                 </div>
               </div>
               <a href="#home-request">RESERVE NOW</a>

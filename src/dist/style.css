@@ -435,7 +435,7 @@ a {
 }
 
 #bike-models {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -456,9 +456,9 @@ a {
 
 .models-wrapper {
   width: 100%;
-  margin: 3rem 0;
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .models-choose {
@@ -477,6 +477,10 @@ a {
   background-color: #3f84e5;
   color: white;
 }
+.models-choose .model-active-btn {
+  background-color: #3f84e5;
+  color: white;
+}
 
 .models-img {
   width: 30rem;
@@ -484,6 +488,7 @@ a {
 }
 .models-img img {
   width: 30rem;
+  height: 28rem;
 }
 
 .models-table {

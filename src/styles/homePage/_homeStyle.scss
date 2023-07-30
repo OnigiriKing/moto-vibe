@@ -240,7 +240,7 @@
 //! Models screen
 
 #bike-models {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -262,9 +262,9 @@
 
 .models-wrapper {
   width: 100%;
-  margin: 3rem 0;
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 
 }
 
@@ -285,6 +285,11 @@
         color: #FFFF;
       }
     }
+
+    .model-active-btn {
+      background-color: $primColor;
+      color: #FFFF;
+    }
   }
 
   .models-img {
@@ -293,6 +298,7 @@
 
     img {
       width: 30rem;
+      height: 28rem;
     }
   }
 
