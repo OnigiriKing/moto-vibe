@@ -6,6 +6,14 @@
 
   svg {
   transition: none;
+
+  path {
+        transition: none;
+      }
+
+      g {
+        transition: none;
+      }
 }
 
 }

@@ -1,4 +1,5 @@
-
+import { homeSvg } from "../../../svg/homeSvg";
+import { chooseUs } from "../../../svg/chooseUsSvg";
 
 export function ChooseUs() {
 
@@ -15,12 +16,12 @@ export function ChooseUs() {
               experience with unforgettable memories and an adrenaline-fueled
               adventure like no other!
             </p>
-            <a>Rent Bike</a>
+            <a href="#home-request">Rent Bike {homeSvg(20).arrow}</a>
           </div>
 
           <div className="choose-us-all-reasons">
             <div className="choose-us-reason">
-              <div></div>
+              <div>{chooseUs(50).safety}</div>
               <div>
                 <h2>Safety First</h2>
                 <p>
@@ -31,7 +32,7 @@ export function ChooseUs() {
             </div>
 
             <div className="choose-us-reason">
-              <div></div>
+              <div className="choose-us-des">{chooseUs(50).money}</div>
               <div>
                 <h2>No Hidden Charges</h2>
                 <p>
@@ -42,13 +43,13 @@ export function ChooseUs() {
             </div>
 
             <div className="choose-us-reason">
-              <div></div>
+              <div>{chooseUs(50).quality}</div>
               <div>
                 <h2>Best Quality Bikes</h2>
                 <p>
-                  Expertly maintained, our bikes offer
-                  the utmost in comfort, safety, and performance, ensuring you
-                  have a smooth and enjoyable ride.
+                  Expertly maintained, our bikes offer the utmost in comfort,
+                  safety, and performance, ensuring you have a smooth and
+                  enjoyable ride.
                 </p>
               </div>
             </div>

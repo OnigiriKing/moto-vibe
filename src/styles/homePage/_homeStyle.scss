@@ -81,10 +81,6 @@
     background-color: #000;
     border: #000 2px solid;
 
-    path {
-      transition: all 0s;
-    }
-
     &:hover {
       color: #000;
       background-color: #ffff;
@@ -220,7 +216,7 @@
     color: $primColor;
 
     &:hover {
-      background-color: $primLight;
+      background-color: $primLightHover;
       color: $primDark;
     }
   }
@@ -379,8 +375,13 @@
 
   a {
     @include button-style;
-    width: 6rem;
+    display: flex;
+    width: 7rem;
     text-align: center;
+    justify-content: center;
+    font-size: $h4-size;
+    gap: 0.3rem;
+    font-weight: 600;
   }
 }
 
@@ -388,22 +389,37 @@
   max-width: 30rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 
   .choose-us-reason {
     display: flex;
     gap: 1rem;
-
+    align-items: center;
 
     div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 50%;
-      padding: 2rem;
+      padding: 1rem;
       background-color: $primLight;
       color: $primColor;
+
+      &:hover {
+        background-color: $primLightHover;
+        color: $primDark;
+      }
     }
 
     h2 {
-    font-size: $h2-size;
+      font-size: $h2-size;
+      margin-bottom: .5rem;
+    }
+
+    p{
+      color: $grayText;
+      line-height: 1.2rem;
+    }
   }
-  }
+
 }
