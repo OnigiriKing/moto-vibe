@@ -668,11 +668,12 @@ a {
 }
 .review-screen-clients h3 {
   font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 .review-screen-clients .review-screen-review {
   display: flex;
   flex-direction: column;
-  max-width: 30rem;
+  max-width: 25rem;
   padding: 2rem;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   gap: 1rem;
@@ -685,8 +686,19 @@ a {
 .review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
-.review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des div:nth-child(1) {
-  padding: 2rem;
+.review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des .review-screen-face {
+  display: flex;
+  padding: 2.5rem;
   border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
+}
+.review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des .cillian {
+  background-image: url("../img/Cillian.png");
+}
+.review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des .minami {
+  background-image: url("../img/Minami.png");
 }/*# sourceMappingURL=style.css.map */

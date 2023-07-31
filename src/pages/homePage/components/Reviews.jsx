@@ -1,3 +1,7 @@
+import cillianFace from "../../../img/Cillian.png"
+import minamiFace from "../../../img/Minami.png"
+
+
 export default function Reviews() {
   return (
     <div id="reviews-screen">
@@ -17,14 +21,14 @@ export default function Reviews() {
             <h3>
               "The bikes were in excellent condition, and I enjoyed every moment
               of my ride. Highly recommend MotoVibe for an unforgettable
-              adventure!""
+              adventure!"
             </h3>
             <div className="review-screen-client-info">
               <div className="review-screen-client-photo-des">
-                <div></div>
+                <div className="review-screen-face cillian"></div>
                 <div>
-                  <h3>Name</h3>
-                  <p>Country</p>
+                  <h3>Cillian Shelby</h3>
+                  <p>Britain</p>
                 </div>
               </div>
               <div>svg</div>
@@ -34,14 +38,14 @@ export default function Reviews() {
             <h3>
               "I had an incredible experience with MotoVibe, the leading
               motorbike rental service. The process was seamless, and their team
-              was attentive to my needs.""
+              was attentive to my needs."
             </h3>
             <div className="review-screen-client-info">
-              <div>
-                <div></div>
+              <div className="review-screen-client-photo-des">
+                <div className="review-screen-face minami"></div>
                 <div>
-                  <h3>Name</h3>
-                  <p>Country</p>
+                  <h3>Minami Tanaka</h3>
+                  <p>Japan</p>
                 </div>
               </div>
               <div>svg</div>
