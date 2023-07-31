@@ -625,8 +625,32 @@ a {
 
 #reviews-screen {
   height: 80vh;
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
 }
 
+.review-screen-wrapper {
+  gap: 1rem;
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-screen-des {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 3rem;
+  margin-bottom: 3rem;
+}
 .reviews-screen-des h2 {
   font-size: 1.5rem;
 }
@@ -635,4 +659,34 @@ a {
 }
 .reviews-screen-des p {
   color: #5d5c67;
+}
+
+.review-screen-clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.review-screen-clients h3 {
+  font-size: 1.3rem;
+}
+.review-screen-clients .review-screen-review {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+.review-screen-clients .review-screen-review .review-screen-client-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des {
+  display: flex;
+  flex-direction: row;
+}
+.review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des div:nth-child(1) {
+  padding: 2rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

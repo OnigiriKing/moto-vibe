@@ -12,14 +12,40 @@ export default function Reviews() {
             made a lasting impact.
           </p>
         </div>
-        <div>
-          <div>
-            <h2></h2>
-            <div></div>
+        <div className="review-screen-clients">
+          <div className="review-screen-review">
+            <h3>
+              "The bikes were in excellent condition, and I enjoyed every moment
+              of my ride. Highly recommend MotoVibe for an unforgettable
+              adventure!""
+            </h3>
+            <div className="review-screen-client-info">
+              <div className="review-screen-client-photo-des">
+                <div></div>
+                <div>
+                  <h3>Name</h3>
+                  <p>Country</p>
+                </div>
+              </div>
+              <div>svg</div>
+            </div>
           </div>
-          <div>
-            <h2></h2>
-            <div></div>
+          <div className="review-screen-review">
+            <h3>
+              "I had an incredible experience with MotoVibe, the leading
+              motorbike rental service. The process was seamless, and their team
+              was attentive to my needs.""
+            </h3>
+            <div className="review-screen-client-info">
+              <div>
+                <div></div>
+                <div>
+                  <h3>Name</h3>
+                  <p>Country</p>
+                </div>
+              </div>
+              <div>svg</div>
+            </div>
           </div>
         </div>
       </div>
