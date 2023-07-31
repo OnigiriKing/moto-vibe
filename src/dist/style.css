@@ -650,6 +650,7 @@ a {
   max-width: 40rem;
   margin: 0 3rem;
   margin-bottom: 3rem;
+  gap: 0.5rem;
 }
 .reviews-screen-des h2 {
   font-size: 1.5rem;
@@ -701,4 +702,9 @@ a {
 }
 .review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des .minami {
   background-image: url("../img/Minami.png");
+}
+
+#questions-screen {
+  height: 90vh;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,3 @@
-import cillianFace from "../../../img/Cillian.png"
-import minamiFace from "../../../img/Minami.png"
-
 
 export default function Reviews() {
   return (
