@@ -193,7 +193,6 @@
   width: 80%;
   height: 20rem;
 
-
   .advantage:nth-child(1) div {
     border-radius: 30% 70% 42% 58% / 30% 14% 86% 70%;
   }
@@ -217,11 +216,11 @@
   div {
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: #3f84e529;
+    background-color: $primLight;
     color: $primColor;
 
     &:hover {
-      background-color: #3f84e53b;
+      background-color: $primLight;
       color: $primDark;
     }
   }
@@ -235,7 +234,6 @@
     color: $grayText;
   }
 }
-
 
 //! Models screen
 
@@ -257,7 +255,6 @@
   width: 100%;
   margin: 0 3rem;
   row-gap: 1rem;
-
 }
 
 .models-wrapper {
@@ -265,83 +262,148 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-
 }
 
 .models-choose {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  
-    button {
-      padding: 1rem;
-      background-color: $inputBg;
-      border: none;
-      font-size: $h3-size;
-      font-weight: 600;
-  
-      &:hover {
-        background-color: $primColor;
-        color: #FFFF;
-      }
-    }
 
-    .model-active-btn {
+  button {
+    padding: 1rem;
+    background-color: $inputBg;
+    border: none;
+    font-size: $h3-size;
+    font-weight: 600;
+
+    &:hover {
       background-color: $primColor;
-      color: #FFFF;
+      color: #ffff;
     }
   }
 
-  .models-img {
+  .model-active-btn {
+    background-color: $primColor;
+    color: #ffff;
+  }
+}
+
+.models-img {
+  width: 30rem;
+  display: block;
+
+  img {
     width: 30rem;
-    display: block;
-
-    img {
-      width: 30rem;
-      height: 28rem;
-    }
+    height: 28rem;
   }
+}
 
-  .models-table {
+.models-table {
+  display: flex;
+  flex-direction: column;
+
+  .bike-price {
+    background-color: $primColor;
+    color: #ffff;
+    padding: 0.8rem;
+    font-size: $h3-size;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    flex-direction: column;
-
-    .bike-price {
-      background-color: $primColor;
-      color: #FFFF;
-      padding: .8rem;
-      font-size: $h3-size;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      span {
-        font-size: $h2-size;
-        font-weight: 600;
-      }
-    }
-
-    .bike-model {
-      border: 1px solid black;
-      padding: .4rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      span {
-        text-align: center;
-        padding: .2rem 1rem;
-        font-size: $h4-size;
-      }
-
-      span:nth-child(1) {
-        border-right: 1px black solid;
-      }
-    }
-
-    a{
-      @include button-style;
-      font-size: $h3-size;
-      text-align: center;
-      margin-top: 1rem;
+    span {
+      font-size: $h2-size;
+      font-weight: 600;
     }
   }
-  
+
+  .bike-model {
+    border: 1px solid black;
+    padding: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    span {
+      text-align: center;
+      padding: 0.2rem 1rem;
+      font-size: $h4-size;
+    }
+
+    span:nth-child(1) {
+      border-right: 1px black solid;
+    }
+  }
+
+  a {
+    @include button-style;
+    font-size: $h3-size;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+//! Chooose us screen
+
+#choose-us-screen {
+  height: 60vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.choose-us-wrapper {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem;
+}
+
+.choose-us-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  text-align: left;
+  row-gap: 1rem;
+
+  h2 {
+    font-size: $h2-size;
+  }
+
+  h1 {
+    font-size: $h1-size;
+  }
+
+  p {
+    color: $grayText;
+  }
+
+  a {
+    @include button-style;
+    width: 6rem;
+    text-align: center;
+  }
+}
+
+.choose-us-all-reasons {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .choose-us-reason {
+    display: flex;
+    gap: 1rem;
+
+
+    div:nth-child(1) {
+      border-radius: 50%;
+      padding: 2rem;
+      background-color: $primLight;
+      color: $primColor;
+    }
+
+    h2 {
+    font-size: $h2-size;
+  }
+  }
+}

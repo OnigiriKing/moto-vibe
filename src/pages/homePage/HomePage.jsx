@@ -2,6 +2,7 @@ import Welcome from "./components/Welcome"
 import { Request } from "./components/Request"
 import Advantages from "./components/Advantages"
 import { Models } from "./components/BikeModels"
+import { ChooseUs } from "./components/ChooseUs"
 
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
         <Request />
         <Advantages />
         <Models />
+        <ChooseUs />
         </div>
     )
 }

@@ -419,7 +419,7 @@ a {
 .advantage div {
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: rgba(63, 132, 229, 0.1607843137);
+  background-color: rgba(63, 132, 229, 0.231372549);
   color: #3f84e5;
 }
 .advantage div:hover {
@@ -535,4 +535,69 @@ a {
 .models-table a:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
+}
+
+#choose-us-screen {
+  height: 60vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.choose-us-wrapper {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem;
+}
+
+.choose-us-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  text-align: left;
+  row-gap: 1rem;
+}
+.choose-us-text h2 {
+  font-size: 1.5rem;
+}
+.choose-us-text h1 {
+  font-size: 2.5rem;
+}
+.choose-us-text p {
+  color: #5d5c67;
+}
+.choose-us-text a {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+  width: 6rem;
+  text-align: center;
+}
+.choose-us-text a:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
+}
+
+.choose-us-all-reasons {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.choose-us-all-reasons .choose-us-reason {
+  display: flex;
+  gap: 1rem;
+}
+.choose-us-all-reasons .choose-us-reason div:nth-child(1) {
+  border-radius: 50%;
+  padding: 2rem;
+  background-color: rgba(63, 132, 229, 0.231372549);
+  color: #3f84e5;
+}
+.choose-us-all-reasons .choose-us-reason h2 {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
