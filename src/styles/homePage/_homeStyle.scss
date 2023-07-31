@@ -423,3 +423,24 @@
   }
 
 }
+
+
+//! reviews screen
+
+#reviews-screen {
+  height: 80vh;
+}
+
+.reviews-screen-des {
+  h2 {
+      font-size: $h2-size;
+    }
+  
+    h1 {
+      font-size: $h1-size;
+    }
+  
+    p {
+      color: $grayText;
+    }
+}

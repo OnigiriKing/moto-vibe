@@ -621,4 +621,18 @@ a {
 .choose-us-all-reasons .choose-us-reason p {
   color: #5d5c67;
   line-height: 1.2rem;
+}
+
+#reviews-screen {
+  height: 80vh;
+}
+
+.reviews-screen-des h2 {
+  font-size: 1.5rem;
+}
+.reviews-screen-des h1 {
+  font-size: 2.5rem;
+}
+.reviews-screen-des p {
+  color: #5d5c67;
 }/*# sourceMappingURL=style.css.map */
