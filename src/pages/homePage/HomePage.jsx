@@ -4,6 +4,7 @@ import Advantages from "./components/Advantages"
 import { Models } from "./components/BikeModels"
 import { ChooseUs } from "./components/ChooseUs"
 import Reviews from "./components/Reviews"
+import Questions from "./components/Questions"
 
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
         <Models />
         <ChooseUs />
         <Reviews />
+        <Questions />
         </div>
     )
 }

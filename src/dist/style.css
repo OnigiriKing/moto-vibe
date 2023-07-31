@@ -221,6 +221,18 @@ a {
   width: 100%;
   z-index: 1;
 }
+#home-page h3 {
+  font-size: 1.3rem;
+}
+#home-page h2 {
+  font-size: 1.5rem;
+}
+#home-page h1 {
+  font-size: 2.5rem;
+}
+#home-page p {
+  color: #5d5c67;
+}
 
 .welcome-screen {
   height: 74vh;
@@ -245,11 +257,9 @@ a {
   z-index: 2;
 }
 .welcome-des h3 {
-  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 .welcome-des h1 {
-  font-size: 2.5rem;
   display: inline;
   line-height: 3rem;
 }
@@ -258,7 +268,6 @@ a {
 }
 .welcome-des p {
   margin: 2rem 0;
-  color: #5d5c67;
 }
 @media (max-width: 1050px) {
   .welcome-des p {
@@ -338,7 +347,6 @@ a {
   flex-direction: column;
 }
 .request-wrapper h2 {
-  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .request-wrapper .request-form {
@@ -387,11 +395,7 @@ a {
   margin-top: 5rem;
   overflow: hidden;
 }
-#advantages-screen h2 {
-  font-size: 1.5rem;
-}
 #advantages-screen h1 {
-  font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -431,10 +435,6 @@ a {
 }
 .advantage h3 {
   margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-.advantage p {
-  color: #5d5c67;
 }
 
 #bike-models {
@@ -562,15 +562,6 @@ a {
   text-align: left;
   row-gap: 1rem;
 }
-.choose-us-text h2 {
-  font-size: 1.5rem;
-}
-.choose-us-text h1 {
-  font-size: 2.5rem;
-}
-.choose-us-text p {
-  color: #5d5c67;
-}
 .choose-us-text a {
   padding: 1rem 1.2rem;
   color: #fff;
@@ -615,11 +606,9 @@ a {
   color: #3776cd;
 }
 .choose-us-all-reasons .choose-us-reason h2 {
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 .choose-us-all-reasons .choose-us-reason p {
-  color: #5d5c67;
   line-height: 1.2rem;
 }
 
@@ -652,15 +641,6 @@ a {
   margin-bottom: 3rem;
   gap: 0.5rem;
 }
-.reviews-screen-des h2 {
-  font-size: 1.5rem;
-}
-.reviews-screen-des h1 {
-  font-size: 2.5rem;
-}
-.reviews-screen-des p {
-  color: #5d5c67;
-}
 
 .review-screen-clients {
   display: grid;
@@ -668,7 +648,6 @@ a {
   gap: 3rem;
 }
 .review-screen-clients h3 {
-  font-size: 1.3rem;
   line-height: 1.8rem;
 }
 .review-screen-clients .review-screen-review {
@@ -705,6 +684,27 @@ a {
 }
 
 #questions-screen {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-wrapper {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.questions-wrapper .questions-des {
+  text-align: center;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
