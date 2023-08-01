@@ -1,4 +1,9 @@
+import {homeSvg} from "../../../svg/homeSvg"
+import React from "react";
+
 export default function Questions() {
+  const [faq, setQ] = React.useState("Q1")
+
   return (
     <div id="questions-screen">
       <div className="questions-wrapper">
@@ -13,22 +18,29 @@ export default function Questions() {
         </div>
         <div className="all-questions">
           <div className="faq-question">
-            <div>
-              <p>What are the requirements for renting a motorbike?</p>
+            <div  className={faq==="Q1"?"active-question":""} onClick={() => faq !=="Q1"?setQ("Q1"):setQ("Q0")}>
+              <h3>1. What are the requirements for renting a motorbike?</h3> {homeSvg(20).arrow}
             </div>
-            <div></div>
+            <div 
+            className={`questions-slide ${faq==="Q1"?"active-answer":""}`}>
+
+            </div>
           </div>
           <div className="faq-question">
-            <div>
-              <p>Is insurance included in the rental cost?</p>
+            <div 
+            className={faq==="Q2"?"active-question":""} 
+            onClick={() => faq !=="Q2"?setQ("Q2"):setQ("Q0")}>
+              <h3>2. Is insurance included in the rental cost?</h3>{homeSvg(20).arrow}
             </div>
-            <div></div>
+            <div 
+            className={`questions-slide ${faq==="Q1"?"active-answer":""}`}></div>
           </div>
           <div className="faq-question">
-            <div>
-              <p>Can I rent a motorbike for an extended period?</p>
+            <div 
+            className={faq==="Q3"?"active-question":""} onClick={() => faq !=="Q3"?setQ("Q3"):setQ("Q0")}>
+              <h3>3. Can I rent a motorbike for an extended period?</h3> {homeSvg(20).arrow}
             </div>
-            <div></div>
+            <div className={`questions-slide ${faq==="Q1"?"active-answer":""}`}></div>
           </div>
         </div>
       </div>

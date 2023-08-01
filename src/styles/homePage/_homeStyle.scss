@@ -519,7 +519,42 @@
     max-width: 35rem;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
     margin-bottom: 2rem;
+    row-gap: 1rem;
   }
+
+  .all-questions {
+    
+  }
+
+  .faq-question {
+
+
+    div:nth-child(1) {
+      padding: 1.5rem 2rem;
+      width: 35rem;
+      cursor: pointer;
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+      display: flex;
+      justify-content: space-between;
+      transition: background-color .3s ease;
+
+      svg {
+        transform: rotate(90deg);
+      }
+      
+      h3 {
+        transition: color .1s;
+        font-weight: 500;
+    }
+  }
+  }
+}
+
+.active-question {
+  background-color: $primColor;
+  color: #FFFF;
+}
+.active-answer {
+
 }
