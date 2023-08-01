@@ -763,6 +763,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f8f8;
 }
 
 .advertisement-wrapper {
@@ -771,14 +772,15 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0rem 2rem;
-  row-gap: 2rem;
+  row-gap: 4rem;
+  position: relative;
 }
 
 .advertisement-des {
   max-width: 35rem;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 .advertisement-des h4 {
   line-height: 1.5rem;
@@ -791,4 +793,14 @@ a {
 }
 .advertisement-links a img {
   width: 13rem;
+}
+
+.phone-image {
+  position: relative;
+  margin-right: 3rem;
+}
+.phone-image img {
+  position: relative;
+  width: 20rem;
+  transform: translate(280%, -78%);
 }/*# sourceMappingURL=style.css.map */

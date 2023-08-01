@@ -1,5 +1,6 @@
 import appleImg from "../../../img/apple.png"
 import googleImg from "../../../img/google.png";
+import phoneImg from "../../../img/phone.png";
 
 export default function Advertisement() {
   return (
@@ -23,6 +24,10 @@ export default function Advertisement() {
           >
             <img src={googleImg} />
           </a>
+        </div>
+
+        <div className="phone-image">
+          <img src={phoneImg} />
         </div>
       </div>
     </div>
