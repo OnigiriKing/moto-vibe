@@ -25,10 +25,6 @@ export default function Advertisement() {
             <img src={googleImg} />
           </a>
         </div>
-
-        <div className="phone-image">
-          <img src={phoneImg} />
-        </div>
       </div>
     </div>
   );

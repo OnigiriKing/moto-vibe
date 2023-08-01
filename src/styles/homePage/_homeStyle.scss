@@ -587,6 +587,10 @@
   align-items: center;
   justify-content: center;
   background-color: $bgGrey;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: 85% 3rem;
 }
 
 .advertisement-wrapper {
@@ -621,17 +625,5 @@
     img {
       width: 13rem;
     }
-  }
-}
-
-.phone-image {
-  position: relative;
-  margin-right: 3rem;
-
-
-  img {
-    position: relative;
-    width: 20rem;
-    transform: translate(280%, -78%);
   }
 }
