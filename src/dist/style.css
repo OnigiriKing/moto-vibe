@@ -754,4 +754,41 @@ a {
 .active-answer {
   padding: 1.2rem 2rem;
   max-height: 20rem;
+}
+
+#advertisement-screen {
+  height: auto;
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advertisement-wrapper {
+  width: 100%;
+  max-width: 75rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 2rem;
+  row-gap: 2rem;
+}
+
+.advertisement-des {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.advertisement-des h4 {
+  line-height: 1.5rem;
+  color: #5d5c67;
+}
+
+.advertisement-links {
+  display: flex;
+  gap: 2rem;
+}
+.advertisement-links a img {
+  width: 13rem;
 }/*# sourceMappingURL=style.css.map */
