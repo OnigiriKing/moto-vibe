@@ -119,7 +119,7 @@
 
 #home-request {
   width: 100%;
-  height: 17rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +175,7 @@
 //! Advantages screen
 
 #advantages-screen {
-  height: 65vh;
+  padding: 1rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -237,14 +237,14 @@
 //! Models screen
 
 #bike-models {
-  height: 90vh;
+  padding: 2rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
-  max-width: 85rem;
   align-items: center;
   overflow: hidden;
+  background-color: $bgGrey;
 }
 
 .models-main-wrapper {
@@ -252,6 +252,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  max-width: 78rem;
   margin: 0 3rem;
   row-gap: 1rem;
 }
@@ -343,7 +344,7 @@
 //! Chooose us screen
 
 #choose-us-screen {
-  height: 60vh;
+  padding: 5rem 0;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -415,7 +416,7 @@
 //! reviews screen
 
 #reviews-screen {
-  height: 80vh;
+  padding: 6rem 0;
   display: flex;
   width: 100%;
   display: flex;
@@ -494,7 +495,7 @@
 //! questions screen
 
 #questions-screen {
-  height: 85vh;
+  padding: 6rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
