@@ -57,10 +57,6 @@ export function Models() {
       },
     };
 
-    console.log(bikeType)
-    console.log(bikes[bikeType])
-    console.log(bikes[bikeType].img)
-
     return (
       <div id="bike-models">
         <div className="models-main-wrapper">

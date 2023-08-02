@@ -6,6 +6,10 @@ export function Request() {
 
   const [fillState, setFillState] = React.useState("")
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    setFillState("empty");
+  }
 
 
     return (
@@ -18,7 +22,7 @@ export function Request() {
               <button></button>
             </div>
           )}
-          <form className="request-form">
+          <form className="request-form" onSubmit={handleSubmit}>
             <div className="request-select">
               <label>{requestSvg(20).bike}Select a bike</label>
               <select>
@@ -64,7 +68,7 @@ export function Request() {
             <button
               type="submit"
               children="Search"
-              onClick={() => setFillState("empty")}
+              value
             />
           </form>
         </div>
