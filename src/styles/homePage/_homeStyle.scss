@@ -139,14 +139,15 @@
   }
 
   .request-form {
-    grid-gap: 2rem;
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
+    align-items: end;
 
     div {
       display: grid;
+      gap: 1rem;
 
       label {
         font-size: $h4-size;
@@ -167,6 +168,7 @@
     button {
       @include button-style;
       border: none;
+      height: 3rem;
     }
   }
 }

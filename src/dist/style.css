@@ -349,14 +349,15 @@ a {
   margin-bottom: 1rem;
 }
 .request-wrapper .request-form {
-  grid-gap: 2rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
+  align-items: end;
 }
 .request-wrapper .request-form div {
   display: grid;
+  gap: 1rem;
 }
 .request-wrapper .request-form div label {
   font-size: 1.1rem;
@@ -377,6 +378,7 @@ a {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
   transition: all 0.2s;
   border: none;
+  height: 3rem;
 }
 .request-wrapper .request-form button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);

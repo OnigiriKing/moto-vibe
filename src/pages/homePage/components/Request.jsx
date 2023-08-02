@@ -11,15 +11,32 @@ export function Request() {
           <form className="request-form">
             <div className="request-select">
               <label>Select a bike</label>
-              <select></select>
+              <select>
+                <option>Select a bike type</option>
+                <option>Honda Click</option>
+                <option>Chetak Smart</option>
+                <option>Scooter Sym</option>
+                <option>Yadea G5S</option>
+                <option>Yamaha Fazzio</option>
+              </select>
             </div>
             <div className="request-select">
               <label>Pick-up</label>
-              <select></select>
+              <select>
+                <option>Select Pick-up location</option>
+                <option>Khao San</option>
+                <option>Sukhumvit</option>
+                <option>Siam</option>
+              </select>
             </div>
             <div className="request-select">
               <label>Drop-off</label>
-              <select></select>
+              <select>
+                <option>Select Drop-off location</option>
+                <option>Khao San</option>
+                <option>Sukhumvit</option>
+                <option>Siam</option>
+              </select>
             </div>
             <div className="request-date">
               <label>Pick-up date</label>
@@ -30,7 +47,7 @@ export function Request() {
               <input type="date"></input>
             </div>
 
-            <button children="Search" />
+            <button type="submit" children="Search" />
           </form>
         </div>
       </div>
