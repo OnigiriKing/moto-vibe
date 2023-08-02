@@ -362,6 +362,11 @@ a {
 .request-wrapper .request-form div label {
   font-size: 1.1rem;
   font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+}
+.request-wrapper .request-form div label svg {
+  color: #3f84e5;
 }
 .request-wrapper .request-form div select,
 .request-wrapper .request-form div input {

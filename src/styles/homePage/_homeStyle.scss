@@ -152,6 +152,12 @@
       label {
         font-size: $h4-size;
         font-weight: 600;
+        display: flex;
+        gap: .5rem;
+
+        svg {
+          color: $primColor;
+        }
       }
 
       select,
