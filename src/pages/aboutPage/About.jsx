@@ -1,7 +1,8 @@
 import AllPagesStart from "../navBar/AllPagesStart";
 import AllPagesFooter from "../footerPage/AllPagesFooter";
 import Advantages from "../homePage/components/Advantages";
-import bikeRent from "../../img/bikeRent.png"
+import bikeRent from "../../img/bikeRent.png";
+import { requestSvg } from "../../svg/requestFormSvg";
 
 export default function About() {
   return (
@@ -19,30 +20,30 @@ export default function About() {
                 thrilling and convenient way to navigate the city's bustling
                 streets and discover its hidden gems. Whether you're a seasoned
                 rider or a novice explorer, our reliable fleet and exceptional
-                service ensure an unforgettable and safe experience. 
+                service ensure an unforgettable and safe experience.
               </p>
             </div>
             <div className="about-page-adv">
               <div className="about-page-pros">
-                <img></img>
-                <div>
+                <div>{requestSvg(50).bike}</div>
+                <span>
                   <h1>25</h1>
                   <p>Bikes to rent</p>
-                </div>
+                </span>
               </div>
               <div className="about-page-pros">
-                <img></img>
-                <div>
+                <div>{requestSvg(50).office}</div>
+                <span>
                   <h1>3</h1>
                   <p>Offices</p>
-                </div>
+                </span>
               </div>
               <div className="about-page-pros">
-                <img></img>
-                <div>
+                <div>{requestSvg(50).garage}</div>
+                <span>
                   <h1>5</h1>
                   <p>Repair Shop</p>
-                </div>
+                </span>
               </div>
             </div>
           </div>

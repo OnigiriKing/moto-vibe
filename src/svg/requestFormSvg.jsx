@@ -41,6 +41,39 @@ export function requestSvg(width) {
           />
         </svg>
       ),
+      garage: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width}
+          height={width}
+          viewBox="0 0 15 15"
+        >
+          <path
+            fill="currentColor"
+            d="M7.21.093a.5.5 0 0 1 .58 0l7 5A.5.5 0 0 1 15 5.5v9a.5.5 0 0 1-.5.5H13V7H2v8H.5a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .21-.407l7-5Z"
+          />
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M3 15h9v-4H3v4Zm6-2H6v-1h3v1Z"
+            clip-rule="evenodd"
+          />
+          <path fill="currentColor" d="M12 10V8H3v2h9Z" />
+        </svg>
+      ),
+      office: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width}
+          height={width}
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="currentColor"
+            d="M14 15V4h-3V1H2v14H0v1h7v-3h2v3h7v-1h-2zm-8-4H4V9h2v2zm0-3H4V6h2v2zm0-3H4V3h2v2zm3 6H7V9h2v2zm0-3H7V6h2v2zm0-3H7V3h2v2zm4 6h-2V9h2v2zm0-3h-2V6h2v2z"
+          />
+        </svg>
+      ),
     };
 
 

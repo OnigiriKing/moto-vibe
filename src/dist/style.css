@@ -885,4 +885,28 @@ a {
 }
 .about-page-des p {
   color: #5d5c67;
+}
+
+.about-page-adv {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.about-page-adv .about-page-pros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-page-adv .about-page-pros svg {
+  color: #3f84e5;
+}
+.about-page-adv .about-page-pros div {
+  margin-bottom: 1rem;
+}
+.about-page-adv .about-page-pros span {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
 }/*# sourceMappingURL=style.css.map */
