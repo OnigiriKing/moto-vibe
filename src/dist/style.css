@@ -88,6 +88,37 @@ a {
   background-color: #3776cd;
 }
 
+#all-pages-start-screen {
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("../img/allPagesBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all-pages-start-wrapper {
+  background-color: rgba(255, 255, 255, 0.7450980392);
+  display: flex;
+  width: 100%;
+  max-width: 75rem;
+  display: flex;
+  margin: 0 3rem;
+}
+.all-pages-start-wrapper h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.all-pages-start-wrapper h3 {
+  font-size: 1.3rem;
+}
+.all-pages-start-wrapper h3 a:hover {
+  color: #3f84e5;
+}
+
 #footer-page {
   background-color: white;
   margin: 4rem 2rem;

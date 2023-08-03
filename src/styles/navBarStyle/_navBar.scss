@@ -11,9 +11,9 @@
   z-index: 1;
 
   a {
-  font-size: $h4-size;
-  font-weight: 550;
-}
+    font-size: $h4-size;
+    font-weight: 550;
+  }
 }
 
 .nav-wrapper {
@@ -63,6 +63,42 @@
 
     a:nth-child(2) {
       @include button-style;
+    }
+  }
+}
+
+//! AllPagesBg
+
+#all-pages-start-screen {
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("../img/allPagesBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all-pages-start-wrapper {
+  background-color: #ffffffbe;
+  display: flex;
+  width: 100%;
+  max-width: 75rem;
+  display: flex;
+  margin: 0 3rem;
+
+  h1 {
+    font-size: $h1-size;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: $h3-size;
+
+    a:hover {
+      color: $primColor;
     }
   }
 }
