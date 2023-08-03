@@ -150,13 +150,29 @@
 
   #testimonials-page {
     width: 100%;
+    // background-image: url("../img/footerBike.png");
+    background-position: center;
+    background-size: cover;
   }
 
   .all-pages-footer-wrapper {
-    background-color: #ffffff9e;
+    background-color: #000000c0;
+
   }
 
 
   .all-pages-footer-text{
     padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-size: $h4-size;
+    color: #ffff;
+
+    a {
+      h1 {
+        color: $primColor;
+      }
+    }
   }

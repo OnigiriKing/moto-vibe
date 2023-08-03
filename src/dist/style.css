@@ -247,14 +247,25 @@ a {
 
 #testimonials-page {
   width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .all-pages-footer-wrapper {
-  background-color: rgba(255, 255, 255, 0.6196078431);
+  background-color: rgba(0, 0, 0, 0.7529411765);
 }
 
 .all-pages-footer-text {
   padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 1.1rem;
+  color: white;
+}
+.all-pages-footer-text a h1 {
+  color: #3f84e5;
 }
 
 #home-page {
