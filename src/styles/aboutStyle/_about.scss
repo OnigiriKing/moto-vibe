@@ -1,0 +1,30 @@
+@use "../global/" as *;
+
+#about-page {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-page-wrapper {
+    margin: 0 3rem;
+    display: flex;
+    gap: 2rem;
+
+    img {
+        width: 30rem;
+    }
+}
+
+.about-page-des {
+    width: 25rem;
+
+    p {
+        color: $greyText;
+    }
+}
+
+.about-page-adv {
+
+}

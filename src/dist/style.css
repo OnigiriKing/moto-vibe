@@ -862,4 +862,27 @@ a {
 }
 .advertisement-links a img {
   width: 13rem;
+}
+
+#about-page {
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page-wrapper {
+  margin: 0 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.about-page-wrapper img {
+  width: 30rem;
+}
+
+.about-page-des {
+  width: 25rem;
+}
+.about-page-des p {
+  color: #5d5c67;
 }/*# sourceMappingURL=style.css.map */
