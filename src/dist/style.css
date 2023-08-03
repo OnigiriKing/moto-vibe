@@ -33,8 +33,9 @@ a {
   justify-content: center;
   height: 5rem;
   margin-top: 1rem;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
 }
 #nav-bar a {
   font-size: 1.1rem;
@@ -90,7 +91,7 @@ a {
 
 #all-pages-start-screen {
   width: 100%;
-  padding: 6rem 0;
+  height: 50vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -101,21 +102,23 @@ a {
 }
 
 .all-pages-start-wrapper {
-  background-color: rgba(255, 255, 255, 0.7450980392);
+  background-color: rgba(255, 255, 255, 0.8235294118);
   display: flex;
   width: 100%;
-  max-width: 75rem;
   display: flex;
-  margin: 0 3rem;
+  padding-top: 10rem;
 }
-.all-pages-start-wrapper h1 {
+.all-pages-start-wrapper .all-pages-start-text {
+  margin: 0 5rem;
+}
+.all-pages-start-wrapper .all-pages-start-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-.all-pages-start-wrapper h3 {
+.all-pages-start-wrapper .all-pages-start-text h3 {
   font-size: 1.3rem;
 }
-.all-pages-start-wrapper h3 a:hover {
+.all-pages-start-wrapper .all-pages-start-text h3 a:hover {
   color: #3f84e5;
 }
 
@@ -251,6 +254,7 @@ a {
   position: relative;
   width: 100%;
   z-index: 1;
+  padding: 4rem 0;
 }
 #home-page h3 {
   font-size: 1.3rem;
