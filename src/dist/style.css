@@ -124,9 +124,8 @@ a {
 
 #footer-page {
   background-color: white;
-  margin: 4rem 2rem;
-  height: 14rem;
-  display: block;
+  padding: 5rem 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -144,6 +143,7 @@ a {
   width: 100%;
   height: 100%;
   gap: 5rem;
+  margin: 0 2rem;
 }
 
 .footer-des {
@@ -243,6 +243,18 @@ a {
 .footer-sub button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
+}
+
+#testimonials-page {
+  width: 100%;
+}
+
+.all-pages-footer-wrapper {
+  background-color: rgba(255, 255, 255, 0.6196078431);
+}
+
+.all-pages-footer-text {
+  padding: 4rem 0;
 }
 
 #home-page {
