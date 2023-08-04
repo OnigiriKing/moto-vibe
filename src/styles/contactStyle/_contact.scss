@@ -4,6 +4,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-image: url('../img/World.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact-page-wrapper {
@@ -14,6 +17,7 @@
   align-items: center;
   max-width: 80rem;
   gap: 4rem;
+  background-color: #fffffff4;
 }
 
 .contact-page-text {

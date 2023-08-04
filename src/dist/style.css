@@ -917,6 +917,9 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-image: url("../img/World.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact-page-wrapper {
@@ -927,6 +930,7 @@ a {
   align-items: center;
   max-width: 80rem;
   gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.9568627451);
 }
 
 .contact-page-text {
