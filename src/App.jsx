@@ -6,6 +6,7 @@ import HomePage from "./pages/homePage/HomePage";
 import FooterPage from "./pages/footerPage/Footer";
 import Testimonials from "./pages/testimonialsPage/Testimonials";
 import About from "./pages/aboutPage/About";
+import Contact from "./pages/contactPage/Contact";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/Reviews" element={<Testimonials />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <FooterPage />
     </div>
