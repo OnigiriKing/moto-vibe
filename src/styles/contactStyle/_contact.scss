@@ -4,9 +4,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url('../img/World.png');
+  background-image: url("../img/World.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-page-bg-color {
+  background-color: #fffffff4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-page-wrapper {
@@ -15,9 +23,9 @@
   padding: 6rem 0;
   margin: 0 3rem;
   align-items: center;
+  width: 100%;
   max-width: 80rem;
-  gap: 4rem;
-  background-color: #fffffff4;
+  gap: 3rem;
 }
 
 .contact-page-text {
@@ -35,5 +43,45 @@
     line-height: 1.5rem;
     color: $greyText;
   }
+}
 
+.contact-page-contact-form {
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 33rem;
+    gap: 0.8rem;
+    font-weight: 600;
+
+    input,
+    textarea {
+      border: none;
+      background-color: rgb(243, 243, 243);
+      font-size: $h5-size;
+    }
+
+    input {
+      padding: 1rem 2rem;
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      height: 10rem;
+      padding: 1rem 2rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      display: flex;
+      border: none;
+      @include button-style;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      font-size: $h4-size;
+    }
+  }
 }
