@@ -16,13 +16,21 @@ export default function Contact() {
               we will get back to you as soon as possible. You can also reach us
               via phone or email at the provided contact details.
             </p>
-            <a href="tel:09999999">{footerSvg(20).phone} (09)-999-999</a>
-            <a href="mailto: motovibe@gmail.com">
-              {footerSvg(20).email} motovibe@gmail.com
-            </a>
-            <a href="https://www.google.com/maps/place/Bangkok">
-              {requestSvg(20).location}Bangkok, Thailand
-            </a>
+            <div className="footer-number-email">
+              <a href="tel:09999999" rel="noreferrer">
+                {footerSvg(20).phone} (09)-999-999
+              </a>
+              <a href="mailto: motovibe@gmail.com" rel="noreferrer">
+                {footerSvg(20).email} motovibe@gmail.com
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Bangkok"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {requestSvg(20).location}Bangkok, Thailand
+              </a>
+            </div>
           </div>
           <div className="contact-page-contact-form">
             <form>

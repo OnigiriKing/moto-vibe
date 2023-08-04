@@ -49,7 +49,10 @@
     color: $greyText;
   }
 
-  .footer-number-email {
+
+}
+
+.footer-number-email {
 
     a {
       display: flex;
@@ -57,6 +60,7 @@
       margin-bottom: 0.6rem;
       font-weight: 600;
       font-size: $h4-size;
+      width: fit-content;
 
       path, g {
         transition: all 0s;
@@ -68,8 +72,6 @@
       }
     }
   }
-
-}
 
 
 .footer-about {

@@ -166,17 +166,19 @@ a {
   line-height: 1.4rem;
   color: #5d5c67;
 }
-.footer-des .footer-number-email a {
+
+.footer-number-email a {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
   font-size: 1.1rem;
+  width: fit-content;
 }
-.footer-des .footer-number-email a path, .footer-des .footer-number-email a g {
+.footer-number-email a path, .footer-number-email a g {
   transition: all 0s;
 }
-.footer-des .footer-number-email a:hover {
+.footer-number-email a:hover {
   color: #3f84e5;
 }
 
@@ -909,4 +911,35 @@ a {
   justify-content: center;
   align-items: center;
   width: 6rem;
+}
+
+#contact-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem 0;
+  margin: 0 3rem;
+  align-items: center;
+  max-width: 80rem;
+  gap: 4rem;
+}
+
+.contact-page-text {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+.contact-page-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.contact-page-text p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  color: #5d5c67;
 }/*# sourceMappingURL=style.css.map */
