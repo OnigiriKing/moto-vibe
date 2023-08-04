@@ -1,0 +1,17 @@
+@use "../global/" as *;
+
+#contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-page-wrapper {
+  padding: 6rem 0;
+}
+
+.contact-page-text {
+  display: flex;
+  flex-direction: column;
+}
