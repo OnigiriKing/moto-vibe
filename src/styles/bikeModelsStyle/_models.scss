@@ -1,0 +1,16 @@
+@use "../global/" as *;
+
+#bike-models-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.bike-models-wrapper {
+    width: 100%;
+    max-width: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
