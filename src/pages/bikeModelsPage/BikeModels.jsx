@@ -6,7 +6,9 @@ export default function BikeModels() {
     <div>
       <AllPagesStart />
       <div id="bike-models-page">
-        
+        <div className="bike-models-wrapper">
+          
+        </div>
       </div>
       <AllPagesFooter />
     </div>
