@@ -3,27 +3,29 @@ import { bikeDesSvg } from "../../../svg/bikeDesSvg";
 export default function BikeDes({ bikeType, bikeModel, price, gas, weight, img, star }) {
 
   const stars = [
-    bikeDesSvg(10).star,
-    bikeDesSvg(10).star,
-    bikeDesSvg(10).star,
-    bikeDesSvg(10).star,
-    bikeDesSvg(10).star,
+    bikeDesSvg(15).star,
+    bikeDesSvg(15).star,
+    bikeDesSvg(15).star,
+    bikeDesSvg(15).star,
+    bikeDesSvg(15).star,
   ];
   return (
     <div className="bike-des-wrapper">
-      <div className="bike-des-img">{img}</div>
+      <div className="bike-des-img">
+        <img src={img}></img>
+      </div>
       <div className="bike-des-text">
-        <div className="bike-des-price">
+        <div className="bike-des">
           <div>
             <h3>{bikeModel}</h3>
             <div>{stars.splice(0, star)}</div>
           </div>
-          <div>
-            <h3>{price}</h3>
+          <div className="bike-des-price">
+            <h3>${price}</h3>
             <p>Per day</p>
           </div>
         </div>
-        <div className="bike-des-type">
+        <div className="bike-des">
           <h4>
             {bikeDesSvg(20).bike}
             {bikeType}
@@ -33,8 +35,8 @@ export default function BikeDes({ bikeType, bikeModel, price, gas, weight, img, 
             {bikeDesSvg(20).weight}
           </h4>
         </div>
-        <div className="bike-des-gas">
-          <h4>Auto</h4>
+        <div className="bike-des">
+          <h4>{bikeDesSvg(20).gearBox} Auto</h4>
           <h4>
             {gas}L{bikeDesSvg(20).gas}
           </h4>
