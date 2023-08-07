@@ -90,21 +90,23 @@
   padding-top: 10rem;
 
   .all-pages-start-text {
-
     margin: 0 5rem;
 
-  h1 {
-    font-size: $h1-size;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: $h3-size;
-
-    a:hover {
-      color: $primColor;
+    h1 {
+      font-size: $h1-size;
+      margin-bottom: 1rem;
     }
 
-  }
+    h3 {
+      font-size: $h3-size;
+
+      a:hover {
+        color: $primColor;
+
+        @media (max-width: $navWidth) {
+          color: aqua;
+        }
+      }
+    }
   }
 }

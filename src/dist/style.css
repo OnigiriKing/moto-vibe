@@ -121,6 +121,11 @@ a {
 .all-pages-start-wrapper .all-pages-start-text h3 a:hover {
   color: #3f84e5;
 }
+@media (max-width: 965px) {
+  .all-pages-start-wrapper .all-pages-start-text h3 a:hover {
+    color: aqua;
+  }
+}
 
 #footer-page {
   background-color: white;
