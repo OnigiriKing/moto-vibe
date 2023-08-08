@@ -5,57 +5,59 @@ import yadeaBike from "../../../img/Yadea.png";
 import yamahaBike from "../../../img/Yamaha.png";
 import React from "react";
 
+export const bikes = {
+  Honda: {
+    price: "10",
+    model: "150i",
+    deposit: "$100",
+    gearbox: "Automatic",
+    tank: "5.5 L",
+    weight: "107 KG",
+    img: hondaBike,
+  },
+  Chetak: {
+    price: "12",
+    model: "Smart",
+    deposit: "$100",
+    gearbox: "Automatic",
+    tank: "60 Ah",
+    weight: "100KG",
+    img: chetakBike,
+  },
+  Sym: {
+    price: "8",
+    model: "Symphony",
+    deposit: "$100",
+    gearbox: "Automatic",
+    tank: "5.4 L",
+    weight: "123KG",
+    img: symBike,
+  },
+  Yadea: {
+    price: "15",
+    model: "G5S ",
+    deposit: "$150",
+    gearbox: "Automatic",
+    tank: "50 Ah",
+    weight: "81KG",
+    img: yadeaBike,
+  },
+  Yamaha: {
+    price: "12",
+    model: "Fazzio",
+    deposit: "$120",
+    gearbox: "Automatic",
+    tank: "5.1L",
+    weight: "125KG",
+    img: yamahaBike,
+  },
+};
+
 export function Models() {
 
     const [bikeType, setType] = React.useState('Honda')
 
-    const bikes = {
-      Honda: {
-        price: "10",
-        model: "150i",
-        deposit: "$100",
-        gearbox: "Automatic",
-        tank: "5.5 L",
-        weight: "107 KG",
-        img: hondaBike,
-      },
-      Chetak: {
-        price: "12",
-        model: "Smart",
-        deposit: "$100",
-        gearbox: "Automatic",
-        tank: "60 Ah",
-        weight: "100KG",
-        img: chetakBike,
-      },
-      Sym: {
-        price: "8",
-        model: "Symphony",
-        deposit: "$100",
-        gearbox: "Automatic",
-        tank: "5.4 L",
-        weight: "123KG",
-        img: symBike,
-      },
-      Yadea: {
-        price: "15",
-        model: "G5S ",
-        deposit: "$150",
-        gearbox: "Automatic",
-        tank: "50 Ah",
-        weight: "81KG",
-        img: yadeaBike,
-      },
-      Yamaha: {
-        price: "12",
-        model: "Fazzio",
-        deposit: "$120",
-        gearbox: "Automatic",
-        tank: "5.1L",
-        weight: "125KG",
-        img: yamahaBike,
-      },
-    };
+  
 
     return (
       <div id="bike-models">

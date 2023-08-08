@@ -1,22 +1,58 @@
 import AllPagesStart from "../navBar/AllPagesStart";
 import AllPagesFooter from "../footerPage/AllPagesFooter";
 import BikeDes from "./components/BikeDes";
-import hondaClick from "../../img/HondaClick.jpg";
+import { bikes } from "../homePage/components/BikeModels";
 
 export default function BikeModels() {
   return (
     <div>
-      <AllPagesStart />
+      <AllPagesStart page="Bike Models" />
       <div id="bike-models-page">
         <div className="bike-models-wrapper">
           <BikeDes
-            bikeType="Honda"
             bikeModel="Honda Click"
-            price="10"
-            gas="5.5"
-            weight="107"
-            img={hondaClick}
-            star = "5"
+            bikeType={bikes.Honda.model}
+            price={bikes.Honda.price}
+            gas={bikes.Honda.tank}
+            weight={bikes.Honda.weight}
+            img={bikes.Honda.img}
+            star="5"
+          />
+          <BikeDes
+            bikeModel="Chetak Smart"
+            bikeType={bikes.Chetak.model}
+            price={bikes.Chetak.price}
+            gas={bikes.Chetak.tank}
+            weight={bikes.Chetak.weight}
+            img={bikes.Chetak.img}
+            star="4"
+          />
+          <BikeDes
+            bikeModel="Scooter Sym"
+            bikeType={bikes.Sym.model}
+            price={bikes.Sym.price}
+            gas={bikes.Sym.tank}
+            weight={bikes.Sym.weight}
+            img={bikes.Sym.img}
+            star="4"
+          />
+          <BikeDes
+            bikeModel="Yadea G5S"
+            bikeType={bikes.Yadea.model}
+            price={bikes.Yadea.price}
+            gas={bikes.Yadea.tank}
+            weight={bikes.Yadea.weight}
+            img={bikes.Yadea.img}
+            star="3"
+          />
+          <BikeDes
+            bikeModel="Yamaha Fazzio"
+            bikeType={bikes.Yamaha.model}
+            price={bikes.Yamaha.price}
+            gas={bikes.Yamaha.tank}
+            weight={bikes.Yamaha.weight}
+            img={bikes.Yamaha.img}
+            star="5"
           />
         </div>
       </div>
