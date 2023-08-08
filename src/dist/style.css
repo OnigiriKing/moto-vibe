@@ -136,6 +136,16 @@ a {
   transition: 0.5s ease-in-out;
 }
 
+.drop-menu-register {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.drop-menu-register a {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
 #all-pages-start-screen {
   width: 100%;
   height: 50vh;

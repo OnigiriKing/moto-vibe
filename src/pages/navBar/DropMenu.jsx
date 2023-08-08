@@ -24,6 +24,10 @@ export default function DropMenu() {
       <Link to={"/Models"} children="Bike Models" {...closeMenu()} />
       <Link to={"/Reviews"} children="Testimonials" {...closeMenu()} />
       <Link to={"/Contact"} children="Contact" {...closeMenu()} />
+      <div className="drop-menu-register">
+        <Link to={"/"} children="Login" />
+        <Link to={"/"} children="Sign up" />
+      </div>
     </div>
   );
 }

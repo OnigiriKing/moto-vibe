@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { navSvg, nameLogo } from "../../svg/navSvg";
 
-
 export default function NavBar() {
-
   function openMenu() {
-      document.querySelector(".drop-menu").classList.add("menu-open");
+    document.querySelector(".drop-menu").classList.add("menu-open");
   }
   return (
     <nav id="nav-bar">
@@ -22,8 +20,8 @@ export default function NavBar() {
           <Link to={"/Contact"} children="Contact" />
         </div>
         <div className="login-register">
+          <Link to={"/"} children="Login" />
           <Link to={"/"} children="Sign up" />
-          <Link to={"/"} children="Register" />
         </div>
         <div className="nav-menu-btn" onClick={() => openMenu()}>
           {navSvg(40).menuBtn}
