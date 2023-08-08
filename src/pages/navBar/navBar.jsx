@@ -8,7 +8,7 @@ export default function NavBar() {
       <div className="nav-wrapper">
         <div className="nav-logo">
           {nameLogo}
-          {navSvg("#3F84E5", 40).logo}
+          {navSvg(40).logo}
         </div>
         <div className="nav-menu">
           <Link to={"/"} children="Home" />
@@ -20,6 +20,9 @@ export default function NavBar() {
         <div className="login-register">
           <Link to={"/"} children="Sign up" />
           <Link to={"/"} children="Register" />
+        </div>
+        <div className="nav-menu-btn">
+          {navSvg(40).menuBtn}
         </div>
       </div>
     </nav>

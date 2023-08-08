@@ -88,6 +88,18 @@ a {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
 }
+.nav-wrapper .nav-menu-btn {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 965px) {
+  .nav-wrapper .login-register, .nav-wrapper .nav-menu {
+    display: none;
+  }
+  .nav-wrapper .nav-menu-btn {
+    display: flex;
+  }
+}
 
 #all-pages-start-screen {
   width: 100%;
@@ -120,11 +132,6 @@ a {
 }
 .all-pages-start-wrapper .all-pages-start-text h3 a:hover {
   color: #3f84e5;
-}
-@media (max-width: 965px) {
-  .all-pages-start-wrapper .all-pages-start-text h3 a:hover {
-    color: aqua;
-  }
 }
 
 #footer-page {

@@ -13,4 +13,12 @@
       }
 }
 
+$navBarWidth: 965px;
+
+@mixin name {
+  @media (max-width: 965px) {
+    @content;
+  }
+}
+
 

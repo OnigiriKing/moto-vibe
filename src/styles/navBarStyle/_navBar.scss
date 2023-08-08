@@ -44,6 +44,7 @@
     flex-direction: row;
     gap: $default-gap;
 
+
     a {
       &:hover {
         color: $primColor;
@@ -56,6 +57,7 @@
     gap: 1.5rem;
     align-items: center;
 
+
     a:first-child {
       &:hover {
         color: $primColor;
@@ -66,7 +68,23 @@
       @include button-style;
     }
   }
+
+  .nav-menu-btn {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: $navBarWidth) {
+  .login-register, .nav-menu {
+    display: none;
+  }
+  .nav-menu-btn {
+    display: flex;
+  }
+  
 }
+}
+
 
 //! AllPagesBg
 
@@ -102,10 +120,6 @@
 
       a:hover {
         color: $primColor;
-
-        @media (max-width: $navWidth) {
-          color: aqua;
-        }
       }
     }
   }
