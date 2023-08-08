@@ -8,11 +8,13 @@ import Testimonials from "./pages/testimonialsPage/Testimonials";
 import About from "./pages/aboutPage/About";
 import Contact from "./pages/contactPage/Contact";
 import BikeModels from "./pages/bikeModelsPage/BikeModels";
+import DropMenu from "./pages/navBar/DropMenu";
 
 export default function App() {
   return (
     <div className="App">
       <NavBar />
+      <DropMenu />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Reviews" element={<Testimonials />} />

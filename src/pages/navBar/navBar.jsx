@@ -3,6 +3,10 @@ import { navSvg, nameLogo } from "../../svg/navSvg";
 
 
 export default function NavBar() {
+
+  function openMenu() {
+      document.querySelector(".drop-menu").classList.add("menu-open");
+  }
   return (
     <nav id="nav-bar">
       <div className="nav-wrapper">
@@ -21,7 +25,7 @@ export default function NavBar() {
           <Link to={"/"} children="Sign up" />
           <Link to={"/"} children="Register" />
         </div>
-        <div className="nav-menu-btn">
+        <div className="nav-menu-btn" onClick={() => openMenu()}>
           {navSvg(40).menuBtn}
         </div>
       </div>
