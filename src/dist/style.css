@@ -193,14 +193,27 @@ a {
 }
 
 .footer-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
   gap: 5rem;
   margin: 0 2rem;
+}
+@media (max-width: 965px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 670px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-des {
