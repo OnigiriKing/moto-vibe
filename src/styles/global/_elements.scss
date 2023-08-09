@@ -14,10 +14,17 @@
 }
 
 $navBarWidth: 965px;
-$welcomeScreenWidth: 920px;
+$mediumWidth: 920px;
+$smallWidth: 670px;
 
-@mixin welcomeWidth {
-  @media (max-width: $welcomeScreenWidth) {
+@mixin mediumWidth {
+  @media (max-width: $mediumWidth) {
+    @content;
+  }
+}
+
+@mixin smallWidth {
+  @media (max-width: $smallWidth) {
     @content;
   }
 }

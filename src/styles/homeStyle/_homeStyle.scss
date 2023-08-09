@@ -44,7 +44,7 @@
   margin: 0 2rem;
   width: 100%;
 
-  @include welcomeWidth {
+  @include mediumWidth {
     justify-content: center;
     text-align: center;
   }
@@ -77,7 +77,7 @@
       width: 28rem;
     }
 
-    @include welcomeWidth {
+    @include mediumWidth {
     justify-content: center;
     text-align: center;
     width: auto;
@@ -89,7 +89,7 @@
   display: flex;
   gap: 1.5rem;
 
-  @include welcomeWidth {
+  @include mediumWidth {
     justify-content: center;
     text-align: center;
   }
@@ -126,7 +126,7 @@
   z-index: 1;
   margin-right: 0.5rem;
 
-  @include welcomeWidth {
+  @include mediumWidth {
     display: none;
   }
 
@@ -211,9 +211,8 @@
   justify-content: center;
   align-items: center;
   row-gap: 1.5rem;
-  margin-top: 5rem;
+  margin: 4rem 0;
   overflow: hidden;
-
   h1 {
     margin-bottom: 3rem;
   }
@@ -224,7 +223,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   width: 80%;
-  height: 20rem;
+  row-gap: 2.5rem;
+
+  @include mediumWidth {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include smallWidth {
+    grid-template-columns: 1fr;
+  }
+
+  
 
   .advantage:nth-child(1) div {
     border-radius: 30% 70% 42% 58% / 30% 14% 86% 70%;
