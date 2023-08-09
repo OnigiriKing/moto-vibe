@@ -365,6 +365,12 @@ a {
   margin: 0 2rem;
   width: 100%;
 }
+@media (max-width: 920px) {
+  .welcome-wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 .welcome-des {
   width: 40rem;
@@ -390,10 +396,23 @@ a {
     width: 28rem;
   }
 }
+@media (max-width: 920px) {
+  .welcome-des p {
+    justify-content: center;
+    text-align: center;
+    width: auto;
+  }
+}
 
 .welcome-links {
   display: flex;
   gap: 1.5rem;
+}
+@media (max-width: 920px) {
+  .welcome-links {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .welcome-links a {
   display: flex;
@@ -438,6 +457,11 @@ a {
   justify-content: flex-end;
   z-index: 1;
   margin-right: 0.5rem;
+}
+@media (max-width: 920px) {
+  .welcome-img {
+    display: none;
+  }
 }
 .welcome-img img {
   width: 40%;

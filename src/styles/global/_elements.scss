@@ -14,9 +14,10 @@
 }
 
 $navBarWidth: 965px;
+$welcomeScreenWidth: 920px;
 
-@mixin name {
-  @media (max-width: 965px) {
+@mixin welcomeWidth {
+  @media (max-width: $welcomeScreenWidth) {
     @content;
   }
 }
