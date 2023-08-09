@@ -14,8 +14,16 @@
 }
 
 $navBarWidth: 965px;
+$bigWidth: 1050px;
 $mediumWidth: 920px;
 $smallWidth: 670px;
+
+
+@mixin navBarWidth {
+  @media (max-width: $navBarWidth) {
+    @content;
+  }
+}
 
 @mixin mediumWidth {
   @media (max-width: $mediumWidth) {
@@ -25,6 +33,11 @@ $smallWidth: 670px;
 
 @mixin smallWidth {
   @media (max-width: $smallWidth) {
+    @content;
+  }
+}
+@mixin bigWidth {
+  @media (max-width: $bigWidth) {
     @content;
   }
 }
