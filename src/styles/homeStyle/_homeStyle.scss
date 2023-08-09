@@ -584,11 +584,9 @@
     row-gap: 1rem;
   }
 
-  .all-questions {
-          width: 35rem;
-  }
 
   .faq-question {
+
     div:nth-child(1) {
       padding: 1.5rem 2rem;
       width: 35rem;
@@ -656,6 +654,10 @@
   background-repeat: no-repeat;
   background-size: 20rem;
   background-position: 85% 3rem;
+
+  @include navBarWidth {
+    background-image: none;
+  }
 }
 
 .advertisement-wrapper {
@@ -666,6 +668,11 @@
   margin: 0rem 2rem;
   row-gap: 4rem;
   position: relative;
+  @include navBarWidth {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .advertisement-des {
@@ -684,6 +691,7 @@
 .advertisement-links {
   display: flex;
   gap: 2rem;
+  
 
   a {
 

@@ -895,9 +895,6 @@ a {
   margin-bottom: 2rem;
   row-gap: 1rem;
 }
-.questions-wrapper .all-questions {
-  width: 35rem;
-}
 .questions-wrapper .faq-question div:nth-child(1) {
   padding: 1.5rem 2rem;
   width: 35rem;
@@ -956,6 +953,11 @@ a {
   background-size: 20rem;
   background-position: 85% 3rem;
 }
+@media (max-width: 965px) {
+  #advertisement-screen {
+    background-image: none;
+  }
+}
 
 .advertisement-wrapper {
   width: 100%;
@@ -965,6 +967,13 @@ a {
   margin: 0rem 2rem;
   row-gap: 4rem;
   position: relative;
+}
+@media (max-width: 965px) {
+  .advertisement-wrapper {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .advertisement-des {
