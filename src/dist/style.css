@@ -1157,6 +1157,16 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media (max-width: 1050px) {
+  .bike-models-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .bike-models-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .bike-des-wrapper {
   border: 1px solid rgb(205, 205, 205);

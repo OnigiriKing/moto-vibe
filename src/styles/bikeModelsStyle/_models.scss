@@ -13,6 +13,14 @@
   margin: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @include bigWidth {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .bike-des-wrapper {
