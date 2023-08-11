@@ -212,7 +212,9 @@ a {
 @media (max-width: 600px) {
   .footer-wrapper {
     grid-template-columns: 1fr;
-    margin-left: 25%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: left;
   }
 }
 
@@ -336,6 +338,12 @@ a {
   gap: 4rem;
   font-size: 1.1rem;
   color: white;
+}
+@media (max-width: 920px) {
+  .all-pages-footer-text {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 .all-pages-footer-text a h1 {
   color: #3f84e5;
@@ -1165,6 +1173,7 @@ a {
 @media (max-width: 750px) {
   .bike-models-wrapper {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 

@@ -31,7 +31,9 @@
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    margin-left: 25%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: left;
   }
 }
 
@@ -169,7 +171,11 @@
   gap: 4rem;
   font-size: $h4-size;
   color: #ffff;
-
+  
+  @include mediumWidth {
+    flex-direction: column;
+    gap: 1rem;
+  }
   a {
     h1 {
       color: $primColor;
