@@ -12,6 +12,11 @@
   display: flex;
   gap: 2rem;
 
+  @include mediumWidth {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   img {
     width: 30rem;
   }
@@ -19,6 +24,10 @@
 
 .about-page-des {
   width: 25rem;
+
+  @include mediumWidth {
+    text-align: center;
+  }
 
   p {
     color: $greyText;
@@ -29,6 +38,10 @@
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
+
+    @include mediumWidth {
+    justify-content: center;
+  }
 
   .about-page-pros {
     display: flex;

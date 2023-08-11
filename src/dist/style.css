@@ -1030,12 +1030,23 @@ a {
   display: flex;
   gap: 2rem;
 }
+@media (max-width: 920px) {
+  .about-page-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .about-page-wrapper img {
   width: 30rem;
 }
 
 .about-page-des {
   width: 25rem;
+}
+@media (max-width: 920px) {
+  .about-page-des {
+    text-align: center;
+  }
 }
 .about-page-des p {
   color: #5d5c67;
@@ -1045,6 +1056,11 @@ a {
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
+}
+@media (max-width: 920px) {
+  .about-page-adv {
+    justify-content: center;
+  }
 }
 .about-page-adv .about-page-pros {
   display: flex;
