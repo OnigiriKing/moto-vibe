@@ -1030,14 +1030,18 @@ a {
   display: flex;
   gap: 2rem;
 }
+.about-page-wrapper img {
+  width: 30rem;
+}
 @media (max-width: 920px) {
   .about-page-wrapper {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-}
-.about-page-wrapper img {
-  width: 30rem;
+  .about-page-wrapper img {
+    width: 25rem;
+  }
 }
 
 .about-page-des {

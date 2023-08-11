@@ -12,13 +12,19 @@
   display: flex;
   gap: 2rem;
 
-  @include mediumWidth {
-    flex-direction: column;
-    justify-content: center;
-  }
 
   img {
     width: 30rem;
+  }
+
+  @include mediumWidth {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 25rem;
+    }
   }
 }
 
