@@ -212,9 +212,15 @@ a {
 @media (max-width: 600px) {
   .footer-wrapper {
     grid-template-columns: 1fr;
-    box-sizing: border-box;
-    justify-content: center;
-    text-align: left;
+  }
+  .footer-wrapper .footer-des {
+    width: 100%;
+  }
+  .footer-wrapper li, .footer-wrapper .footer-number-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
