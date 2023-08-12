@@ -19,8 +19,12 @@
   }
 
   @media (max-width: 750px) {
-    grid-template-columns: 1fr;
-    justify-content: center;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
   }
 }
 

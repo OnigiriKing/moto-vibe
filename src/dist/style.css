@@ -1199,8 +1199,10 @@ a {
 }
 @media (max-width: 750px) {
   .bike-models-wrapper {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 
