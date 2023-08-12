@@ -1118,6 +1118,18 @@ a {
   max-width: 80rem;
   gap: 3rem;
 }
+@media (max-width: 920px) {
+  .contact-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-page-wrapper .footer-number-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .contact-page-text {
   display: flex;
@@ -1137,6 +1149,7 @@ a {
 .contact-page-contact-form {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .contact-page-contact-form form {
   display: flex;
@@ -1144,6 +1157,11 @@ a {
   width: 33rem;
   gap: 0.8rem;
   font-weight: 600;
+}
+@media (max-width: 920px) {
+  .contact-page-contact-form form {
+    width: 100%;
+  }
 }
 .contact-page-contact-form form input,
 .contact-page-contact-form form textarea {

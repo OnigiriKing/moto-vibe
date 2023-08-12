@@ -26,6 +26,18 @@
   width: 100%;
   max-width: 80rem;
   gap: 3rem;
+
+  @include mediumWidth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .footer-number-email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 .contact-page-text {
@@ -48,6 +60,7 @@
 .contact-page-contact-form {
   display: flex;
   justify-content: center;
+  width: 100%;
 
   form {
     display: flex;
@@ -55,6 +68,10 @@
     width: 33rem;
     gap: 0.8rem;
     font-weight: 600;
+
+     @include mediumWidth {
+      width: 100%;
+  }
 
     input,
     textarea {
