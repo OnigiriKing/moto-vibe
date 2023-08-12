@@ -35,6 +35,8 @@
   width: 100%;
   margin-bottom: 4rem;
   padding: 9rem 0rem;
+  display: flex;
+  justify-content: center;
 }
 
 .welcome-wrapper {
@@ -52,7 +54,7 @@
 
 .welcome-des {
   width: 40rem;
-  margin-left: 3rem;
+  margin: 0 3rem;
   position: relative;
   z-index: 2;
 
