@@ -1,3 +1,5 @@
+import { homeSvg } from "../../../svg/homeSvg";
+
 
 export default function Reviews() {
   return (
@@ -28,7 +30,7 @@ export default function Reviews() {
                   <p>Britain</p>
                 </div>
               </div>
-              <div>svg</div>
+              <div>{homeSvg(40).comment}</div>
             </div>
           </div>
           <div className="review-screen-review">
@@ -45,7 +47,7 @@ export default function Reviews() {
                   <p>Japan</p>
                 </div>
               </div>
-              <div>svg</div>
+              <div>{homeSvg(40).comment}</div>
             </div>
           </div>
         </div>

@@ -908,6 +908,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.review-screen-clients .review-screen-review .review-screen-client-info svg {
+  color: #3f84e5;
 }
 .review-screen-clients .review-screen-review .review-screen-client-info .review-screen-client-photo-des {
   display: flex;
