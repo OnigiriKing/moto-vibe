@@ -384,7 +384,7 @@ a {
   position: relative;
   width: 100%;
   margin-bottom: 4rem;
-  padding: 9rem 0rem;
+  padding: 8rem 0rem;
   display: flex;
   justify-content: center;
 }
@@ -581,6 +581,7 @@ a {
 }
 #advantages-screen h1 {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .advantages-list {
