@@ -583,6 +583,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem;
 }
 
 .questions-wrapper {
@@ -603,10 +604,19 @@
     row-gap: 1rem;
   }
 
+  .all-questions  {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
   .faq-question {
     div:nth-child(1) {
-      padding: 1.5rem 2rem;
-      width: 35rem;
+      padding: 1.5rem 1rem;
+      width: 100%;
       cursor: pointer;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
       display: flex;
@@ -641,8 +651,8 @@
   line-height: 1.5;
   font-size: $h4-size;
   overflow: hidden;
-  width: 35rem;
-  padding: 0rem 2rem;
+  width: 100%;
+  padding: 0rem 1rem;
   color: $greyText;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
   max-height: 0;
@@ -650,8 +660,8 @@
 }
 
 .active-answer {
-  padding: 1.2rem 2rem;
-  max-height: 20rem;
+  padding: 1.2rem 1rem;
+  max-height: fit-content;
 }
 
 //! advertisement screen

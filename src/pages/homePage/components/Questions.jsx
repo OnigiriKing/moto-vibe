@@ -63,7 +63,7 @@ export default function Questions() {
               className={faq === "Q3" ? "active-question" : ""}
               onClick={() => (faq !== "Q3" ? setQ("Q3") : setQ("Q0"))}
             >
-              <h3>3. Can I rent a motorbike for an extended period?</h3>{" "}
+              <h3>3. Can I rent a motorbike for an extended period?</h3>
               {homeSvg(20).arrowDown}
             </div>
             <div
