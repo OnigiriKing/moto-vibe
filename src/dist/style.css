@@ -1059,6 +1059,11 @@ a {
   display: flex;
   gap: 2rem;
 }
+@media (max-width: 420px) {
+  .advertisement-links {
+    flex-direction: column;
+  }
+}
 .advertisement-links a img {
   width: 13rem;
 }

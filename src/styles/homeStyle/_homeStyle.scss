@@ -721,6 +721,10 @@
   display: flex;
   gap: 2rem;
 
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
+
   a {
     img {
       width: 13rem;
