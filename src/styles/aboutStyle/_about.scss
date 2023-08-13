@@ -24,6 +24,10 @@
 
     img {
       width: 25rem;
+
+       @media (max-width: 420px) {
+    width: 20rem;
+  }
     }
   }
 }

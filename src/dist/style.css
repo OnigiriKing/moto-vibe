@@ -1093,6 +1093,11 @@ a {
     width: 25rem;
   }
 }
+@media (max-width: 920px) and (max-width: 420px) {
+  .about-page-wrapper img {
+    width: 20rem;
+  }
+}
 
 .about-page-des {
   width: 25rem;
