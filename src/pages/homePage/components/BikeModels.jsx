@@ -101,6 +101,7 @@ export function Models() {
                 Yamaha Fazzio
               </button>
             </div>
+            <div className="models-img-table">
             <div className="models-img">
               <img src={bikes[bikeType].img} />
             </div>
@@ -131,6 +132,7 @@ export function Models() {
                 </div>
               </div>
               <a href="#home-request">RESERVE NOW</a>
+            </div>
             </div>
           </div>
         </div>
