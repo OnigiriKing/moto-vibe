@@ -150,8 +150,9 @@
 
 .request-wrapper {
   height: auto;
-  width: 100%;
-  margin: 0 5rem;
+  width: 80%;
+  max-width: 65rem;
+  margin: 0 3rem;
   padding: 5rem;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   display: flex;
@@ -167,6 +168,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     align-items: end;
+
+    @include mediumWidth {
+      grid-template-columns: 1fr;
+    }
 
     div {
       display: grid;
