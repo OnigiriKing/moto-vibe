@@ -1180,6 +1180,11 @@ a {
   flex-direction: column;
   width: 25rem;
 }
+@media (max-width: 920px) {
+  .contact-page-text {
+    width: auto;
+  }
+}
 .contact-page-text h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
