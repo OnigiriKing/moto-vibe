@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
 import { navSvg } from "../../svg/navSvg";
+import { changeClass } from "../../scripts/scripts";
 
 export default function DropMenu() {
   function closeMenu() {
-    function close() {
-      document.querySelector(".drop-menu").classList.remove("menu-open");
-    }
-
     return {
       onClick: function () {
-        close();
+        changeClass(".drop-menu", "menu-open");
       },
     };
   }

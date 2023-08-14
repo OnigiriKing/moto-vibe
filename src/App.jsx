@@ -11,6 +11,8 @@ import BikeModels from "./pages/bikeModelsPage/BikeModels";
 import DropMenu from "./pages/navBar/DropMenu";
 
 export default function App() {
+  
+
   return (
     <div className="App">
       <NavBar />
