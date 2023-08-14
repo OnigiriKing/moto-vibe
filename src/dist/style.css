@@ -387,6 +387,7 @@ a {
   padding: 8rem 0rem;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .welcome-wrapper {
@@ -1070,6 +1071,25 @@ a {
 }
 .advertisement-links a img {
   width: 13rem;
+}
+
+.request-menu-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  position: absolute;
+  background-color: #892222;
+}
+
+.request-menu-wrapper {
+  width: 30rem;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+  background-color: aqua;
 }
 
 #about-page {

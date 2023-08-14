@@ -6,6 +6,7 @@ import { ChooseUs } from "./components/ChooseUs"
 import Reviews from "./components/Reviews"
 import Questions from "./components/Questions"
 import Advertisement from "./components/Advertisement";
+import RequestMenu from "./components/RequestMenu"
 
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Reviews />
         <Questions />
         <Advertisement />
+        {/* <RequestMenu /> */}
         </div>
     )
 }

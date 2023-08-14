@@ -1,77 +1,80 @@
 import { requestSvg } from "../../../svg/requestFormSvg";
 import React from "react";
 
-
 export function Request() {
+  
+  const defaultFillState = {
+    bikeType: "Select a bike type",
+    pickUp: "Select Pick-up location",
+    dropOff: "Select Drop-off location",
+    pickDate: "",
+    dropDate: "",
+  };
 
-  const [fillState, setFillState] = React.useState("")
-
+  const [fillState, setFillState] = React.useState(defaultFillState);
+  
   function handleSubmit(event) {
     event.preventDefault();
-    setFillState("empty");
   }
 
+   function changeFillState(e) {
+     setFillState({ ...fillState, [e.target.id]: [e.target.value] });
+     console.log(fillState);
+     console.log(defaultFillState === fillState);
+   }
 
-    return (
-      <div id="home-request">
-        <div className="request-wrapper">
-          <h2>Book a bike</h2>
-          {fillState === "empty" && (
-            <div className="fields-banner">
-              <h3>All fields are required</h3>
-              <button></button>
-            </div>
-          )}
-          <form className="request-form" onSubmit={handleSubmit}>
-            <div className="request-select">
-              <label>{requestSvg(20).bike}Select a bike</label>
-              <select>
-                <option>Select a bike type</option>
-                <option>Honda Click</option>
-                <option>Chetak Smart</option>
-                <option>Scooter Sym</option>
-                <option>Yadea G5S</option>
-                <option>Yamaha Fazzio</option>
-              </select>
-            </div>
-            <div className="request-select">
-              <label>{requestSvg(20).location}Pick-up</label>
-              <select>
-                <option>Select Pick-up location</option>
-                <option>Khao San</option>
-                <option>Sukhumvit</option>
-                <option>Siam</option>
-              </select>
-            </div>
-            <div className="request-select">
-              <label>{requestSvg(20).location}Drop-off</label>
-              <select>
-                <option>Select Drop-off location</option>
-                <option>Khao San</option>
-                <option>Sukhumvit</option>
-                <option>Siam</option>
-              </select>
-            </div>
-            <div className="request-date">
-              <label for="pick-up-date">
-                {requestSvg(20).calendar}Pick-up date
-              </label>
-              <input id="pick-up-date" type="date"></input>
-            </div>
-            <div className="request-date">
-              <label for="drop-off-date">
-                {requestSvg(20).calendar}Drop-off date
-              </label>
-              <input id="drop-off-date" type="date"></input>
-            </div>
+  return (
+    <div id="home-request">
+      <div className="request-wrapper">
+        <h2>Book a bike</h2>
+        {fillState === "empty" && (
+          <div className="fields-banner">
+            <h3>All fields are required</h3>
+            <button></button>
+          </div>
+        )}
+        <form className="request-form" onSubmit={handleSubmit}>
+          <div className="request-select">
+            <label>{requestSvg(20).bike}Select a bike</label>
+            <select onChange={changeFillState} id="bikeType">
+              <option>Select a bike type</option>
+              <option>Honda Click</option>
+              <option>Chetak Smart</option>
+              <option>Scooter Sym</option>
+              <option>Yadea G5S</option>
+              <option>Yamaha Fazzio</option>
+            </select>
+          </div>
+          <div className="request-select">
+            <label>{requestSvg(20).location}Pick-up</label>
+            <select onChange={changeFillState} id="pickUp">
+              <option>Select Pick-up location</option>
+              <option>Khao San</option>
+              <option>Sukhumvit</option>
+              <option>Siam</option>
+            </select>
+          </div>
+          <div className="request-select">
+            <label>{requestSvg(20).location}Drop-off</label>
+            <select onChange={changeFillState} id="dropOff">
+              <option>Select Drop-off location</option>
+              <option>Khao San</option>
+              <option>Sukhumvit</option>
+              <option>Siam</option>
+            </select>
+          </div>
+          <div className="request-date">
+            <label for="pickDate">{requestSvg(20).calendar}Pick-up date</label>
+            <input id="pickDate" type="date" onChange={changeFillState}></input>
+          </div>
+          <div className="request-date">
+            <label for="dropDate">{requestSvg(20).calendar}Drop-off date</label>
+            <input id="dropDate" type="date" onChange={changeFillState}></input>
+          </div>
 
-            <button
-              type="submit"
-              children="Search"
-              value
-            />
-          </form>
-        </div>
+          <button type="submit" children="Search" value />
+        </form>
       </div>
-    );
+    </div>
+  );
 }
