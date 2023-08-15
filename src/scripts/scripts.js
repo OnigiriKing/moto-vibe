@@ -1,8 +1,10 @@
 
 
-export function changeClass(baseClass, newClass) {
+export function changeClass(baseClass, newClass, check=true) {
     const classList = document.querySelector(baseClass).classList;
-    classList.contains(newClass)
-      ? classList.remove(newClass)
+    check
+      ? classList.contains(newClass)
+        ? classList.remove(newClass)
+        : classList.add(newClass)
       : classList.add(newClass);
   };

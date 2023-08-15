@@ -17,11 +17,19 @@ export function Request() {
   
   function handleSubmit(event) {
     event.preventDefault();
+    if (
+      fillState.bikeType === defaultFillState.bikeType ||
+      fillState.dropDate === defaultFillState.dropDate ||
+      fillState.dropOff === defaultFillState.dropOff ||
+      fillState.pickDate === defaultFillState.pickDate ||
+      fillState.pickUp === defaultFillState.pickUp 
+    ) {
+      changeClass(".fields-banner", "fields-banner-active", false);
+    }
   }
 
    function changeFillState(e) {
      setFillState({ ...fillState, [e.target.id]: [e.target.value] });
-     console.log(defaultFillState === fillState);
    }
 
   return (
@@ -30,7 +38,7 @@ export function Request() {
         <h2>Book a bike</h2>
         <div className="fields-banner">
           <h3>All fields are required</h3>
-          <div onClick={() => changeClass(".fields-banner", "fields-banner-active")}>
+          <div>
             {navSvg(20).closeBtn}
           </div>
         </div>
