@@ -208,6 +208,22 @@
   }
 }
 
+.fields-banner {
+  background: #fc8989;
+  display: none;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  padding: .3rem;
+
+  div {
+    cursor: pointer;
+  }
+}
+
+.fields-banner-active {
+  display: flex;
+}
+
 //! Advantages screen
 
 #advantages-screen {

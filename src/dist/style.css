@@ -569,6 +569,21 @@ a {
   background-color: #3776cd;
 }
 
+.fields-banner {
+  background: #fc8989;
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+}
+.fields-banner div {
+  cursor: pointer;
+}
+
+.fields-banner-active {
+  display: flex;
+}
+
 #advantages-screen {
   padding: 1rem 0;
   width: 100%;

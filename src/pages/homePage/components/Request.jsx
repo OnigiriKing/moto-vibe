@@ -1,5 +1,7 @@
 import { requestSvg } from "../../../svg/requestFormSvg";
+import { navSvg } from "../../../svg/navSvg";
 import React from "react";
+import {changeClass} from "../../../scripts/scripts";
 
 export function Request() {
   
@@ -19,7 +21,6 @@ export function Request() {
 
    function changeFillState(e) {
      setFillState({ ...fillState, [e.target.id]: [e.target.value] });
-     console.log(fillState);
      console.log(defaultFillState === fillState);
    }
 
@@ -27,12 +28,12 @@ export function Request() {
     <div id="home-request">
       <div className="request-wrapper">
         <h2>Book a bike</h2>
-        {fillState === "empty" && (
-          <div className="fields-banner">
-            <h3>All fields are required</h3>
-            <button></button>
+        <div className="fields-banner">
+          <h3>All fields are required</h3>
+          <div onClick={() => changeClass(".fields-banner", "fields-banner-active")}>
+            {navSvg(20).closeBtn}
           </div>
-        )}
+        </div>
         <form className="request-form" onSubmit={handleSubmit}>
           <div className="request-select">
             <label>{requestSvg(20).bike}Select a bike</label>
