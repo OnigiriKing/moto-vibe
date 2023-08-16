@@ -17,13 +17,10 @@ export function Request() {
   
   function handleSubmit(event) {
     event.preventDefault();
-    if (
-      fillState.bikeType === defaultFillState.bikeType ||
-      fillState.dropDate === defaultFillState.dropDate ||
-      fillState.dropOff === defaultFillState.dropOff ||
-      fillState.pickDate === defaultFillState.pickDate ||
-      fillState.pickUp === defaultFillState.pickUp 
-    ) {
+    const sameValue = Object.keys(fillState).some(
+      (key) => fillState[key] === defaultFillState[key]
+    );
+    if (sameValue) {
       changeClass(".fields-banner", "fields-banner-active", false);
     }
   }
