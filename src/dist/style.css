@@ -570,7 +570,6 @@ a {
 }
 
 .fields-banner {
-  background: #fc8989;
   display: none;
   justify-content: space-between;
   margin-bottom: 0.5rem;
@@ -578,6 +577,14 @@ a {
 }
 .fields-banner div {
   cursor: pointer;
+}
+
+.banner-wrong {
+  background: #fc8989;
+}
+
+.banner-right {
+  background: #9ff995;
 }
 
 .fields-banner-active {
@@ -1096,7 +1103,7 @@ a {
   align-items: center;
   z-index: 3;
   position: absolute;
-  background-color: #892222;
+  background-color: rgba(255, 255, 255, 0.3843137255);
 }
 
 .request-menu-wrapper {
@@ -1104,7 +1111,7 @@ a {
   height: 100%;
   position: relative;
   z-index: 4;
-  background-color: aqua;
+  background-color: rgba(168, 168, 168, 0.552);
 }
 
 #about-page {

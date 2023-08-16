@@ -209,15 +209,22 @@
 }
 
 .fields-banner {
-  background: #fc8989;
   display: none;
   justify-content: space-between;
-  margin-bottom: .5rem;
-  padding: .3rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
 
   div {
     cursor: pointer;
   }
+
+}
+.banner-wrong {
+  background: #fc8989;
+}
+
+.banner-right {
+  background: #9ff995;
 }
 
 .fields-banner-active {
@@ -379,10 +386,9 @@
 
     @include mediumWidth {
       width: 80%;
-    height: 80%;
+      height: 80%;
+    }
   }
-  }
-
 }
 
 .models-table {
@@ -632,7 +638,7 @@
     row-gap: 1rem;
   }
 
-  .all-questions  {
+  .all-questions {
     display: flex;
     flex-direction: column;
     max-width: 40rem;
@@ -764,7 +770,7 @@
   align-items: center;
   z-index: 3;
   position: absolute;
-  background-color: #892222;
+  background-color: #ffffff62;
 }
 
 .request-menu-wrapper {
@@ -772,6 +778,5 @@
   height: 100%;
   position: relative;
   z-index: 4;
-  background-color: aqua;
-
+  background-color: rgba(168, 168, 168, 0.552);
 }
