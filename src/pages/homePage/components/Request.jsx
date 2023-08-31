@@ -2,6 +2,7 @@ import { requestSvg } from "../../../svg/requestFormSvg";
 import { navSvg } from "../../../svg/navSvg";
 import React from "react";
 import { changeClass } from "../../../scripts/scripts";
+import RequestMenu from "./RequestMenu";
 
 export function Request() {
   const defaultFillState = {
@@ -10,6 +11,7 @@ export function Request() {
     dropOff: "Select Drop-off location",
     pickDate: "",
     dropDate: "",
+    img: "",
   };
 
   const [fillState, setFillState] = React.useState(defaultFillState);
@@ -37,6 +39,7 @@ export function Request() {
 
   return (
     <div id="home-request">
+      <RequestMenu info={fillState} />
       <div className="request-wrapper">
         <h2>Book a bike</h2>
         <div className="fields-banner banner-wrong">
