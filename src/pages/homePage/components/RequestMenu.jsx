@@ -27,19 +27,19 @@ export default function RequestMenu({info}) {
                  <h3>Location & Date</h3>
                  <div className="location-info">
                    <h3>{requestSvg(20).calendar}Pick-Up Date & Time</h3>
-                   <p></p>
+                   <p>{info.pickDate}</p>
                  </div>
                  <div className="location-info">
                    <h3>{requestSvg(20).calendar}Drop-Off Date & Time</h3>
-                   <p></p>
+                   <p>{info.dropDate}</p>
                  </div>
                  <div className="location-info">
                    <h3>{requestSvg(20).location}Pick-Up Location</h3>
-                   <p></p>
+                   <p>{info.pickUp}</p>
                  </div>
                  <div className="location-info">
                    <h3>{requestSvg(20).location}Drop-Off Location</h3>
-                   <p></p>
+                   <p>{info.dropOff}</p>
                  </div>
                </div>
                <div className="menu-main-bike">

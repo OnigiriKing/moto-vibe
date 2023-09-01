@@ -1148,6 +1148,9 @@ a {
 .request-menu-des .request-menu-main .menu-main-time {
   display: flex;
 }
+.request-menu-des .request-menu-main .menu-main-bike h3 {
+  display: flex;
+}
 .request-menu-des .request-menu-main .menu-main-complete {
   display: flex;
   padding: 2rem 1rem;
