@@ -36,27 +36,46 @@ export default function RequestMenu({info}) {
             <div className="request-menu-main">
               <div className="menu-main-time">
                 <div className="main-date-location">
-                  <h3>Location & Date</h3>
+                  <span>
+                    <h3>Location & Date</h3>
+                  </span>
                   <div className="location-info">
-                    <h3>{requestSvg(20).calendar}Pick-Up Date & Time</h3>
-                    <p>{info.pickDate} / <input type="time" /></p>
+                    {requestSvg(20).calendar}
+                    <div>
+                      <h3>Pick-Up Date & Time</h3>
+                      <p>
+                        {info.pickDate} / <input type="time" />
+                      </p>
+                    </div>
                   </div>
                   <div className="location-info">
-                    <h3>{requestSvg(20).calendar}Drop-Off Date & Time</h3>
-                    <p>{info.dropDate}</p>
+                    {requestSvg(20).calendar}
+                    <div>
+                      <h3>Drop-Off Date & Time</h3>
+                      <p>
+                        {info.dropDate} / <input type="time" />
+                      </p>
+                    </div>
                   </div>
                   <div className="location-info">
-                    <h3>{requestSvg(20).location}Pick-Up Location</h3>
-                    <p>{info.pickUp}</p>
+                    {requestSvg(20).location}
+                    <div>
+                      <h3>Pick-Up Location</h3>
+                      <p>{info.pickUp}</p>
+                    </div>
                   </div>
                   <div className="location-info">
-                    <h3>{requestSvg(20).location}Drop-Off Location</h3>
-                    <p>{info.dropOff}</p>
+                    {requestSvg(20).location}
+                    <div>
+                      <h3>Drop-Off Location</h3>
+                      <p>{info.dropOff}</p>
+                    </div>
                   </div>
                 </div>
                 <div className="menu-main-bike">
                   <h3>
-                    Bike: <h2>{info.bikeType}</h2>
+                    Bike:
+                      <b>{info.bikeType}</b>
                   </h3>
                   <img src={bikeImg} />
                 </div>

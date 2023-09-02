@@ -1113,7 +1113,7 @@ a {
   z-index: 4;
   background-color: #fff;
   overflow-y: scroll;
-  border: 2px solid #fff;
+  overflow-x: hidden;
 }
 
 .request-menu-des .request-menu-top,
@@ -1154,13 +1154,28 @@ a {
 .request-menu-des .request-menu-main .main-date-location {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.request-menu-des .request-menu-main .menu-main-bike {
-  width: 50%;
+.request-menu-des .request-menu-main .main-date-location span {
+  color: #3f84e5;
+}
+.request-menu-des .request-menu-main .main-date-location .location-info {
+  display: flex;
+  gap: 0.5rem;
+}
+.request-menu-des .request-menu-main .main-date-location .location-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .request-menu-des .request-menu-main .menu-main-bike h3 {
   display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.request-menu-des .request-menu-main .menu-main-bike h3 b {
+  color: #3f84e5;
 }
 .request-menu-des .request-menu-main .menu-main-bike img {
   width: 20rem;
