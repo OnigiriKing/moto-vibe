@@ -141,7 +141,16 @@
     line-height: 1.4rem;
   }
 
-  input {
+
+  button {
+    @include button-style;
+    cursor: pointer;
+    border: none;
+    font-size: $h5-size;
+  }
+}
+
+  .input-field-style {
     margin-bottom: 0.5rem;
     border: none;
     padding: 1rem 1.5rem;
@@ -151,14 +160,6 @@
     line-height: 1.4rem;
     outline: none;
   }
-
-  button {
-    @include button-style;
-    cursor: pointer;
-    border: none;
-    font-size: $h5-size;
-  }
-}
 
 //! allPagesFooter
 

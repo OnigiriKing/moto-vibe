@@ -780,9 +780,9 @@
   overflow-x: hidden;
 }
 
-.request-menu-screen, .request-menu-bg {
-  // display: none;
-}
+// .request-menu-screen, .request-menu-bg {
+//   display: none;
+// }
 // .request-menu-screen::-webkit-scrollbar {
 //   width: 10px;
 // }
@@ -882,6 +882,34 @@
         border: none;
         @include button-style;
         cursor: pointer;
+      }
+    }
+
+    .menu-main-info {
+
+      border-top: 1px solid $greyText;
+
+      h3 {
+        color: $primColor;
+        margin: 1.5rem 0rem;
+      }
+
+      .request-input-field {
+
+        h4 {
+          font-size: 1.1rem;
+          color: $greyText;
+          margin-bottom: .5rem;
+        }
+
+        input {
+          padding: 0.5rem 1rem;
+        }
+
+        p {
+          font-size: .8rem;
+          color: #000;
+        }
       }
     }
   }

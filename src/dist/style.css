@@ -302,16 +302,6 @@ a {
   margin-bottom: 1rem;
   line-height: 1.4rem;
 }
-.footer-sub input {
-  margin-bottom: 0.5rem;
-  border: none;
-  padding: 1rem 1.5rem;
-  background-color: #ececec;
-  font-size: 1rem;
-  color: #5d5c67;
-  line-height: 1.4rem;
-  outline: none;
-}
 .footer-sub button {
   padding: 1rem 1.2rem;
   color: #fff;
@@ -325,6 +315,17 @@ a {
 .footer-sub button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
+}
+
+.input-field-style {
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: #ececec;
+  font-size: 1rem;
+  color: #5d5c67;
+  line-height: 1.4rem;
+  outline: none;
 }
 
 #testimonials-page {
@@ -1199,6 +1200,25 @@ a {
 .request-menu-des .request-menu-main .menu-main-complete button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
+}
+.request-menu-des .request-menu-main .menu-main-info {
+  border-top: 1px solid #5d5c67;
+}
+.request-menu-des .request-menu-main .menu-main-info h3 {
+  color: #3f84e5;
+  margin: 1.5rem 0rem;
+}
+.request-menu-des .request-menu-main .menu-main-info .request-input-field h4 {
+  font-size: 1.1rem;
+  color: #5d5c67;
+  margin-bottom: 0.5rem;
+}
+.request-menu-des .request-menu-main .menu-main-info .request-input-field input {
+  padding: 0.5rem 1rem;
+}
+.request-menu-des .request-menu-main .menu-main-info .request-input-field p {
+  font-size: 0.8rem;
+  color: #000;
 }
 
 #about-page {
