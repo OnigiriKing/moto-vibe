@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 a {
@@ -1101,7 +1102,6 @@ a {
   height: 100%;
   position: fixed;
   top: 0;
-  display: none;
 }
 
 .request-menu-screen {
@@ -1114,7 +1114,6 @@ a {
   background-color: #fff;
   overflow-y: scroll;
   border: 2px solid #fff;
-  display: none;
 }
 
 .request-menu-des .request-menu-top,
@@ -1148,17 +1147,28 @@ a {
   flex-direction: column;
 }
 .request-menu-des .request-menu-main .menu-main-time {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.request-menu-des .request-menu-main .main-date-location {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.request-menu-des .request-menu-main .menu-main-bike {
   width: 50%;
 }
 .request-menu-des .request-menu-main .menu-main-bike h3 {
   display: flex;
-  width: 50%;
+}
+.request-menu-des .request-menu-main .menu-main-bike img {
+  width: 20rem;
 }
 .request-menu-des .request-menu-main .menu-main-complete {
   width: 100%;
   display: flex;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
   justify-content: right;
   background-color: rgba(63, 132, 229, 0.1607843137);
 }

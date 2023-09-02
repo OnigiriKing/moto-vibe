@@ -7,13 +7,13 @@ export default function RequestMenu({info}) {
 
   const [bikeImg, setBikeImg] = React.useState("")
 
-  React.useEffect(()=> {
-    Object.keys(bikes).map(key => {
+  React.useEffect(() => {
+    Object.keys(bikes).map((key) => {
       if (bikes[key].name === info.bikeType) {
-        return setBikeImg(bikes[key].img);
+        setBikeImg(bikes[key].img);
       }
-    })
-  }, [info])
+    });
+  }, [info.bikeType]);
 
     return (
       <>
@@ -39,7 +39,7 @@ export default function RequestMenu({info}) {
                   <h3>Location & Date</h3>
                   <div className="location-info">
                     <h3>{requestSvg(20).calendar}Pick-Up Date & Time</h3>
-                    <p>{info.pickDate}</p>
+                    <p>{info.pickDate} / <input type="time" /></p>
                   </div>
                   <div className="location-info">
                     <h3>{requestSvg(20).calendar}Drop-Off Date & Time</h3>

@@ -34,7 +34,7 @@ export function Request() {
   }
 
   function changeFillState(e) {
-    setFillState({ ...fillState, [e.target.id]: [e.target.value] });
+    setFillState({ ...fillState, [e.target.id]: e.target.value });
   }
 
   return (
