@@ -762,7 +762,7 @@
 //! Requst Menu
 .request-menu-bg {
   background-color: #00000050;
-  width: 100%;
+  width: 110%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -770,7 +770,7 @@
 
 .request-menu-screen {
   width: 45rem;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   position: fixed;
   top: 5rem;
@@ -780,25 +780,19 @@
   overflow-x: hidden;
 }
 
-// .request-menu-screen, .request-menu-bg {
-//   display: none;
-// }
-// .request-menu-screen::-webkit-scrollbar {
-//   width: 10px;
-// }
 
-// .request-menu-screen::-webkit-scrollbar-thumb {
-//   background-color: $primColor;
-//   border-radius: 20px;
-// }
+.request-menu-wrapp {
+  width: 100%;
+}
 
 .request-menu-des {
+  width: 100%;
   .request-menu-top,
   .request-menu-mid,
-  .request-menu-main {
-    padding: 1rem;
+  .request-menu-main,
+  .menu-main-complete {
+    padding: 1.5rem;
     display: flex;
-    width: 100%;
   }
 
   .request-menu-top {
@@ -828,7 +822,7 @@
     .menu-main-time {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      width: 100%;
+
     }
     
     .main-date-location {
@@ -871,19 +865,6 @@
       }
     }
 
-    .menu-main-complete {
-      width: 100%;
-      display: flex;
-      padding: 2rem 0rem;
-      justify-content: right;
-      background-color: $primLight;
-
-      button {
-        border: none;
-        @include button-style;
-        cursor: pointer;
-      }
-    }
 
     .menu-main-info {
       display: flex;
@@ -930,5 +911,28 @@
       }
 
     }
+    .main-info-check {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      
+      input {
+        width: 1rem;
+      }
+    }
+
+    
   }
+   .menu-main-complete {
+      display: flex;
+      justify-content: right;
+      background-color: $primLight;
+
+      button {
+        border: none;
+        @include button-style;
+        cursor: pointer;
+      }
+    }
 }

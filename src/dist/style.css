@@ -1099,7 +1099,7 @@ a {
 
 .request-menu-bg {
   background-color: rgba(0, 0, 0, 0.3137254902);
-  width: 100%;
+  width: 110%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1107,7 +1107,7 @@ a {
 
 .request-menu-screen {
   width: 45rem;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   position: fixed;
   top: 5rem;
@@ -1117,12 +1117,19 @@ a {
   overflow-x: hidden;
 }
 
+.request-menu-wrapp {
+  width: 100%;
+}
+
+.request-menu-des {
+  width: 100%;
+}
 .request-menu-des .request-menu-top,
 .request-menu-des .request-menu-mid,
-.request-menu-des .request-menu-main {
-  padding: 1rem;
+.request-menu-des .request-menu-main,
+.request-menu-des .menu-main-complete {
+  padding: 1.5rem;
   display: flex;
-  width: 100%;
 }
 .request-menu-des .request-menu-top {
   justify-content: space-between;
@@ -1150,7 +1157,6 @@ a {
 .request-menu-des .request-menu-main .menu-main-time {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
 }
 .request-menu-des .request-menu-main .main-date-location {
   display: flex;
@@ -1180,26 +1186,6 @@ a {
 }
 .request-menu-des .request-menu-main .menu-main-bike img {
   width: 20rem;
-}
-.request-menu-des .request-menu-main .menu-main-complete {
-  width: 100%;
-  display: flex;
-  padding: 2rem 0rem;
-  justify-content: right;
-  background-color: rgba(63, 132, 229, 0.1607843137);
-}
-.request-menu-des .request-menu-main .menu-main-complete button {
-  border: none;
-  padding: 1rem 1.2rem;
-  color: #fff;
-  background-color: #3f84e5;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
-  transition: all 0.2s;
-  cursor: pointer;
-}
-.request-menu-des .request-menu-main .menu-main-complete button:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
-  background-color: #3776cd;
 }
 .request-menu-des .request-menu-main .menu-main-info {
   display: flex;
@@ -1236,6 +1222,33 @@ a {
 }
 .request-menu-des .request-menu-main .menu-main-info .main-info-personal {
   grid-template-columns: 1fr 1fr;
+}
+.request-menu-des .request-menu-main .main-info-check {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.request-menu-des .request-menu-main .main-info-check input {
+  width: 1rem;
+}
+.request-menu-des .menu-main-complete {
+  display: flex;
+  justify-content: right;
+  background-color: rgba(63, 132, 229, 0.1607843137);
+}
+.request-menu-des .menu-main-complete button {
+  border: none;
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.request-menu-des .menu-main-complete button:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
 }
 
 #about-page {
