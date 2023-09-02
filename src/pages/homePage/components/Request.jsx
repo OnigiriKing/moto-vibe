@@ -23,6 +23,11 @@ export function Request() {
     );
     if (sameValue) {
       changeClass(".banner-wrong", "fields-banner-active", false);
+    } if (!sameValue) {
+      document
+        .querySelector(".banner-wrong")
+        .classList.remove("fields-banner-active");
+      changeClass(".banner-right", "fields-banner-active", false);
     }
   }
   function handleSubmitAccept(event) {
@@ -44,11 +49,13 @@ export function Request() {
         <h2>Book a bike</h2>
         <div className="fields-banner banner-wrong">
           <h3>All fields are required</h3>
-          <div>{navSvg(20).closeBtn}</div>
+          <div onClick={()=>{changeClass(".banner-wrong", "fields-banner-active");}}>{navSvg(20).closeBtn}</div>
         </div>
         <div className="fields-banner banner-right">
           <h3>The reservation has been made</h3>
-          <div>{navSvg(20).closeBtn}</div>
+          <div onClick={()=> {
+            changeClass(".banner-right", "fields-banner-active");
+          }}>{navSvg(20).closeBtn}</div>
         </div>
         <form className="request-form" onSubmit={handleSubmit}>
           <div className="request-select">
@@ -86,7 +93,6 @@ export function Request() {
             <label for="dropDate">{requestSvg(20).calendar}Drop-off date</label>
             <input id="dropDate" type="date" onChange={changeFillState}></input>
           </div>
-
           <button type="submit" children="Search" value />
         </form>
       </div>

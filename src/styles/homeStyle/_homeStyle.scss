@@ -204,6 +204,7 @@
       @include button-style;
       border: none;
       height: 3rem;
+      cursor: pointer;
     }
   }
 }
@@ -935,4 +936,13 @@
         cursor: pointer;
       }
     }
+}
+
+
+.request-menu-closed {
+  display: none;
+}
+
+.scroll-deactivated {
+  overflow: hidden;
 }

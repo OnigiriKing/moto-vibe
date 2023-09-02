@@ -29,8 +29,8 @@ export default function RequestMenu({info}) {
 
     return (
       <>
-        <div className="request-menu-bg" />
-        <div className="request-menu-screen">
+        <div className="request-menu-bg request-menu-closed" />
+        <div className="request-menu-screen request-menu-closed">
           <div className="request-menu-des">
             <div className="request-menu-wrapp">
               <div className="request-menu-top">
@@ -132,11 +132,11 @@ export default function RequestMenu({info}) {
                 </div>
               </div>
             </div>
-              <div className="request-menu-wrapp">
-                <div className="menu-main-complete">
-                  <button>Reserve now</button>
-                </div>
+            <div className="request-menu-wrapp">
+              <div className="menu-main-complete">
+                <button>Reserve now</button>
               </div>
+            </div>
           </div>
         </div>
       </>
