@@ -1202,11 +1202,18 @@ a {
   background-color: #3776cd;
 }
 .request-menu-des .request-menu-main .menu-main-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   border-top: 1px solid #5d5c67;
+  gap: 2rem;
 }
 .request-menu-des .request-menu-main .menu-main-info h3 {
   color: #3f84e5;
   margin: 1.5rem 0rem;
+}
+.request-menu-des .request-menu-main .menu-main-info .request-input-field {
+  width: 100%;
 }
 .request-menu-des .request-menu-main .menu-main-info .request-input-field h4 {
   font-size: 1.1rem;
@@ -1215,10 +1222,20 @@ a {
 }
 .request-menu-des .request-menu-main .menu-main-info .request-input-field input {
   padding: 0.5rem 1rem;
+  width: 90%;
 }
 .request-menu-des .request-menu-main .menu-main-info .request-input-field p {
   font-size: 0.8rem;
   color: #000;
+}
+.request-menu-des .request-menu-main .menu-main-info .main-info-personal,
+.request-menu-des .request-menu-main .menu-main-info .main-info-address,
+.request-menu-des .request-menu-main .menu-main-info .main-info-mail {
+  gap: 1rem;
+  display: grid;
+}
+.request-menu-des .request-menu-main .menu-main-info .main-info-personal {
+  grid-template-columns: 1fr 1fr;
 }
 
 #about-page {

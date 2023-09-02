@@ -886,8 +886,11 @@
     }
 
     .menu-main-info {
-
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       border-top: 1px solid $greyText;
+      gap: 2rem;
 
       h3 {
         color: $primColor;
@@ -895,6 +898,7 @@
       }
 
       .request-input-field {
+        width: 100%;
 
         h4 {
           font-size: 1.1rem;
@@ -904,13 +908,27 @@
 
         input {
           padding: 0.5rem 1rem;
+          width: 90%;
         }
 
         p {
           font-size: .8rem;
           color: #000;
         }
+
       }
+
+      .main-info-personal, 
+      .main-info-address,
+      .main-info-mail {
+        gap: 1rem;
+        display: grid;
+      }
+
+      .main-info-personal {
+        grid-template-columns: 1fr 1fr;
+      }
+
     }
   }
 }

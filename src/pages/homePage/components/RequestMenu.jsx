@@ -123,7 +123,7 @@ export default function RequestMenu({info}) {
                     holder="Enter your Zip Code"
                   />
                 </div>
-                <input type="checkbox" />
+                <input type="checkbox"/>
               </div>
               <div className="menu-main-complete">
                 <button>Reserve now</button>
