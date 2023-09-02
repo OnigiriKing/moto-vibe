@@ -18,7 +18,6 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 a {
@@ -1102,6 +1101,7 @@ a {
   height: 100%;
   position: fixed;
   top: 0;
+  display: none;
 }
 
 .request-menu-screen {
@@ -1113,6 +1113,8 @@ a {
   z-index: 4;
   background-color: #fff;
   overflow-y: scroll;
+  border: 2px solid #fff;
+  display: none;
 }
 
 .request-menu-des .request-menu-top,
@@ -1147,14 +1149,18 @@ a {
 }
 .request-menu-des .request-menu-main .menu-main-time {
   display: flex;
+  width: 50%;
 }
 .request-menu-des .request-menu-main .menu-main-bike h3 {
   display: flex;
+  width: 50%;
 }
 .request-menu-des .request-menu-main .menu-main-complete {
+  width: 100%;
   display: flex;
   padding: 2rem 1rem;
   justify-content: right;
+  background-color: rgba(63, 132, 229, 0.1607843137);
 }
 .request-menu-des .request-menu-main .menu-main-complete button {
   border: none;

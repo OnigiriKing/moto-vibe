@@ -3,6 +3,7 @@ import { navSvg } from "../../../svg/navSvg";
 import React from "react";
 import { changeClass } from "../../../scripts/scripts";
 import RequestMenu from "./RequestMenu";
+import { bikes } from "./BikeModels";
 
 export function Request() {
   const defaultFillState = {
@@ -11,7 +12,6 @@ export function Request() {
     dropOff: "Select Drop-off location",
     pickDate: "",
     dropDate: "",
-    img: "",
   };
 
   const [fillState, setFillState] = React.useState(defaultFillState);
@@ -55,11 +55,9 @@ export function Request() {
             <label>{requestSvg(20).bike}Select a bike</label>
             <select onChange={changeFillState} id="bikeType">
               <option>Select a bike type</option>
-              <option>Honda Click</option>
-              <option>Chetak Smart</option>
-              <option>Scooter Sym</option>
-              <option>Yadea G5S</option>
-              <option>Yamaha Fazzio</option>
+              {Object.keys(bikes).map(key => {
+                return <option>{bikes[key].name}</option>;
+              })}
             </select>
           </div>
           <div className="request-select">

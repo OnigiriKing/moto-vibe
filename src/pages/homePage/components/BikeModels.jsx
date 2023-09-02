@@ -9,6 +9,7 @@ export const bikes = {
   Honda: {
     price: "10",
     model: "150i",
+    name: "Honda Click",
     deposit: "$100",
     gearbox: "Automatic",
     tank: "5.5 L",
@@ -18,6 +19,7 @@ export const bikes = {
   Chetak: {
     price: "12",
     model: "Smart",
+    name: "Chetak Smart",
     deposit: "$100",
     gearbox: "Automatic",
     tank: "60 Ah",
@@ -27,6 +29,7 @@ export const bikes = {
   Sym: {
     price: "8",
     model: "Symphony",
+    name: "Scooter Sym",
     deposit: "$100",
     gearbox: "Automatic",
     tank: "5.4 L",
@@ -36,6 +39,7 @@ export const bikes = {
   Yadea: {
     price: "15",
     model: "G5S ",
+    name: "Yadea G5S",
     deposit: "$150",
     gearbox: "Automatic",
     tank: "50 Ah",
@@ -45,6 +49,7 @@ export const bikes = {
   Yamaha: {
     price: "12",
     model: "Fazzio",
+    name: "Yamaha Fazzio",
     deposit: "$120",
     gearbox: "Automatic",
     tank: "5.1L",

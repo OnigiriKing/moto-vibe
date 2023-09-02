@@ -767,6 +767,7 @@
   height: 100%;
   position: fixed;
   top: 0;
+  display: none;
 }
 
 .request-menu-screen {
@@ -778,6 +779,8 @@
   z-index: 4;
   background-color: #fff;
   overflow-y: scroll;
+  border: 2px solid #fff;
+  display: none;
 
 }
 // .request-menu-screen::-webkit-scrollbar {
@@ -824,19 +827,23 @@
 
     .menu-main-time {
       display: flex;
+      width: 50%;
     }
 
     .menu-main-bike {
       h3 {
         display: flex;
+        width: 50%;
         
       }
     }
 
     .menu-main-complete {
+      width: 100%;
       display: flex;
       padding: 2rem 1rem;
       justify-content: right;
+      background-color: $primLight;
 
       button {
         border: none;
