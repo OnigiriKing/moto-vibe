@@ -766,19 +766,25 @@
   width: 110%;
   height: 100%;
   position: fixed;
+  z-index: 4;
   top: 0;
+
 }
 
 .request-menu-screen {
-  width: 45rem;
+  width: 50rem;
   height: 90vh;
   display: flex;
   position: fixed;
   top: 5rem;
-  z-index: 4;
+  z-index: 5;
   background-color: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
+
+    @include mediumWidth {
+    width: 100%;
+  }
 }
 
 .request-menu-wrapp {
@@ -822,6 +828,14 @@
     .menu-main-time {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      
+      @include smallWidth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
     }
 
     .main-date-location {
@@ -851,6 +865,8 @@
         display: flex;
         gap: 1rem;
         margin-bottom: 1.5rem;
+        justify-content: center;
+        
 
         b {
           color: $primColor;
@@ -903,6 +919,11 @@
 
       .main-info-personal {
         grid-template-columns: 1fr 1fr;
+
+        @include smallWidth {
+    display: flex;
+    flex-direction: column;
+  }
       }
     }
     .main-info-check {
@@ -921,10 +942,16 @@
     justify-content: right;
     background-color: $primLight;
 
+    @include smallWidth {
+    justify-content: center;
+  }
+
     button {
       border: none;
       @include button-style;
       cursor: pointer;
+      font-size: $h3-size;
+      
     }
   }
 }
