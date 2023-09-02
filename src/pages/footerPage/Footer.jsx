@@ -44,7 +44,10 @@ export default function FooterPage() {
         <li className="footer-sub">
           <h3>SUBSCRIBE</h3>
           <p>Subscribe your Email address for latest news & updates.</p>
-          <input placeholder="Enter Email Address"/>
+          <input
+            className="input-field-style"
+            placeholder="Enter Email Address"
+          />
           <button>Submit</button>
         </li>
       </ul>

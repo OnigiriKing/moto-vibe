@@ -15,6 +15,18 @@ export default function RequestMenu({info}) {
     });
   }, [info.bikeType]);
 
+  function InputField({name, holder, type = "text"}) {
+
+    return (
+      <div className="request-input-field">
+        <h4>{name}</h4>
+        <input className="input-field-style" placeholder={holder}
+        type={type}></input>
+        <p>This field is required.</p>
+      </div>
+    );
+  }
+
     return (
       <>
         <div className="request-menu-bg" />
@@ -75,19 +87,42 @@ export default function RequestMenu({info}) {
                 <div className="menu-main-bike">
                   <h3>
                     Bike:
-                      <b>{info.bikeType}</b>
+                    <b>{info.bikeType}</b>
                   </h3>
                   <img src={bikeImg} />
                 </div>
               </div>
               <div className="menu-main-info">
-                <h3>PERSONAL INFORMATION</h3>
+                <h3>Personal Information</h3>
                 <div className="main-info-personal">
-                  <label></label>
-                  <input></input>
+                  <InputField
+                    name="First Name"
+                    holder="Enter your first name"
+                  />
+                  <InputField name="Last Name" holder="Enter your last name" />
+                  <InputField
+                    name="Phone Number"
+                    holder="Enter your phone number"
+                  />
+                  <InputField name="Age" holder="18" type="number" />
                 </div>
-                <div className="main-info-mail"></div>
-                <div className="main-info-address"></div>
+                <div className="main-info-mail">
+                  <InputField name="Email" holder="Enter your Email" />
+                  <InputField
+                    name="Address"
+                    holder="Enter your street address"
+                  />
+                </div>
+                <div className="main-info-address">
+                  <InputField
+                    name="City"
+                    holder="Enter your City"
+                  />
+                  <InputField
+                    name="Zip Code"
+                    holder="Enter your Zip Code"
+                  />
+                </div>
                 <input type="checkbox" />
               </div>
               <div className="menu-main-complete">
