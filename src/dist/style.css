@@ -20,6 +20,10 @@ body {
   position: relative;
 }
 
+.scroll-off {
+  overflow: hidden !important;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -1253,10 +1257,6 @@ a {
 
 .request-menu-closed {
   display: none;
-}
-
-.scroll-deactivated {
-  overflow: hidden;
 }
 
 #about-page {

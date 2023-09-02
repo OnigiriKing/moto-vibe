@@ -23,19 +23,15 @@ export function Request() {
     );
     if (sameValue) {
       changeClass(".banner-wrong", "fields-banner-active", false);
-    } if (!sameValue) {
+    } 
+    if (!sameValue) {
+      changeClass(".body", "scroll-off");
       document
         .querySelector(".banner-wrong")
         .classList.remove("fields-banner-active");
-      changeClass(".banner-right", "fields-banner-active", false);
+      changeClass(".request-menu-bg", "request-menu-closed");
+      changeClass(".request-menu-screen", "request-menu-closed");
     }
-  }
-  function handleSubmitAccept(event) {
-    event.preventDefault();
-    document
-      .querySelector(".banner-wrong")
-      .classList.remove("fields-banner-active");
-    changeClass(".banner-right", "fields-banner-active");
   }
 
   function changeFillState(e) {

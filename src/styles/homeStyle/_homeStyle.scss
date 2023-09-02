@@ -781,7 +781,6 @@
   overflow-x: hidden;
 }
 
-
 .request-menu-wrapp {
   width: 100%;
 }
@@ -823,9 +822,8 @@
     .menu-main-time {
       display: grid;
       grid-template-columns: 1fr 1fr;
-
     }
-    
+
     .main-date-location {
       display: flex;
       flex-direction: column;
@@ -836,17 +834,15 @@
         color: $primColor;
       }
 
-
       .location-info {
         display: flex;
-        gap: .5rem;
-
+        gap: 0.5rem;
 
         div {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-      }
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
       }
     }
 
@@ -866,7 +862,6 @@
       }
     }
 
-
     .menu-main-info {
       display: flex;
       flex-direction: column;
@@ -885,7 +880,7 @@
         h4 {
           font-size: 1.1rem;
           color: $greyText;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
         }
 
         input {
@@ -894,13 +889,12 @@
         }
 
         p {
-          font-size: .8rem;
+          font-size: 0.8rem;
           color: #000;
         }
-
       }
 
-      .main-info-personal, 
+      .main-info-personal,
       .main-info-address,
       .main-info-mail {
         gap: 1rem;
@@ -910,39 +904,31 @@
       .main-info-personal {
         grid-template-columns: 1fr 1fr;
       }
-
     }
     .main-info-check {
       display: flex;
       gap: 1rem;
       margin-bottom: 2rem;
       font-size: 1.2rem;
-      
+
       input {
         width: 1rem;
       }
     }
-
-    
   }
-   .menu-main-complete {
-      display: flex;
-      justify-content: right;
-      background-color: $primLight;
+  .menu-main-complete {
+    display: flex;
+    justify-content: right;
+    background-color: $primLight;
 
-      button {
-        border: none;
-        @include button-style;
-        cursor: pointer;
-      }
+    button {
+      border: none;
+      @include button-style;
+      cursor: pointer;
     }
+  }
 }
-
 
 .request-menu-closed {
   display: none;
-}
-
-.scroll-deactivated {
-  overflow: hidden;
 }
