@@ -138,6 +138,14 @@
   }
 }
 
+.welcome-screen-bg {
+  position: absolute;
+  z-index: 0;
+  width: 70rem;
+  top: -17rem;
+  right: -25rem;
+}
+
 //! request form
 
 #home-request {

@@ -59,6 +59,39 @@ export function homeSvg(width) {
         />
       </svg>
     ),
+    shape: (
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stopColor="rgba(63, 132, 229, 0.47843137254901963)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stopColor="rgba(63, 132, 229, 0.47843137254901963)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M19.4,-25.7C24.5,-22.9,27.8,-16.5,28.9,-10.1C30,-3.7,28.8,2.6,27.6,9.8C26.5,17,25.3,25.1,20.6,28.4C16,31.7,8,30.2,0.4,29.8C-7.3,29.3,-14.6,29.7,-20.6,26.9C-26.6,24,-31.3,17.9,-33,11.1C-34.7,4.3,-33.4,-3,-32.1,-11.5C-30.7,-19.9,-29.5,-29.3,-24.1,-32.1C-18.8,-34.8,-9.4,-30.9,-1.2,-29.3C7.1,-27.7,14.2,-28.5,19.4,-25.7Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          style={{ transition: "all 0.3s" }}
+          strokeWidth="0"
+          stroke="url(#sw-gradient)"
+        ></path>
+      </svg>
+    ),
   };
 
   return svg;

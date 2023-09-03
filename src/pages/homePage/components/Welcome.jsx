@@ -4,6 +4,9 @@ import bikeImg from "../../../img/welcome-bike.png"
 export default function Welcome() {
   return (
     <div className="welcome-screen">
+      <div className="welcome-screen-bg">
+        {homeSvg(100).shape}
+      </div>
       <div className="welcome-wrapper">
         <div className="welcome-des">
           <h3>Explore the city on the bike</h3>
