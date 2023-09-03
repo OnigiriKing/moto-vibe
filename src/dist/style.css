@@ -492,7 +492,7 @@ a {
   left: 8rem;
   display: flex;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 2;
   margin-right: 0.5rem;
 }
 @media (max-width: 920px) {
@@ -507,7 +507,7 @@ a {
 
 .welcome-screen-bg {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   width: 85rem;
   top: -25rem;
   right: -35rem;
@@ -521,18 +521,12 @@ a {
   align-items: center;
   margin-bottom: 5rem;
   position: relative;
-}
-
-.request-bg-color {
-  background-image: url("../img/requestBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .request-wrapper {
   background-image: url("../img/requestBg.png");
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
