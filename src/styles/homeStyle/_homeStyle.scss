@@ -140,10 +140,10 @@
 
 .welcome-screen-bg {
   position: absolute;
-  z-index: 0;
-  width: 70rem;
-  top: -17rem;
-  right: -25rem;
+  z-index: 1;
+  width: 85rem;
+  top: -25rem;
+  right: -35rem;
 }
 
 //! request form
@@ -155,12 +155,15 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  position: relative;
 }
 
 .request-bg-color {
   background-image: url("../img/requestBg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+   z-index: 2;
 }
 
 .request-wrapper {
@@ -175,6 +178,8 @@
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 
   h2 {
     margin-bottom: 1rem;
@@ -785,7 +790,6 @@
   position: fixed;
   z-index: 4;
   top: 0;
-
 }
 
 .request-menu-screen {
@@ -799,7 +803,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
-    @include mediumWidth {
+  @include mediumWidth {
     width: 100%;
   }
 }
@@ -845,14 +849,14 @@
     .menu-main-time {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      
+
       @include smallWidth {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
     }
 
     .main-date-location {
@@ -883,7 +887,6 @@
         gap: 1rem;
         margin-bottom: 1.5rem;
         justify-content: center;
-        
 
         b {
           color: $primColor;
@@ -938,9 +941,9 @@
         grid-template-columns: 1fr 1fr;
 
         @include smallWidth {
-    display: flex;
-    flex-direction: column;
-  }
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
     .main-info-check {
@@ -960,15 +963,14 @@
     background-color: $primLight;
 
     @include smallWidth {
-    justify-content: center;
-  }
+      justify-content: center;
+    }
 
     button {
       border: none;
       @include button-style;
       cursor: pointer;
       font-size: $h3-size;
-      
     }
   }
 }

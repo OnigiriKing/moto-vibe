@@ -507,10 +507,10 @@ a {
 
 .welcome-screen-bg {
   position: absolute;
-  z-index: 0;
-  width: 70rem;
-  top: -17rem;
-  right: -25rem;
+  z-index: 1;
+  width: 85rem;
+  top: -25rem;
+  right: -35rem;
 }
 
 #home-request {
@@ -520,12 +520,15 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  position: relative;
 }
 
 .request-bg-color {
   background-image: url("../img/requestBg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .request-wrapper {
@@ -540,6 +543,8 @@ a {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 .request-wrapper h2 {
   margin-bottom: 1rem;
