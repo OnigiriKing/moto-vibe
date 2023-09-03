@@ -514,7 +514,16 @@ a {
   margin-bottom: 5rem;
 }
 
+.request-bg-color {
+  background-image: url("../img/requestBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .request-wrapper {
+  background-image: url("../img/requestBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
   width: 80%;
   max-width: 65rem;
