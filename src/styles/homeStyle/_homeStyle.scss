@@ -13,6 +13,24 @@
   z-index: 1;
   padding: 4rem 0;
 
+  .link-to-top {
+    padding: .5rem;
+    position: fixed;
+    background-color: $primColor;
+    right: 5rem;
+    bottom: 5rem;
+    z-index: 5;
+
+    svg {
+      transform: rotate(180deg);
+      color: #fff;
+    }
+  }
+
+  .link-visible {
+    display: block;
+  }
+
   h3 {
     font-size: $h3-size;
   }
@@ -725,6 +743,8 @@
   background-repeat: no-repeat;
   background-size: 20rem;
   background-position: 85% 3rem;
+  position: relative;
+  z-index: 2;
 
   @include navBarWidth {
     background-image: none;

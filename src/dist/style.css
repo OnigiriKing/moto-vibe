@@ -220,7 +220,8 @@ a {
   .footer-wrapper .footer-des {
     width: 100%;
   }
-  .footer-wrapper li, .footer-wrapper .footer-number-email {
+  .footer-wrapper li,
+  .footer-wrapper .footer-number-email {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,6 +372,21 @@ a {
   width: 100%;
   z-index: 1;
   padding: 4rem 0;
+}
+#home-page .link-to-top {
+  padding: 0.5rem;
+  position: fixed;
+  background-color: #3f84e5;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 5;
+}
+#home-page .link-to-top svg {
+  transform: rotate(180deg);
+  color: #fff;
+}
+#home-page .link-visible {
+  display: block;
 }
 #home-page h3 {
   font-size: 1.3rem;
@@ -1066,6 +1082,8 @@ a {
   background-repeat: no-repeat;
   background-size: 20rem;
   background-position: 85% 3rem;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 965px) {
   #advertisement-screen {

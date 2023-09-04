@@ -36,14 +36,13 @@
       width: 100%;
     }
 
-
-    li, .footer-number-email {
+    li,
+    .footer-number-email {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-    
   }
 }
 
@@ -141,7 +140,6 @@
     line-height: 1.4rem;
   }
 
-
   button {
     @include button-style;
     cursor: pointer;
@@ -150,16 +148,16 @@
   }
 }
 
-  .input-field-style {
-    margin-bottom: 0.5rem;
-    border: none;
-    padding: 1rem 1.5rem;
-    background-color: $inputBg;
-    font-size: $h5-size;
-    color: $greyText;
-    line-height: 1.4rem;
-    outline: none;
-  }
+.input-field-style {
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: $inputBg;
+  font-size: $h5-size;
+  color: $greyText;
+  line-height: 1.4rem;
+  outline: none;
+}
 
 //! allPagesFooter
 
