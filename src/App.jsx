@@ -1,7 +1,7 @@
 import React from "react";
 import "./dist/style.css";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./pages/navBar/NavBar";
+import NavBar from "./pages/navBar/NavBarComponent";
 import HomePage from "./pages/homePage/HomePage";
 import FooterPage from "./pages/footerPage/Footer";
 import Testimonials from "./pages/testimonialsPage/Testimonials";

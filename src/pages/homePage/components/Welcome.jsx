@@ -34,7 +34,7 @@ export default function Welcome() {
           </div>
         </div>
         <div className="welcome-img ">
-          <img src={bikeImg} />
+          <img src={bikeImg} alt="bikeImg"/>
         </div>
       </div>
     </div>
