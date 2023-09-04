@@ -1,6 +1,6 @@
 import { homeSvg } from "../../../svg/homeSvg";
 import bikeImg from "../../../img/welcome-bike.png"
-import { changeClass } from "../../../scripts/scripts";
+import { Link } from "react-router-dom";
 
 export default function Welcome() {
 
@@ -30,11 +30,11 @@ export default function Welcome() {
           </p>
           <div className="welcome-links">
             <a href="#home-request">Book Bike {homeSvg(20).check}</a>
-            <a>Learn More {homeSvg(20).arrow}</a>
+            <Link to="/Models">Learn More {homeSvg(20).arrow}</Link>
           </div>
         </div>
         <div className="welcome-img ">
-          <img src={bikeImg} alt="bikeImg"/>
+          <img src={bikeImg} alt="bikeImg" />
         </div>
       </div>
     </div>

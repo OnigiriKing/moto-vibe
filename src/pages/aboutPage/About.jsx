@@ -10,7 +10,7 @@ export default function About() {
       <AllPagesStart page="About" />
       <div id="about-page">
         <div className="about-page-wrapper">
-          <img src={bikeRent}></img>
+          <img src={bikeRent} alt="bikeRent" />
           <div className="about-page-des">
             <div className="about-page-text">
               <h2>About Company</h2>

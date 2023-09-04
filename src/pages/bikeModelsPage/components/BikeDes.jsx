@@ -12,7 +12,7 @@ export default function BikeDes({ bikeType, bikeModel, price, gas, weight, img, 
   return (
     <div className="bike-des-wrapper">
       <div className="bike-des-img">
-        <img src={img}></img>
+        <img src={img} alt={bikeType} />
       </div>
       <div className="bike-des-text">
         <div className="bike-des">

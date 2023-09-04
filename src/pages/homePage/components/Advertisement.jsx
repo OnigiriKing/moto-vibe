@@ -1,6 +1,5 @@
 import appleImg from "../../../img/apple.png"
 import googleImg from "../../../img/google.png";
-import phoneImg from "../../../img/phone.png";
 
 export default function Advertisement() {
   return (
@@ -15,14 +14,14 @@ export default function Advertisement() {
         </div>
         <div className="advertisement-links">
           <a href="https://play.google.com" target="_blank" rel="noreferrer">
-            <img src={appleImg} />
+            <img src={appleImg} alt="appleStore"/>
           </a>
           <a
             href="https://www.apple.com/app-store/"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={googleImg} />
+            <img src={googleImg} alt="googleStore"/>
           </a>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function RequestMenu({ info }) {
   React.useEffect(() => {
     Object.keys(bikes).map((key) => {
       if (bikes[key].name === info.bikeType) {
-        setBikeImg(bikes[key].img);
+        return setBikeImg(bikes[key].img);
       }
     });
   }, [info.bikeType]);
@@ -108,7 +108,7 @@ export default function RequestMenu({ info }) {
                     Bike:
                     <b>{info.bikeType}</b>
                   </h3>
-                  <img src={bikeImg} />
+                  <img src={bikeImg} alt={info.bikeType} />
                 </div>
               </div>
               <div className="menu-main-info">

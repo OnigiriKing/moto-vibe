@@ -107,37 +107,37 @@ export function Models() {
               </button>
             </div>
             <div className="models-img-table">
-            <div className="models-img">
-              <img src={bikes[bikeType].img} />
-            </div>
-            <div className="models-table">
-              <div className="bike-price">
-                <span>${bikes[bikeType].price}</span> / per day
+              <div className="models-img">
+                <img src={bikes[bikeType].img} alt={bikes[bikeType].model} />
               </div>
-              <div className="bike-description">
-                <div className="bike-model">
-                  <span>Model</span>
-                  <span>{bikes[bikeType].model}</span>
+              <div className="models-table">
+                <div className="bike-price">
+                  <span>${bikes[bikeType].price}</span> / per day
                 </div>
-                <div className="bike-model">
-                  <span>Deposit</span>
-                  <span>{bikes[bikeType].deposit}</span>
+                <div className="bike-description">
+                  <div className="bike-model">
+                    <span>Model</span>
+                    <span>{bikes[bikeType].model}</span>
+                  </div>
+                  <div className="bike-model">
+                    <span>Deposit</span>
+                    <span>{bikes[bikeType].deposit}</span>
+                  </div>
+                  <div className="bike-model">
+                    <span>Gearbox</span>
+                    <span>{bikes[bikeType].gearbox}</span>
+                  </div>
+                  <div className="bike-model">
+                    <span>Tank</span>
+                    <span>{bikes[bikeType].tank}</span>
+                  </div>
+                  <div className="bike-model">
+                    <span>Weight</span>
+                    <span>{bikes[bikeType].weight}</span>
+                  </div>
                 </div>
-                <div className="bike-model">
-                  <span>Gearbox</span>
-                  <span>{bikes[bikeType].gearbox}</span>
-                </div>
-                <div className="bike-model">
-                  <span>Tank</span>
-                  <span>{bikes[bikeType].tank}</span>
-                </div>
-                <div className="bike-model">
-                  <span>Weight</span>
-                  <span>{bikes[bikeType].weight}</span>
-                </div>
+                <a href="#home-request">RESERVE NOW</a>
               </div>
-              <a href="#home-request">RESERVE NOW</a>
-            </div>
             </div>
           </div>
         </div>
