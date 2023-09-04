@@ -1,27 +1,27 @@
 import appleImg from "../../../img/apple.png"
 import googleImg from "../../../img/google.png";
 
-export default function Advertisement() {
+export default function Application() {
   return (
-    <div id="advertisement-screen">
-      <div className="advertisement-wrapper">
-        <div className="advertisement-des">
+    <div id="app-screen">
+      <div className="app-wrapper">
+        <div className="app-des">
           <h1>Supercharge your experience with our app</h1>
           <h4>
             Discover the joy of two-wheeled freedom with our motorbike rental
             app. Download now and let the ride of a lifetime begin!
           </h4>
         </div>
-        <div className="advertisement-links">
+        <div className="app-links">
           <a href="https://play.google.com" target="_blank" rel="noreferrer">
-            <img src={appleImg} alt="appleStore"/>
+            <img src={appleImg} alt="Apple"/>
           </a>
           <a
             href="https://www.apple.com/app-store/"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={googleImg} alt="googleStore"/>
+            <img src={googleImg} alt="Google"/>
           </a>
         </div>
       </div>

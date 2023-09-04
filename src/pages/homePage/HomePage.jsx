@@ -5,14 +5,14 @@ import { Models } from "./components/BikeModels"
 import { ChooseUs } from "./components/ChooseUs"
 import Reviews from "./components/Reviews"
 import Questions from "./components/Questions"
-import Advertisement from "./components/Advertisement";
+import Application from "./components/Application";
 
 
 
 export default function HomePage() {
 
     return (
-        <div id="home-page">
+      <div id="home-page">
         <Welcome />
         <Request />
         <Advantages />
@@ -20,7 +20,7 @@ export default function HomePage() {
         <ChooseUs />
         <Reviews />
         <Questions />
-        <Advertisement />
-        </div>
-    )
+        <Application />
+      </div>
+    );
 }

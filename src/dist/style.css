@@ -1071,7 +1071,7 @@ a {
   max-height: fit-content;
 }
 
-#advertisement-screen {
+#app-screen {
   height: auto;
   width: 100%;
   padding: 6rem 0;
@@ -1083,16 +1083,14 @@ a {
   background-repeat: no-repeat;
   background-size: 20rem;
   background-position: 85% 3rem;
-  position: relative;
-  z-index: 2;
 }
 @media (max-width: 965px) {
-  #advertisement-screen {
+  #app-screen {
     background-image: none;
   }
 }
 
-.advertisement-wrapper {
+.app-wrapper {
   width: 100%;
   max-width: 75rem;
   display: flex;
@@ -1102,34 +1100,34 @@ a {
   position: relative;
 }
 @media (max-width: 965px) {
-  .advertisement-wrapper {
+  .app-wrapper {
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 }
 
-.advertisement-des {
+.app-des {
   max-width: 35rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
 }
-.advertisement-des h4 {
+.app-des h4 {
   line-height: 1.5rem;
   color: #5d5c67;
 }
 
-.advertisement-links {
+.app-links {
   display: flex;
   gap: 2rem;
 }
 @media (max-width: 420px) {
-  .advertisement-links {
+  .app-links {
     flex-direction: column;
   }
 }
-.advertisement-links a img {
+.app-links a img {
   width: 13rem;
 }
 

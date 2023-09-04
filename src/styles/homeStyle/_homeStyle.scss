@@ -732,7 +732,7 @@
 
 //! advertisement screen
 
-#advertisement-screen {
+#app-screen {
   height: auto;
   width: 100%;
   padding: 6rem 0;
@@ -744,15 +744,13 @@
   background-repeat: no-repeat;
   background-size: 20rem;
   background-position: 85% 3rem;
-  position: relative;
-  z-index: 2;
 
   @include navBarWidth {
     background-image: none;
   }
 }
 
-.advertisement-wrapper {
+.app-wrapper {
   width: 100%;
   max-width: 75rem;
   display: flex;
@@ -760,6 +758,7 @@
   margin: 0rem 2rem;
   row-gap: 4rem;
   position: relative;
+
   @include navBarWidth {
     align-items: center;
     justify-content: center;
@@ -767,7 +766,7 @@
   }
 }
 
-.advertisement-des {
+.app-des {
   max-width: 35rem;
   display: flex;
   flex-direction: column;
@@ -779,7 +778,7 @@
   }
 }
 
-.advertisement-links {
+.app-links {
   display: flex;
   gap: 2rem;
 
