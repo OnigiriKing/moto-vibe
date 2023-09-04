@@ -380,6 +380,7 @@ a {
   right: 5rem;
   bottom: 5rem;
   z-index: 5;
+  display: none;
 }
 #home-page .link-to-top svg {
   transform: rotate(180deg);

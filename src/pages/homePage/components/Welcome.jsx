@@ -1,20 +1,42 @@
 import { homeSvg } from "../../../svg/homeSvg";
 import bikeImg from "../../../img/welcome-bike.png"
 import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Welcome() {
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
-      document.querySelector(".link-to-top").style.display = "block"
-    } else {
-      document.querySelector(".link-to-top").style.display = "none";
+  const [scrollUp, setScroll] = React.useState(false)
+
+  React.useEffect(() => {
+    const scrollFun = () => {
+      if (window.pageYOffset > 400) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
     }
-  });
+
+    window.addEventListener("scroll", scrollFun);
+
+    return () => {
+      window.removeEventListener("scroll", scrollFun);
+    };
+  }, [])
+
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY > 400) {
+  //     document.querySelector(".link-to-top").style.display = "block"
+  //   } else {
+  //     document.querySelector(".link-to-top").style.display = "none";
+  //   }
+  // });
 
   return (
     <div className="welcome-screen">
-      <a href="#home-page" className="link-to-top">
+      <a
+        href="#home-page"
+        className={`link-to-top ${scrollUp ? "link-visible" : ""}`}
+      >
         {homeSvg(25).arrowDown}
       </a>
       <div className="welcome-screen-bg">{homeSvg(100).shape}</div>
