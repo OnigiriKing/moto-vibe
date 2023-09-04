@@ -23,13 +23,6 @@ export default function Welcome() {
     };
   }, [])
 
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY > 400) {
-  //     document.querySelector(".link-to-top").style.display = "block"
-  //   } else {
-  //     document.querySelector(".link-to-top").style.display = "none";
-  //   }
-  // });
 
   return (
     <div className="welcome-screen">

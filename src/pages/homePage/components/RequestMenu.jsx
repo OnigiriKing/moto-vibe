@@ -8,9 +8,9 @@ export default function RequestMenu({ info }) {
   const [bikeImg, setBikeImg] = React.useState("");
 
   React.useEffect(() => {
-    Object.keys(bikes).map((key) => {
+    Object.keys(bikes).forEach((key) => {
       if (bikes[key].name === info.bikeType) {
-        return setBikeImg(bikes[key].img);
+        setBikeImg(bikes[key].img);
       }
     });
   }, [info.bikeType]);
