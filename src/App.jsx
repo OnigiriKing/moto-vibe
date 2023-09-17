@@ -5,7 +5,7 @@ import NavBar from "./pages/navBar/NavBarComponent";
 import HomePage from "./pages/homePage/HomePage";
 import FooterPage from "./pages/footerPage/Footer";
 import Testimonials from "./pages/testimonialsPage/Testimonials";
-import About from "./pages/aboutPage/About";
+import About from "./pages/aboutPage/AboutPage";
 import Contact from "./pages/contactPage/Contact";
 import BikeModels from "./pages/bikeModelsPage/BikeModels";
 import DropMenu from "./pages/navBar/DropMenu";
