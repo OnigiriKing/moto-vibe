@@ -1,7 +1,7 @@
 import AllPagesStart from "../navBar/AllPagesStart";
 import AllPagesFooter from "../footerPage/AllPagesFooter";
-import { footerSvg } from "../../svg/footerSvg";
-import { requestSvg } from "../../svg/requestFormSvg";
+import { footerSvg } from "svg/footerSvg";
+import { requestSvg } from "svg/requestFormSvg";
 
 export default function Contact() {
   return (
