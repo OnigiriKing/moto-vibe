@@ -3,16 +3,14 @@ import "./dist/style.css";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./pages/navBar/NavBarComponent";
 import HomePage from "./pages/homePage/HomePage";
-import FooterPage from "./pages/footerPage/Footer";
+import FooterPage from "./pages/footerPage/FooterPage";
 import TestimonialsPage from "pages/testimonialsPage/TestimonialsPage";
 import AboutPage from "pages/aboutPage/AboutPage";
 import ContactPage from "pages/contactPage/ContactPage";
-import BikeModels from "./pages/bikeModelsPage/BikeModels";
+import BikePage from "pages/bikePage/BikePage";
 import DropMenu from "./pages/navBar/DropMenu";
 
 export default function App() {
-  
-
   return (
     <div className="App">
       <NavBar />
@@ -22,7 +20,7 @@ export default function App() {
         <Route path="/Reviews" element={<TestimonialsPage />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Contact" element={<ContactPage />} />
-        <Route path="/Models" element={<BikeModels />} />
+        <Route path="/Models" element={<BikePage />} />
       </Routes>
       <FooterPage />
     </div>

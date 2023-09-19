@@ -1,7 +1,7 @@
-import AllPagesStart from "../navBar/AllPagesStart";
-import AllPagesFooter from "../footerPage/AllPagesFooter";
-import BikeDes from "./components/BikeDes";
-import { bikes } from "../homePage/components/BikeModels";
+import AllPagesStart from "../../pages/navBar/AllPagesStart";
+import AllPagesFooter from "../../pages/footerPage/AllPagesFooter";
+import BikeDes from "./BikeModels.BikeDes/BikeDes";
+import { bikes } from "../../pages/homePage/components/BikeModels";
 
 export default function BikeModels() {
   return (
