@@ -1,5 +1,5 @@
 import AllPagesStart from "../../pages/navBar/AllPagesStart";
-import AllPagesFooter from "../../pages/footerPage/AllPagesFooter";
+import AllPagesFooter from "../AllPagesFooter/AllPagesFooter";
 import BikeDes from "./BikeModels.BikeDes/BikeDes";
 import { bikes } from "../../pages/homePage/components/BikeModels";
 
