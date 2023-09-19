@@ -1,7 +1,7 @@
 import { nameLogo } from "../../svg/navSvg";
 import { footerSvg } from "../../svg/footerSvg";
 
-export default function FooterPage() {
+export default function Footer() {
   return (
     <footer id="footer-page">
       <ul className="footer-wrapper">
