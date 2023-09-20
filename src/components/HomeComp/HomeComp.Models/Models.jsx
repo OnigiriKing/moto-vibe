@@ -1,14 +1,10 @@
-import hondaBike from "img/bikes/bikes/Honda.png"
-import chetakBike from "img/bikes/bikes/Chetak.png";
-import symBike from "img/bikes/bikes/Sym.png";
-import yadeaBike from "img/bikes/bikes/Yadea.png";
-import yamahaBike from "img/bikes/bikes/Yamaha.png";
+
 import bikeInfo from "common/bikeInfo";
 import React from "react";
 
 
 
-export default function BikeModels() {
+export default function Models() {
 
     const [bikeType, setType] = React.useState('Honda')
 

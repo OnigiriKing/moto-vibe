@@ -1,3 +1,9 @@
+import hondaBike from "img/bikes/Honda.png";
+import chetakBike from "img/bikes/Chetak.png";
+import symBike from "img/bikes/Sym.png";
+import yadeaBike from "img/bikes/Yadea.png";
+import yamahaBike from "img/bikes/Yamaha.png";
+
 const bikeInfo = {
   Honda: {
     price: "10",
