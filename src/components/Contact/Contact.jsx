@@ -1,5 +1,5 @@
-import AllPagesStart from "../navBar/AllPagesStart";
-import AllPagesFooter from "../footerPage/AllPagesFooter";
+import AllPagesStart from "components/AllPagesStart";
+import AllPagesFooter from "components/AllPagesFooter";
 import { footerSvg } from "svg/footerSvg";
 import { requestSvg } from "svg/requestFormSvg";
 

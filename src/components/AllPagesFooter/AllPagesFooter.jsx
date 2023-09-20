@@ -1,4 +1,4 @@
-import { footerSvg } from "../../svg/footerSvg";
+import { footerSvg } from "svg/footerSvg";
 
 export default function AllPagesFooter() {
   return (

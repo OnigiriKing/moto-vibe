@@ -1,3 +1,4 @@
-import AllPagesFooter from "components/AllPagesFooter";
+import AllPagesStart from "./AllPagesStart";
 
-export default AllPagesFooter;
+
+export default AllPagesStart;

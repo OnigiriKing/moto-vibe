@@ -1,4 +1,4 @@
-import { bikeDesSvg } from "../../../svg/bikeDesSvg";
+import { bikeDesSvg } from "svg/bikeDesSvg";
 
 export default function BikeDes({ bikeType, bikeModel, price, gas, weight, img, star }) {
 
