@@ -1,7 +1,7 @@
-import { homeSvg } from "../../../svg/homeSvg";
-import { chooseUs } from "../../../svg/chooseUsSvg";
+import { homeSvg } from "svg/homeSvg";
+import { chooseUs } from "svg/chooseUsSvg";
 
-export function ChooseUs() {
+export default function ChooseUs() {
 
     return (
       <div id="choose-us-screen">

@@ -1,8 +1,8 @@
-import { navSvg } from "../../../svg/navSvg";
-import { requestSvg } from "../../../svg/requestFormSvg";
+import { navSvg } from "../../../../svg/navSvg";
+import { requestSvg } from "../../../../svg/requestFormSvg";
 import React from "react";
-import { bikes } from "./BikeModels";
-import { changeClass } from "../../../scripts/scripts";
+import { bikes } from "../../HomeComp.BikeModels/BikeModels";
+import { changeClass } from "../../../../scripts/scripts";
 
 export default function RequestMenu({ info }) {
   const [bikeImg, setBikeImg] = React.useState("");

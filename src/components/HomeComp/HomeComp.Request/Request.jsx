@@ -2,10 +2,10 @@ import { requestSvg } from "../../../svg/requestFormSvg";
 import { navSvg } from "../../../svg/navSvg";
 import React from "react";
 import { changeClass } from "../../../scripts/scripts";
-import RequestMenu from "./RequestMenu";
-import { bikes } from "./BikeModels";
+import RequestMenu from "./Request.RequestMenu/RequestMenu";
+import { bikes } from "../HomeComp.BikeModels/BikeModels";
 
-export function Request() {
+export default function Request() {
   const defaultFillState = {
     bikeType: "Select a bike type",
     pickUp: "Select Pick-up location",
@@ -23,7 +23,7 @@ export function Request() {
     );
     if (sameValue) {
       changeClass(".banner-wrong", "fields-banner-active", false);
-    } 
+    }
     if (!sameValue) {
       changeClass(".body", "scroll-off");
       document
@@ -45,20 +45,30 @@ export function Request() {
         <h2>Book a bike</h2>
         <div className="fields-banner banner-wrong">
           <h3>All fields are required</h3>
-          <div onClick={()=>{changeClass(".banner-wrong", "fields-banner-active");}}>{navSvg(20).closeBtn}</div>
+          <div
+            onClick={() => {
+              changeClass(".banner-wrong", "fields-banner-active");
+            }}
+          >
+            {navSvg(20).closeBtn}
+          </div>
         </div>
         <div className="fields-banner banner-right">
           <h3>The reservation has been made</h3>
-          <div onClick={()=> {
-            changeClass(".banner-right", "fields-banner-active");
-          }}>{navSvg(20).closeBtn}</div>
+          <div
+            onClick={() => {
+              changeClass(".banner-right", "fields-banner-active");
+            }}
+          >
+            {navSvg(20).closeBtn}
+          </div>
         </div>
         <form className="request-form" onSubmit={handleSubmit}>
           <div className="request-select">
             <label>{requestSvg(20).bike}Select a bike</label>
             <select onChange={changeFillState} id="bikeType">
               <option>Select a bike type</option>
-              {Object.keys(bikes).map(key => {
+              {Object.keys(bikes).map((key) => {
                 return <option>{bikes[key].name}</option>;
               })}
             </select>
