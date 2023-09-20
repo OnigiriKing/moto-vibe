@@ -1,9 +1,9 @@
-import { requestSvg } from "../../../svg/requestFormSvg";
-import { navSvg } from "../../../svg/navSvg";
+import { requestSvg } from "svg/requestFormSvg";
+import { navSvg } from "svg/navSvg";
 import React from "react";
-import { changeClass } from "../../../scripts/scripts";
+import { changeClass } from "scripts/scripts";
 import RequestMenu from "./Request.RequestMenu/RequestMenu";
-import { bikes } from "../HomeComp.BikeModels/BikeModels";
+import bikeInfo from "common/bikeInfo";
 
 export default function Request() {
   const defaultFillState = {
@@ -68,8 +68,8 @@ export default function Request() {
             <label>{requestSvg(20).bike}Select a bike</label>
             <select onChange={changeFillState} id="bikeType">
               <option>Select a bike type</option>
-              {Object.keys(bikes).map((key) => {
-                return <option>{bikes[key].name}</option>;
+              {Object.keys(bikeInfo).map((key) => {
+                return <option>{bikeInfo[key].name}</option>;
               })}
             </select>
           </div>

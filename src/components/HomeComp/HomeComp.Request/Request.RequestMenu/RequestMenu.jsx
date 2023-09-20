@@ -1,16 +1,16 @@
-import { navSvg } from "../../../../svg/navSvg";
-import { requestSvg } from "../../../../svg/requestFormSvg";
+import { navSvg } from "svg/navSvg";
+import { requestSvg } from "svg/requestFormSvg";
 import React from "react";
-import { bikes } from "../../HomeComp.BikeModels/BikeModels";
-import { changeClass } from "../../../../scripts/scripts";
+import bikeInfo from "common/bikeInfo";
+import { changeClass } from "scripts/scripts";
 
 export default function RequestMenu({ info }) {
   const [bikeImg, setBikeImg] = React.useState("");
 
   React.useEffect(() => {
-    Object.keys(bikes).forEach((key) => {
-      if (bikes[key].name === info.bikeType) {
-        setBikeImg(bikes[key].img);
+    Object.keys(bikeInfo).forEach((key) => {
+      if (bikeInfo[key].name === info.bikeType) {
+        setBikeImg(bikeInfo[key].img);
       }
     });
   }, [info.bikeType]);

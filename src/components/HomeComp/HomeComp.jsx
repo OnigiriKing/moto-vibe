@@ -1,7 +1,7 @@
 import Welcome from "./HomeComp.Welcome/Welcome"
 import Request from "./HomeComp.Request/Request"
 import Advantages from "./HomeComp.Advantages/Advantages"
-import { Models } from "./HomeComp.BikeModels/BikeModels"
+import BikeModels from "./HomeComp.BikeModels/BikeModels"
 import ChooseUs from "./HomeComp.ChooseUs/ChooseUs"
 import Reviews from "./HomeComp.Reviews/Reviews"
 import Questions from "./HomeComp.Questions/Questions"

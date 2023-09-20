@@ -1,4 +1,4 @@
-import { homeSvg } from "../../../svg/homeSvg";
+import { homeSvg } from "svg/homeSvg";
 
 
 export default function Reviews() {

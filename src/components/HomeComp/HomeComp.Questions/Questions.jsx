@@ -1,4 +1,4 @@
-import {homeSvg} from "../../../svg/homeSvg"
+import {homeSvg} from "svg/homeSvg"
 import React from "react";
 
 export default function Questions() {

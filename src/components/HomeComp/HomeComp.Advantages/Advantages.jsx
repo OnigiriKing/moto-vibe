@@ -1,4 +1,4 @@
-import { advantagesSvg } from "../../../svg/advantagesSvg";
+import { advantagesSvg } from "svg/advantagesSvg";
 
 export default function Advantages() {
 

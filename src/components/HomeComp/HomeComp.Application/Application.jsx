@@ -1,5 +1,5 @@
-import appleImg from "../../../img/apple.png"
-import googleImg from "../../../img/google.png";
+import appleImg from "img/appImg/apple.png";
+import googleImg from "img/appImg/google.png";
 
 export default function Application() {
   return (

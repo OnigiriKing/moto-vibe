@@ -1,8 +1,8 @@
-import hondaBike from "../../../img/Honda.png"
-import chetakBike from "../../../img/Chetak.png";
-import symBike from "../../../img/Sym.png";
-import yadeaBike from "../../../img/Yadea.png";
-import yamahaBike from "../../../img/Yamaha.png";
+import hondaBike from "img/bikes/bikes/Honda.png"
+import chetakBike from "img/bikes/bikes/Chetak.png";
+import symBike from "img/bikes/bikes/Sym.png";
+import yadeaBike from "img/bikes/bikes/Yadea.png";
+import yamahaBike from "img/bikes/bikes/Yamaha.png";
 import bikeInfo from "common/bikeInfo";
 import React from "react";
 

@@ -1,5 +1,5 @@
-import { homeSvg } from "../../../svg/homeSvg";
-import bikeImg from "../../../img/welcome-bike.png"
+import { homeSvg } from "svg/homeSvg";
+import bikeImg from "img/bikes/welcome-bike.png"
 import { Link } from "react-router-dom";
 import React from "react";
 
