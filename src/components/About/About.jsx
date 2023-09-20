@@ -1,8 +1,8 @@
-import AllPagesStart from "../navBar/AllPagesStart";
-import AllPagesFooter from "../footerPage/AllPagesFooter";
-import Advantages from "../homePage/components/Advantages";
-import bikeRent from "../../img/bikeRent.png";
-import { requestSvg } from "../../svg/requestFormSvg";
+import AllPagesStart from "components/AllPagesStart/AllPagesStart";
+import AllPagesFooter from "components/AllPagesFooter";
+import Advantages from "components/HomeComp/HomeComp.Advantages/Advantages";
+import bikeRent from "img/bikeRent.png";
+import { requestSvg } from "svg/requestFormSvg";
 
 export default function About() {
   return (
