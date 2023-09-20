@@ -1,5 +1,5 @@
-import { nameLogo } from "../../svg/navSvg";
-import { footerSvg } from "../../svg/footerSvg";
+import { nameLogo } from "svg/navSvg";
+import { footerSvg } from "svg/footerSvg";
 
 export default function Footer() {
   return (

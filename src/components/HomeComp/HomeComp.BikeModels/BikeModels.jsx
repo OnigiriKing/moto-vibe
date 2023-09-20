@@ -3,62 +3,12 @@ import chetakBike from "../../../img/Chetak.png";
 import symBike from "../../../img/Sym.png";
 import yadeaBike from "../../../img/Yadea.png";
 import yamahaBike from "../../../img/Yamaha.png";
+import bikeInfo from "common/bikeInfo";
 import React from "react";
 
-export const bikes = {
-  Honda: {
-    price: "10",
-    model: "150i",
-    name: "Honda Click",
-    deposit: "$100",
-    gearbox: "Automatic",
-    tank: "5.5 L",
-    weight: "107 KG",
-    img: hondaBike,
-  },
-  Chetak: {
-    price: "12",
-    model: "Smart",
-    name: "Chetak Smart",
-    deposit: "$100",
-    gearbox: "Automatic",
-    tank: "60 Ah",
-    weight: "100KG",
-    img: chetakBike,
-  },
-  Sym: {
-    price: "8",
-    model: "Symphony",
-    name: "Scooter Sym",
-    deposit: "$100",
-    gearbox: "Automatic",
-    tank: "5.4 L",
-    weight: "123KG",
-    img: symBike,
-  },
-  Yadea: {
-    price: "15",
-    model: "G5S ",
-    name: "Yadea G5S",
-    deposit: "$150",
-    gearbox: "Automatic",
-    tank: "50 Ah",
-    weight: "81KG",
-    img: yadeaBike,
-  },
-  Yamaha: {
-    price: "12",
-    model: "Fazzio",
-    name: "Yamaha Fazzio",
-    deposit: "$120",
-    gearbox: "Automatic",
-    tank: "5.1L",
-    weight: "125KG",
-    img: yamahaBike,
-  },
-};
 
-export function Models() {
+
+export default function BikeModels() {
 
     const [bikeType, setType] = React.useState('Honda')
 
@@ -108,32 +58,35 @@ export function Models() {
             </div>
             <div className="models-img-table">
               <div className="models-img">
-                <img src={bikes[bikeType].img} alt={bikes[bikeType].model} />
+                <img
+                  src={bikeInfo[bikeType].img}
+                  alt={bikeInfo[bikeType].model}
+                />
               </div>
               <div className="models-table">
                 <div className="bike-price">
-                  <span>${bikes[bikeType].price}</span> / per day
+                  <span>${bikeInfo[bikeType].price}</span> / per day
                 </div>
                 <div className="bike-description">
                   <div className="bike-model">
                     <span>Model</span>
-                    <span>{bikes[bikeType].model}</span>
+                    <span>{bikeInfo[bikeType].model}</span>
                   </div>
                   <div className="bike-model">
                     <span>Deposit</span>
-                    <span>{bikes[bikeType].deposit}</span>
+                    <span>{bikeInfo[bikeType].deposit}</span>
                   </div>
                   <div className="bike-model">
                     <span>Gearbox</span>
-                    <span>{bikes[bikeType].gearbox}</span>
+                    <span>{bikeInfo[bikeType].gearbox}</span>
                   </div>
                   <div className="bike-model">
                     <span>Tank</span>
-                    <span>{bikes[bikeType].tank}</span>
+                    <span>{bikeInfo[bikeType].tank}</span>
                   </div>
                   <div className="bike-model">
                     <span>Weight</span>
-                    <span>{bikes[bikeType].weight}</span>
+                    <span>{bikeInfo[bikeType].weight}</span>
                   </div>
                 </div>
                 <a href="#home-request">RESERVE NOW</a>

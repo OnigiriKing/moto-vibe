@@ -1,7 +1,7 @@
 import AllPagesStart from "components/AllPagesStart";
 import AllPagesFooter from "components/AllPagesFooter";
 import BikeDes from "./BikeModels.BikeDes/BikeDes";
-import { bikes } from "components/HomeComp/HomeComp.BikeModels/BikeModels";
+import bikeInfo from "common/bikeInfo";
 
 export default function BikeModels() {
   return (
@@ -11,47 +11,47 @@ export default function BikeModels() {
         <div className="bike-models-wrapper">
           <BikeDes
             bikeModel="Honda Click"
-            bikeType={bikes.Honda.model}
-            price={bikes.Honda.price}
-            gas={bikes.Honda.tank}
-            weight={bikes.Honda.weight}
-            img={bikes.Honda.img}
+            bikeType={bikeInfo.Honda.model}
+            price={bikeInfo.Honda.price}
+            gas={bikeInfo.Honda.tank}
+            weight={bikeInfo.Honda.weight}
+            img={bikeInfo.Honda.img}
             star="5"
           />
           <BikeDes
             bikeModel="Chetak Smart"
-            bikeType={bikes.Chetak.model}
-            price={bikes.Chetak.price}
-            gas={bikes.Chetak.tank}
-            weight={bikes.Chetak.weight}
-            img={bikes.Chetak.img}
+            bikeType={bikeInfo.Chetak.model}
+            price={bikeInfo.Chetak.price}
+            gas={bikeInfo.Chetak.tank}
+            weight={bikeInfo.Chetak.weight}
+            img={bikeInfo.Chetak.img}
             star="4"
           />
           <BikeDes
             bikeModel="Scooter Sym"
-            bikeType={bikes.Sym.model}
-            price={bikes.Sym.price}
-            gas={bikes.Sym.tank}
-            weight={bikes.Sym.weight}
-            img={bikes.Sym.img}
+            bikeType={bikeInfo.Sym.model}
+            price={bikeInfo.Sym.price}
+            gas={bikeInfo.Sym.tank}
+            weight={bikeInfo.Sym.weight}
+            img={bikeInfo.Sym.img}
             star="4"
           />
           <BikeDes
             bikeModel="Yadea G5S"
-            bikeType={bikes.Yadea.model}
-            price={bikes.Yadea.price}
-            gas={bikes.Yadea.tank}
-            weight={bikes.Yadea.weight}
-            img={bikes.Yadea.img}
+            bikeType={bikeInfo.Yadea.model}
+            price={bikeInfo.Yadea.price}
+            gas={bikeInfo.Yadea.tank}
+            weight={bikeInfo.Yadea.weight}
+            img={bikeInfo.Yadea.img}
             star="3"
           />
           <BikeDes
             bikeModel="Yamaha Fazzio"
-            bikeType={bikes.Yamaha.model}
-            price={bikes.Yamaha.price}
-            gas={bikes.Yamaha.tank}
-            weight={bikes.Yamaha.weight}
-            img={bikes.Yamaha.img}
+            bikeType={bikeInfo.Yamaha.model}
+            price={bikeInfo.Yamaha.price}
+            gas={bikeInfo.Yamaha.tank}
+            weight={bikeInfo.Yamaha.weight}
+            img={bikeInfo.Yamaha.img}
             star="5"
           />
         </div>
