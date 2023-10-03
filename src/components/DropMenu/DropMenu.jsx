@@ -16,11 +16,21 @@ export default function DropMenu() {
       <div className="menu-close-button" {...closeMenu()}>
         {navSvg(40).closeBtn}
       </div>
-      <Link to={"/"} children="Home" {...closeMenu()} />
-      <Link to={"/About"} children="About" {...closeMenu()} />
-      <Link to={"/Models"} children="Bike Models" {...closeMenu()} />
-      <Link to={"/Reviews"} children="Testimonials" {...closeMenu()} />
-      <Link to={"/Contact"} children="Contact" {...closeMenu()} />
+      <Link to={"/"} {...closeMenu()}>
+        Home
+      </Link>
+      <Link to={"/About"} {...closeMenu()}>
+        About
+      </Link>
+      <Link to={"/Models"} {...closeMenu()}>
+        Bike Models
+      </Link>
+      <Link to={"/Reviews"} {...closeMenu()}>
+        Testimonials
+      </Link>
+      <Link to={"/Contact"} {...closeMenu()}>
+        Contact
+      </Link>
       <div className="drop-menu-register">
         <Link to={"/"} children="Login" />
         <Link to={"/"} children="Sign up" />
