@@ -3,32 +3,33 @@ import { navSvg } from "svg/navSvg";
 import { changeClass } from "scripts/scripts";
 
 export default function DropMenu() {
-  function closeMenu() {
-    return {
-      onClick: function () {
-        changeClass(".drop-menu", "menu-open");
-      },
-    };
-  }
+
+
+  const handleClick = function () {
+    changeClass(".drop-menu", "menu-open");
+  };
+
+  const commonProps = { handleClick };
+
 
   return (
     <div className="drop-menu">
-      <div className="menu-close-button" {...closeMenu()}>
+      <div className="menu-close-button" {...commonProps}>
         {navSvg(40).closeBtn}
       </div>
-      <Link to={"/"} {...closeMenu()}>
+      <Link to={"/"} {...commonProps}>
         Home
       </Link>
-      <Link to={"/About"} {...closeMenu()}>
+      <Link to={"/About"} {...commonProps}>
         About
       </Link>
-      <Link to={"/Models"} {...closeMenu()}>
+      <Link to={"/Models"} {...commonProps}>
         Bike Models
       </Link>
-      <Link to={"/Reviews"} {...closeMenu()}>
+      <Link to={"/Reviews"} {...commonProps}>
         Testimonials
       </Link>
-      <Link to={"/Contact"} {...closeMenu()}>
+      <Link to={"/Contact"} {...commonProps}>
         Contact
       </Link>
       <div className="drop-menu-register">
