@@ -1,7 +1,7 @@
 import { navSvg } from "svg/navSvg";
 import { requestSvg } from "svg/requestFormSvg";
 import React from "react";
-import bikeInfo from "common/bikeInfo";
+import bikeInfo from "common/utils/bikeInfo";
 import { changeClass } from "scripts/scripts";
 
 export default function RequestMenu({ info }) {

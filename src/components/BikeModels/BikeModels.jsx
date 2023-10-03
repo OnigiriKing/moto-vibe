@@ -1,7 +1,7 @@
 import AllPagesStart from "components/AllPagesStart";
 import AllPagesFooter from "components/AllPagesFooter";
 import BikeDes from "./BikeModels.BikeDes/BikeDes";
-import bikeInfo from "common/bikeInfo";
+import bikeInfo from "common/utils/bikeInfo";
 
 export default function BikeModels() {
   return (

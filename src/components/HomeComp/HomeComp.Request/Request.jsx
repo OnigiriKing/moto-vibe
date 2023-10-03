@@ -3,7 +3,7 @@ import { navSvg } from "svg/navSvg";
 import React from "react";
 import { changeClass } from "scripts/scripts";
 import RequestMenu from "./Request.RequestMenu/RequestMenu";
-import bikeInfo from "common/bikeInfo";
+import bikeInfo from "common/utils/bikeInfo";
 
 export default function Request() {
   const defaultFillState = {
