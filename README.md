@@ -17,26 +17,26 @@ Live Demo: <a href='https://moto-vibe.netlify.app'>Ecommerce Demo</a>
 <h3 align='center'>Home Page</h3>
 
 <div align='center'>
-<img src=''/>
+<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe.png'/>
 </div>
 
 <br><br>
 <h3 align='center'>About</h3>
 
 <div align='center'>
-<img src=''/>
+<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe-about.png'/>
 
 <br>
 <br>
 <h3 align='center'>Bike Models</h3>
 
 <div align='center'>
-<img src=''/>
+<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe-bikes.png'/>
 
 <br>
 <br>
 <h3 align='center'>Contact</h3>
 
 <div align='center'>
-<img src=''/>
+<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe-contact.png'/>
 </div>
