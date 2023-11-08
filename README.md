@@ -5,7 +5,7 @@
 <p>Moto Vibe is a straightforward and practical website for renting motorbikes in Bangkok. 
 It offers an easy-to-use platform for users to browse, select, and book motorbikes conveniently.</p>
 
-Live Demo: <a href='https://moto-vibe.netlify.app'>Ecommerce Demo</a>
+Live Demo: <a href='https://moto-vibe.netlify.app'>MotoVibe</a>
 
 <h3>Build with:</h3>
 
