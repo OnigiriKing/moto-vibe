@@ -9,27 +9,26 @@ export default function DropMenu() {
     changeClass(".drop-menu", "menu-open");
   };
 
-  const commonProps = { handleClick };
 
 
   return (
     <div className="drop-menu">
-      <div className="menu-close-button" {...commonProps}>
+      <div className="menu-close-button" onClick={handleClick}>
         {navSvg(40).closeBtn}
       </div>
-      <Link to={"/"} {...commonProps}>
+      <Link to={"/"} onClick={handleClick}>
         Home
       </Link>
-      <Link to={"/About"} {...commonProps}>
+      <Link to={"/About"} onClick={handleClick}>
         About
       </Link>
-      <Link to={"/Models"} {...commonProps}>
+      <Link to={"/Models"} onClick={handleClick}>
         Bike Models
       </Link>
-      <Link to={"/Reviews"} {...commonProps}>
+      <Link to={"/Reviews"} onClick={handleClick}>
         Testimonials
       </Link>
-      <Link to={"/Contact"} {...commonProps}>
+      <Link to={"/Contact"} onClick={handleClick}>
         Contact
       </Link>
       <div className="drop-menu-register">
