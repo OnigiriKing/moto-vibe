@@ -17,7 +17,7 @@ Live Demo: <a href='https://moto-vibe.netlify.app'>MotoVibe</a>
 <h3 align='center'>Home Page</h3>
 
 <div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe.png'/>
+<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe.webp'/>
 </div>
 
 <br><br>
