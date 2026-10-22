@@ -54,7 +54,7 @@ export default function Request() {
           </div>
         </div>
         <div className="fields-banner banner-right">
-          <h3>The reservation has been made</h3>
+          <h3>Demo completed. No reservation was made.</h3>
           <div
             onClick={() => {
               changeClass(".banner-right", "fields-banner-active");

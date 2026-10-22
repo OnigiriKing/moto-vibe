@@ -48,18 +48,18 @@ export default function RequestMenu({ info }) {
         <div className="request-menu-des">
           <div className="request-menu-wrapp">
             <div className="request-menu-top">
-              <h2>COMPLETE RESERVATION</h2>
+              <h2>DEMO RESERVATION</h2>
               <button onClick={() => closeMenu()}>{navSvg(25).closeBtn}</button>
             </div>
           </div>
           <div className="request-menu-wrapp">
             <div className="request-menu-mid">
               <h3>
-                Upon completing this reservation enquiry, you will receive:
+                Try the booking form
               </h3>
               <p>
-                Your rental voucher to produce on arrival at the rental desk and
-                a toll-free customer support number.
+                Use sample details to try this frontend demo. No booking is saved
+                and no confirmation email is sent.
               </p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function RequestMenu({ info }) {
           </div>
           <div className="request-menu-wrapp">
             <div className="menu-main-complete">
-              <button onClick={() => closeMenu("reserved")}>Reserve now</button>
+              <button onClick={() => closeMenu("reserved")}>Complete demo</button>
             </div>
           </div>
         </div>
