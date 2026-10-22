@@ -15,6 +15,7 @@ export default function Request() {
   };
 
   const [fillState, setFillState] = React.useState(defaultFillState);
+  const [errorMessage, setErrorMessage] = React.useState("All fields are required");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -22,16 +23,23 @@ export default function Request() {
       (key) => fillState[key] === defaultFillState[key]
     );
     if (sameValue) {
+      setErrorMessage("All fields are required");
       changeClass(".banner-wrong", "fields-banner-active", false);
+      return;
     }
-    if (!sameValue) {
-      changeClass(".body", "scroll-off");
-      document
-        .querySelector(".banner-wrong")
-        .classList.remove("fields-banner-active");
-      changeClass(".request-menu-bg", "request-menu-closed");
-      changeClass(".request-menu-screen", "request-menu-closed");
+
+    if (fillState.dropDate < fillState.pickDate) {
+      setErrorMessage("Drop-off date cannot be before pick-up date.");
+      changeClass(".banner-wrong", "fields-banner-active", false);
+      return;
     }
+
+    changeClass(".body", "scroll-off");
+    document
+      .querySelector(".banner-wrong")
+      .classList.remove("fields-banner-active");
+    changeClass(".request-menu-bg", "request-menu-closed");
+    changeClass(".request-menu-screen", "request-menu-closed");
   }
 
   function changeFillState(e) {
@@ -44,7 +52,7 @@ export default function Request() {
       <div className="request-wrapper">
         <h2>Book a bike</h2>
         <div className="fields-banner banner-wrong">
-          <h3>All fields are required</h3>
+          <h3>{errorMessage}</h3>
           <div
             onClick={() => {
               changeClass(".banner-wrong", "fields-banner-active");
