@@ -146,6 +146,10 @@
     border: none;
     font-size: $h5-size;
   }
+
+  .newsletter-status:not(:empty) {
+    margin-top: 0.75rem;
+  }
 }
 
 .input-field-style {

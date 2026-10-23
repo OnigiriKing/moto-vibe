@@ -242,6 +242,9 @@ a {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
 }
+.footer-sub .newsletter-status:not(:empty) {
+  margin-top: 0.75rem;
+}
 
 .input-field-style {
   margin-bottom: 0.5rem;

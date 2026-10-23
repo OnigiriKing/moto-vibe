@@ -1,8 +1,16 @@
 import { nameLogo } from "svg/navSvg";
 import { footerSvg } from "svg/footerSvg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Footer() {
+  const [isNewsletterComplete, setIsNewsletterComplete] = useState(false);
+
+  function handleNewsletterSubmit(event) {
+    event.preventDefault();
+    setIsNewsletterComplete(true);
+  }
+
   function handleNavigation() {
     window.scrollTo({ top: 0, behavior: "instant" });
   }
@@ -47,13 +55,32 @@ export default function Footer() {
           <p>Sun: Closed</p>
         </li>
         <li className="footer-sub">
-          <h3>SUBSCRIBE</h3>
-          <p>Subscribe your Email address for latest news & updates.</p>
-          <input
-            className="input-field-style"
-            placeholder="Enter Email Address"
-          />
-          <button>Submit</button>
+          <h3>NEWSLETTER</h3>
+          <p id="newsletter-demo-note">
+            Use a sample email to try this demo. No subscription is created.
+          </p>
+          <form
+            className="footer-sub"
+            aria-label="Newsletter demo"
+            onSubmit={handleNewsletterSubmit}
+            onChange={() => setIsNewsletterComplete(false)}
+          >
+            <input
+              className="input-field-style"
+              type="email"
+              name="email"
+              aria-label="Newsletter email"
+              aria-describedby="newsletter-demo-note"
+              placeholder="you@example.com"
+              required
+            />
+            <button type="submit">Complete demo</button>
+            <p className="newsletter-status" role="status">
+              {isNewsletterComplete
+                ? "Demo completed. No subscription was created."
+                : ""}
+            </p>
+          </form>
         </li>
       </ul>
     </footer>
