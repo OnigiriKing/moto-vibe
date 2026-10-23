@@ -27,6 +27,8 @@ function InputField({ name, holder, type = "text", min }) {
 
 export default function RequestMenu({ info }) {
   const [bikeImg, setBikeImg] = React.useState("");
+  const [times, setTimes] = React.useState({ pickTime: "", dropTime: "" });
+  const [timeError, setTimeError] = React.useState("");
 
   React.useEffect(() => {
     Object.keys(bikeInfo).forEach((key) => {
@@ -37,6 +39,7 @@ export default function RequestMenu({ info }) {
   }, [info.bikeType]);
 
   function closeMenu(e = "") {
+    setTimeError("");
     changeClass(".body", "scroll-off");
     changeClass(".request-menu-bg", "request-menu-closed");
     changeClass(".request-menu-screen", "request-menu-closed");
@@ -47,7 +50,19 @@ export default function RequestMenu({ info }) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    if (info.pickDate === info.dropDate && times.dropTime <= times.pickTime) {
+      setTimeError(
+        "Drop-off time must be later than pick-up time on the same day."
+      );
+      event.currentTarget.elements.dropTime.focus();
+      return;
+    }
     closeMenu("reserved");
+  }
+
+  function handleTimeChange(event) {
+    setTimes({ ...times, [event.target.name]: event.target.value });
+    setTimeError("");
   }
 
   return (
@@ -88,12 +103,23 @@ export default function RequestMenu({ info }) {
                   <span>
                     <h3>Location & Date</h3>
                   </span>
+                  {timeError && (
+                    <p id="booking-time-error" role="alert">{timeError}</p>
+                  )}
                   <div className="location-info">
                     {requestSvg(20).calendar}
                     <div>
                       <h3>Pick-Up Date & Time</h3>
                       <p>
-                        {info.pickDate} / <input type="time" />
+                        {info.pickDate} /{" "}
+                        <input
+                          type="time"
+                          name="pickTime"
+                          aria-label="Pick-up time"
+                          value={times.pickTime}
+                          onChange={handleTimeChange}
+                          required
+                        />
                       </p>
                     </div>
                   </div>
@@ -102,7 +128,19 @@ export default function RequestMenu({ info }) {
                     <div>
                       <h3>Drop-Off Date & Time</h3>
                       <p>
-                        {info.dropDate} / <input type="time" />
+                        {info.dropDate} /{" "}
+                        <input
+                          type="time"
+                          name="dropTime"
+                          aria-label="Drop-off time"
+                          aria-invalid={Boolean(timeError)}
+                          aria-describedby={
+                            timeError ? "booking-time-error" : undefined
+                          }
+                          value={times.dropTime}
+                          onChange={handleTimeChange}
+                          required
+                        />
                       </p>
                     </div>
                   </div>
