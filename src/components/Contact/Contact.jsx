@@ -2,8 +2,16 @@ import AllPagesStart from "components/AllPagesStart";
 import AllPagesFooter from "components/AllPagesFooter";
 import { footerSvg } from "svg/footerSvg";
 import { requestSvg } from "svg/requestFormSvg";
+import { useState } from "react";
 
 export default function Contact() {
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setIsCompleted(true);
+  }
+
   return (
     <div>
       <AllPagesStart page="Contact" />
@@ -11,11 +19,10 @@ export default function Contact() {
         <div className="contact-page-bg-color">
           <div className="contact-page-wrapper">
             <div className="contact-page-text">
-              <h1>Need additional information?</h1>
+              <h1>Try the contact form</h1>
               <p>
-                Feel free to reach out to us through the contact form below, and
-                we will get back to you as soon as possible. You can also reach
-                us via phone or email at the provided contact details.
+                Use sample details to try this contact form. This demo does not
+                send messages. The contact details shown here are examples.
               </p>
               <div className="footer-number-email">
                 <a href="tel:09999999" rel="noreferrer">
@@ -34,23 +41,33 @@ export default function Contact() {
               </div>
             </div>
             <div className="contact-page-contact-form">
-              <form>
-                <label for="contact-form-name">Full Name</label>
+              <form onSubmit={handleSubmit} onChange={() => setIsCompleted(false)}>
+                <label htmlFor="contact-form-name">Full Name</label>
                 <input
                   id="contact-form-name"
+                  name="name"
                   placeholder="E.g. 'Mark Simmons'"
+                  required
                 ></input>
-                <label for="contact-form-email">Email</label>
+                <label htmlFor="contact-form-email">Email</label>
                 <input
                   id="contact-form-email"
+                  name="email"
+                  type="email"
                   placeholder="youremail@example.com"
+                  required
                 ></input>
-                <label for="contact-form-des">Tell us about it</label>
+                <label htmlFor="contact-form-des">Tell us about it</label>
                 <textarea
                   id="contact-form-des"
+                  name="message"
                   placeholder="Write Here..."
+                  required
                 ></textarea>
-                <button>{requestSvg(30).message}Send message</button>
+                <button type="submit">{requestSvg(30).message}Complete demo</button>
+                <p role="status">
+                  {isCompleted ? "Demo completed. No message was sent." : ""}
+                </p>
               </form>
             </div>
           </div>
