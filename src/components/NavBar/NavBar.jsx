@@ -17,9 +17,8 @@ export default function NavBar() {
           <Link to={"/Reviews"} children="Testimonials" />
           <Link to={"/Contact"} children="Contact" />
         </div>
-        <div className="login-register">
-          <Link to={"/"} children="Login" />
-          <Link to={"/"} children="Sign up" />
+        <div className="nav-booking">
+          <Link to="/#home-request">Book a bike</Link>
         </div>
         <div
           className="nav-menu-btn"

@@ -31,9 +31,8 @@ export default function DropMenu() {
       <Link to={"/Contact"} onClick={handleClick}>
         Contact
       </Link>
-      <div className="drop-menu-register">
-        <Link to={"/"} children="Login" />
-        <Link to={"/"} children="Sign up" />
+      <div className="drop-menu-booking">
+        <Link to="/#home-request" onClick={handleClick}>Book a bike</Link>
       </div>
     </div>
   );

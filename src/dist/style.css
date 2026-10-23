@@ -73,22 +73,19 @@ a {
 .nav-wrapper .nav-menu a:hover {
   color: #3f84e5;
 }
-.nav-wrapper .login-register {
+.nav-wrapper .nav-booking {
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
-.nav-wrapper .login-register a:first-child:hover {
-  color: #3f84e5;
-}
-.nav-wrapper .login-register a:nth-child(2) {
+.nav-wrapper .nav-booking a {
   padding: 1rem 1.2rem;
   color: #fff;
   background-color: #3f84e5;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
   transition: all 0.2s;
 }
-.nav-wrapper .login-register a:nth-child(2):hover {
+.nav-wrapper .nav-booking a:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
 }
@@ -97,7 +94,7 @@ a {
   cursor: pointer;
 }
 @media (max-width: 965px) {
-  .nav-wrapper .login-register, .nav-wrapper .nav-menu {
+  .nav-wrapper .nav-booking, .nav-wrapper .nav-menu {
     display: none;
   }
   .nav-wrapper .nav-menu-btn {
@@ -1564,12 +1561,14 @@ a {
   transition: 0.5s ease-in-out;
 }
 
-.drop-menu-register {
+.drop-menu-booking {
   display: flex;
   gap: 2rem;
   margin-top: 1rem;
 }
-.drop-menu-register a {
+.drop-menu-booking a {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid black;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
