@@ -4,6 +4,27 @@ import React from "react";
 import bikeInfo from "common/utils/bikeInfo";
 import { changeClass } from "scripts/scripts";
 
+function InputField({ name, holder, type = "text", min }) {
+  const id = name.toLowerCase().replaceAll(" ", "-");
+
+  return (
+    <div className="request-input-field">
+      <h4>
+        <label htmlFor={id}>{name}</label>
+      </h4>
+      <input
+        id={id}
+        name={id}
+        className="input-field-style"
+        placeholder={holder}
+        type={type}
+        min={min}
+        required
+      />
+    </div>
+  );
+}
+
 export default function RequestMenu({ info }) {
   const [bikeImg, setBikeImg] = React.useState("");
 
@@ -24,18 +45,9 @@ export default function RequestMenu({ info }) {
     }
   }
 
-  function InputField({ name, holder, type = "text" }) {
-    return (
-      <div className="request-input-field">
-        <h4>{name}</h4>
-        <input
-          className="input-field-style"
-          placeholder={holder}
-          type={type}
-        ></input>
-        <p>This field is required.</p>
-      </div>
-    );
+  function handleSubmit(event) {
+    event.preventDefault();
+    closeMenu("reserved");
   }
 
   return (
@@ -45,11 +57,17 @@ export default function RequestMenu({ info }) {
         onClick={() => closeMenu()}
       />
       <div className="request-menu-screen request-menu-closed">
-        <div className="request-menu-des">
+        <form className="request-menu-des" onSubmit={handleSubmit}>
           <div className="request-menu-wrapp">
             <div className="request-menu-top">
               <h2>DEMO RESERVATION</h2>
-              <button onClick={() => closeMenu()}>{navSvg(25).closeBtn}</button>
+              <button
+                type="button"
+                aria-label="Close reservation"
+                onClick={() => closeMenu()}
+              >
+                {navSvg(25).closeBtn}
+              </button>
             </div>
           </div>
           <div className="request-menu-wrapp">
@@ -122,11 +140,16 @@ export default function RequestMenu({ info }) {
                   <InputField
                     name="Phone Number"
                     holder="Enter your phone number"
+                    type="tel"
                   />
-                  <InputField name="Age" holder="18" type="number" />
+                  <InputField name="Age" holder="18" type="number" min="18" />
                 </div>
                 <div className="main-info-mail">
-                  <InputField name="Email" holder="Enter your Email" />
+                  <InputField
+                    name="Email"
+                    holder="Enter your Email"
+                    type="email"
+                  />
                   <InputField
                     name="Address"
                     holder="Enter your street address"
@@ -145,10 +168,10 @@ export default function RequestMenu({ info }) {
           </div>
           <div className="request-menu-wrapp">
             <div className="menu-main-complete">
-              <button onClick={() => closeMenu("reserved")}>Complete demo</button>
+              <button type="submit">Complete demo</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
