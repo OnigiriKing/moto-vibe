@@ -1,7 +1,12 @@
 import { nameLogo } from "svg/navSvg";
 import { footerSvg } from "svg/footerSvg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  function handleNavigation() {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }
+
   return (
     <footer id="footer-page">
       <ul className="footer-wrapper">
@@ -19,19 +24,19 @@ export default function Footer() {
           </div>
         </li>
         <li className="footer-about">
-          <h3>COMPANY</h3>
+          <h3>EXPLORE</h3>
           <ul>
             <li>
-              <a href="#home-page">Bangkok</a>
+              <Link to="/About" onClick={handleNavigation}>About</Link>
             </li>
             <li>
-              <a href="#home-page">Mobile</a>
+              <Link to="/Models" onClick={handleNavigation}>Bike Models</Link>
             </li>
             <li>
-              <a href="#home-page">Careers</a>
+              <Link to="/Reviews" onClick={handleNavigation}>Testimonials</Link>
             </li>
             <li>
-              <a href="#home-page">Blog</a>
+              <Link to="/Contact" onClick={handleNavigation}>Contact</Link>
             </li>
           </ul>
         </li>
