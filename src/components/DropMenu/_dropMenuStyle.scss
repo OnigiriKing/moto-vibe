@@ -15,7 +15,7 @@
     font-size: 25px;
     font-weight: 600;
     transform: translateX(-100%);
-    transition: 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .drop-menu a:hover, .menu-close-button:hover {
@@ -28,11 +28,13 @@
     top: 1.5rem;
     right: 2rem;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: inherit;
 }
 
 .menu-open {
     transform: translateX(0%);
-    transition: 0.5s ease-in-out;
 }
 
 .drop-menu-booking {

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { navSvg, nameLogo } from "svg/navSvg";
-import { changeClass } from "scripts/scripts";
 
-export default function NavBar() {
+export default function NavBar({ isMenuOpen, openMenu }) {
   return (
     <nav id="nav-bar">
       <div className="nav-wrapper">
@@ -20,12 +19,16 @@ export default function NavBar() {
         <div className="nav-booking">
           <Link to="/#home-request">Book a bike</Link>
         </div>
-        <div
+        <button
+          type="button"
           className="nav-menu-btn"
-          onClick={() => changeClass(".drop-menu", "menu-open")}
+          aria-label="Open navigation"
+          aria-controls="mobile-navigation"
+          aria-expanded={isMenuOpen}
+          onClick={openMenu}
         >
           {navSvg(40).menuBtn}
-        </div>
+        </button>
       </div>
     </nav>
   );

@@ -66,6 +66,9 @@
   .nav-menu-btn {
     display: none;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: inherit;
   }
 
   @media (max-width: $navBarWidth) {

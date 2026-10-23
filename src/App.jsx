@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import NavBarPage from "pages/navBar/NavBarPage";
 import HomePage from "pages/homePage/HomePage";
 import FooterPage from "pages/footerPage/FooterPage";
-import DropMenu from "components/DropMenu";
 
 export default function App() {
   const TestimonialsPage = React.lazy(() =>
@@ -17,7 +16,6 @@ export default function App() {
   return (
     <div className="App">
       <NavBarPage />
-      <DropMenu />
       <Suspense
         fallback={
           <h2
