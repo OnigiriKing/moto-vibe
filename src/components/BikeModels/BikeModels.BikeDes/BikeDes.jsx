@@ -1,6 +1,8 @@
 import { bikeDesSvg } from "svg/bikeDesSvg";
 
-export default function BikeDes({ bikeType, bikeModel, price, gas, weight, img, star }) {
+export default function BikeDes({
+  bikeType, bikeModel, price, capacity, capacityLabel, weight, img, star,
+}) {
 
   const stars = [
     bikeDesSvg(15).star,
@@ -37,8 +39,11 @@ export default function BikeDes({ bikeType, bikeModel, price, gas, weight, img, 
         </div>
         <div className="bike-des">
           <h4>{bikeDesSvg(20).gearBox} Auto</h4>
-          <h4>
-            {gas}L{bikeDesSvg(20).gas}
+          <h4 aria-label={`${capacityLabel}: ${capacity}`} title={capacityLabel}>
+            {capacity}
+            {capacityLabel === "Battery"
+              ? bikeDesSvg(20).battery
+              : bikeDesSvg(20).gas}
           </h4>
         </div>
       </div>

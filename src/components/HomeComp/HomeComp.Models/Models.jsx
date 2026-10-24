@@ -71,8 +71,8 @@ export default function Models() {
                   <span>{bikeInfo[bikeType].gearbox}</span>
                 </div>
                 <div className="bike-model">
-                  <span>Tank</span>
-                  <span>{bikeInfo[bikeType].tank}</span>
+                  <span>{bikeInfo[bikeType].capacityLabel}</span>
+                  <span>{bikeInfo[bikeType].capacity}</span>
                 </div>
                 <div className="bike-model">
                   <span>Weight</span>
