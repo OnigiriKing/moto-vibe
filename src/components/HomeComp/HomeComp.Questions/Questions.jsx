@@ -18,14 +18,21 @@ export default function Questions() {
         </div>
         <div className="all-questions">
           <div className="faq-question">
+            <h3>
+              <button
+                type="button"
+                className={faq === "Q1" ? "active-question" : ""}
+                aria-expanded={faq === "Q1"}
+                aria-controls="faq-answer-1"
+                onClick={() => (faq !== "Q1" ? setQ("Q1") : setQ("Q0"))}
+              >
+                <span>1. What are the requirements for renting a motorbike?</span>
+                <span aria-hidden="true">{homeSvg(20).arrowDown}</span>
+              </button>
+            </h3>
             <div
-              className={faq === "Q1" ? "active-question" : ""}
-              onClick={() => (faq !== "Q1" ? setQ("Q1") : setQ("Q0"))}
-            >
-              <h3>1. What are the requirements for renting a motorbike?</h3>{" "}
-              {homeSvg(20).arrowDown}
-            </div>
-            <div
+              id="faq-answer-1"
+              hidden={faq !== "Q1"}
               className={`questions-slide ${
                 faq === "Q1" ? "active-answer" : ""
               }`}
@@ -40,14 +47,21 @@ export default function Questions() {
             </div>
           </div>
           <div className="faq-question">
+            <h3>
+              <button
+                type="button"
+                className={faq === "Q2" ? "active-question" : ""}
+                aria-expanded={faq === "Q2"}
+                aria-controls="faq-answer-2"
+                onClick={() => (faq !== "Q2" ? setQ("Q2") : setQ("Q0"))}
+              >
+                <span>2. Is insurance included in the rental cost?</span>
+                <span aria-hidden="true">{homeSvg(20).arrowDown}</span>
+              </button>
+            </h3>
             <div
-              className={faq === "Q2" ? "active-question" : ""}
-              onClick={() => (faq !== "Q2" ? setQ("Q2") : setQ("Q0"))}
-            >
-              <h3>2. Is insurance included in the rental cost?</h3>
-              {homeSvg(20).arrowDown}
-            </div>
-            <div
+              id="faq-answer-2"
+              hidden={faq !== "Q2"}
               className={`questions-slide ${
                 faq === "Q2" ? "active-answer" : ""
               }`}
@@ -59,14 +73,21 @@ export default function Questions() {
             </div>
           </div>
           <div className="faq-question">
+            <h3>
+              <button
+                type="button"
+                className={faq === "Q3" ? "active-question" : ""}
+                aria-expanded={faq === "Q3"}
+                aria-controls="faq-answer-3"
+                onClick={() => (faq !== "Q3" ? setQ("Q3") : setQ("Q0"))}
+              >
+                <span>3. Can I rent a motorbike for an extended period?</span>
+                <span aria-hidden="true">{homeSvg(20).arrowDown}</span>
+              </button>
+            </h3>
             <div
-              className={faq === "Q3" ? "active-question" : ""}
-              onClick={() => (faq !== "Q3" ? setQ("Q3") : setQ("Q0"))}
-            >
-              <h3>3. Can I rent a motorbike for an extended period?</h3>
-              {homeSvg(20).arrowDown}
-            </div>
-            <div
+              id="faq-answer-3"
+              hidden={faq !== "Q3"}
               className={`questions-slide ${
                 faq === "Q3" ? "active-answer" : ""
               }`}

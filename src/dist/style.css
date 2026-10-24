@@ -921,21 +921,35 @@ a {
   align-items: center;
   justify-content: center;
 }
-.questions-wrapper .faq-question div:nth-child(1) {
+.questions-wrapper .faq-question {
+  width: 100%;
+}
+.questions-wrapper .faq-question > h3 > button {
   padding: 1.5rem 1rem;
   width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
   cursor: pointer;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
   display: flex;
+  align-items: center;
+  gap: 1rem;
   justify-content: space-between;
   transition: background-color 0.3s ease;
 }
-.questions-wrapper .faq-question div:nth-child(1) svg {
+.questions-wrapper .faq-question > h3 > button svg {
   transition: all 0.2s ease-in-out;
 }
-.questions-wrapper .faq-question div:nth-child(1) h3 {
-  transition: color 0.1s;
-  font-weight: 500;
+.questions-wrapper .faq-question > h3 > button:not(.active-question) {
+  background-color: #fff;
+  color: inherit;
+}
+.questions-wrapper .faq-question > h3 > button:focus-visible {
+  outline: 2px solid #3776cd;
+  outline-offset: 3px;
 }
 
 .active-question {
@@ -947,6 +961,7 @@ a {
 }
 
 .questions-slide {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -964,6 +979,10 @@ a {
 .active-answer {
   padding: 1.2rem 1rem;
   max-height: fit-content;
+}
+
+.questions-slide[hidden] {
+  display: none;
 }
 
 #app-screen {
