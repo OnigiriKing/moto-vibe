@@ -1,30 +1,25 @@
-import appleImg from "img/appImg/apple.png";
-import googleImg from "img/appImg/google.png";
+import { Link } from "react-router-dom";
 
 export default function Application() {
   return (
-    <div id="app-screen">
+    <section id="app-screen" aria-labelledby="choose-bike-heading">
       <div className="app-wrapper">
         <div className="app-des">
-          <h1>Supercharge your experience with our app</h1>
-          <h4>
-            Discover the joy of two-wheeled freedom with our motorbike rental
-            app. Download now and let the ride of a lifetime begin!
-          </h4>
+          <h2 id="choose-bike-heading">Choose your bike</h2>
+          <p>
+            Compare the models, then try the demo booking form with sample details.
+          </p>
         </div>
         <div className="app-links">
-          <a href="https://play.google.com" target="_blank" rel="noreferrer">
-            <img src={appleImg} alt="Apple"/>
-          </a>
-          <a
-            href="https://www.apple.com/app-store/"
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to="/Models"
+            onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
           >
-            <img src={googleImg} alt="Google"/>
-          </a>
+            View bikes
+          </Link>
+          <Link to="/#home-request">Try booking demo</Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

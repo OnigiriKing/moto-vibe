@@ -740,13 +740,9 @@
   align-items: center;
   justify-content: center;
   background-color: $bgGrey;
-  background-image: url("../img/appImg/phone.png");
-  background-repeat: no-repeat;
-  background-size: 20rem;
-  background-position: 85% 3rem;
 
-  @include navBarWidth {
-    background-image: none;
+  h2 {
+    font-size: $h1-size;
   }
 }
 
@@ -758,12 +754,9 @@
   margin: 0rem 2rem;
   row-gap: 4rem;
   position: relative;
-
-  @include navBarWidth {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .app-des {
@@ -772,7 +765,7 @@
   flex-direction: column;
   row-gap: 2rem;
 
-  h4 {
+  p {
     line-height: 1.5rem;
     color: $greyText;
   }
@@ -787,8 +780,16 @@
   }
 
   a {
-    img {
-      width: 13rem;
+    @include button-style;
+    font-size: $h4-size;
+    font-weight: 600;
+
+    &:last-child {
+      background-color: #000;
+
+      &:hover {
+        background-color: #333;
+      }
     }
   }
 }

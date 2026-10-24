@@ -974,15 +974,9 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
-  background-image: url("../img/appImg/phone.png");
-  background-repeat: no-repeat;
-  background-size: 20rem;
-  background-position: 85% 3rem;
 }
-@media (max-width: 965px) {
-  #app-screen {
-    background-image: none;
-  }
+#app-screen h2 {
+  font-size: 2.5rem;
 }
 
 .app-wrapper {
@@ -993,13 +987,9 @@ a {
   margin: 0rem 2rem;
   row-gap: 4rem;
   position: relative;
-}
-@media (max-width: 965px) {
-  .app-wrapper {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .app-des {
@@ -1008,7 +998,7 @@ a {
   flex-direction: column;
   row-gap: 2rem;
 }
-.app-des h4 {
+.app-des p {
   line-height: 1.5rem;
   color: #5d5c67;
 }
@@ -1022,8 +1012,24 @@ a {
     flex-direction: column;
   }
 }
-.app-links a img {
-  width: 13rem;
+.app-links a {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.app-links a:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
+}
+.app-links a:last-child {
+  background-color: #000;
+}
+.app-links a:last-child:hover {
+  background-color: #333;
 }
 
 .request-menu-bg {
