@@ -1505,13 +1505,16 @@ a {
 }
 
 .all-pages-footer-text {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
   font-size: 1.1rem;
   color: white;
+}
+.all-pages-footer-text h2 {
+  font-size: 2.5rem;
 }
 @media (max-width: 920px) {
   .all-pages-footer-text {
@@ -1520,8 +1523,18 @@ a {
     text-align: center;
   }
 }
-.all-pages-footer-text a h1 {
-  color: #3f84e5;
+.all-pages-footer-text a {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #3f84e5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.all-pages-footer-text a:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+  background-color: #3776cd;
 }
 
 #all-pages-start-screen {

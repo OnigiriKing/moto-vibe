@@ -11,7 +11,7 @@
 }
 
 .all-pages-footer-text {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,14 +19,18 @@
   font-size: $h4-size;
   color: #ffff;
 
+  h2 {
+    font-size: $h1-size;
+  }
+
   @include mediumWidth {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
   }
   a {
-    h1 {
-      color: $primColor;
-    }
+    @include button-style;
+    font-size: $h3-size;
+    font-weight: 600;
   }
 }

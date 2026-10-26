@@ -1,16 +1,14 @@
-import { footerSvg } from "svg/footerSvg";
+import { Link } from "react-router-dom";
 
 export default function AllPagesFooter() {
   return (
-    <div id="all-pages-footer">
+    <section id="all-pages-footer" aria-labelledby="booking-banner-heading">
       <div className="all-pages-footer-wrapper">
         <div className="all-pages-footer-text">
-          <h1>Ride your adventure - Book a bike now!</h1>
-          <a href="tel:09999999">
-            <h1>{footerSvg(30).phone} (09)-999-999</h1>
-          </a>
+          <h2 id="booking-banner-heading">Explore Bangkok by bike</h2>
+          <Link to="/#home-request">Try booking demo</Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
