@@ -77,6 +77,10 @@
   position: relative;
   z-index: 2;
 
+  @media (min-width: 921px) and (max-width: 1050px) {
+    max-width: 27rem;
+  }
+
   h3 {
     margin-bottom: 1rem;
   }
