@@ -25,7 +25,7 @@ function InputField({ name, holder, type = "text", min }) {
   );
 }
 
-export default function RequestMenu({ info }) {
+export default function RequestMenu({ info, dialogRef }) {
   const [bikeImg, setBikeImg] = React.useState("");
   const [times, setTimes] = React.useState({ pickTime: "", dropTime: "" });
   const [timeError, setTimeError] = React.useState("");
@@ -68,6 +68,7 @@ export default function RequestMenu({ info }) {
   return (
     <>
       <div
+      ref={dialogRef}
         className="request-menu-bg request-menu-closed"
         onClick={() => closeMenu()}
       />
@@ -198,8 +199,10 @@ export default function RequestMenu({ info }) {
                   <InputField name="Zip Code" holder="Enter your Zip Code" />
                 </div>
                 <div className="main-info-check">
-                  <input type="checkbox" />
-                  <p>Please send me latest news and updates</p>
+                  <input id="booking-updates" type="checkbox" />
+                  <label htmlFor="booking-updates">
+                    Please send me latest news and updates
+                  </label>
                 </div>
               </div>
             </div>

@@ -17,6 +17,8 @@ export default function Request() {
   const [fillState, setFillState] = React.useState(defaultFillState);
   const [errorMessage, setErrorMessage] = React.useState("All fields are required");
 
+  const dialogRef = React.useRef(null)
+
   function handleSubmit(event) {
     event.preventDefault();
     const sameValue = Object.keys(fillState).some(
@@ -48,7 +50,7 @@ export default function Request() {
 
   return (
     <div id="home-request">
-      <RequestMenu info={fillState} />
+      <RequestMenu info={fillState} dialogRef={dialogRef} />
       <div className="request-wrapper">
         <h2>Book a bike</h2>
         <div className="fields-banner banner-wrong">
@@ -73,16 +75,16 @@ export default function Request() {
         </div>
         <form className="request-form" onSubmit={handleSubmit}>
           <div className="request-select">
-            <label>{requestSvg(20).bike}Select a bike</label>
+            <label htmlFor="bikeType">{requestSvg(20).bike}Select a bike</label>
             <select onChange={changeFillState} id="bikeType">
               <option>Select a bike type</option>
               {Object.keys(bikeInfo).map((key) => {
-                return <option>{bikeInfo[key].name}</option>;
+                return <option key={key}>{bikeInfo[key].name}</option>;
               })}
             </select>
           </div>
           <div className="request-select">
-            <label>{requestSvg(20).location}Pick-up</label>
+            <label htmlFor="pickUp">{requestSvg(20).location}Pick-up</label>
             <select onChange={changeFillState} id="pickUp">
               <option>Select Pick-up location</option>
               <option>Khao San</option>
@@ -91,7 +93,7 @@ export default function Request() {
             </select>
           </div>
           <div className="request-select">
-            <label>{requestSvg(20).location}Drop-off</label>
+            <label htmlFor="dropOff">{requestSvg(20).location}Drop-off</label>
             <select onChange={changeFillState} id="dropOff">
               <option>Select Drop-off location</option>
               <option>Khao San</option>
@@ -100,11 +102,11 @@ export default function Request() {
             </select>
           </div>
           <div className="request-date">
-            <label for="pickDate">{requestSvg(20).calendar}Pick-up date</label>
+            <label htmlFor="pickDate">{requestSvg(20).calendar}Pick-up date</label>
             <input id="pickDate" type="date" onChange={changeFillState}></input>
           </div>
           <div className="request-date">
-            <label for="dropDate">{requestSvg(20).calendar}Drop-off date</label>
+            <label htmlFor="dropDate">{requestSvg(20).calendar}Drop-off date</label>
             <input id="dropDate" type="date" onChange={changeFillState}></input>
           </div>
           <button type="submit" children="Search" value />
