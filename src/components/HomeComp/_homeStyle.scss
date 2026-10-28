@@ -843,6 +843,22 @@
   }
 }
 
+dialog.request-menu-screen {
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 6rem);
+
+  &:not([open]) {
+    display: none;
+  }
+
+  &::backdrop {
+    background-color: #00000050;
+  }
+}
+
 .request-menu-wrapp {
   width: 100%;
 }

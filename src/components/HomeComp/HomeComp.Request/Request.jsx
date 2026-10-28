@@ -15,14 +15,16 @@ export default function Request() {
   };
 
   const [fillState, setFillState] = React.useState(defaultFillState);
-  const [errorMessage, setErrorMessage] = React.useState("All fields are required");
+  const [errorMessage, setErrorMessage] = React.useState(
+    "All fields are required",
+  );
 
-  const dialogRef = React.useRef(null)
+  const dialogRef = React.useRef(null);
 
   function handleSubmit(event) {
     event.preventDefault();
     const sameValue = Object.keys(fillState).some(
-      (key) => fillState[key] === defaultFillState[key]
+      (key) => fillState[key] === defaultFillState[key],
     );
     if (sameValue) {
       setErrorMessage("All fields are required");
@@ -36,12 +38,12 @@ export default function Request() {
       return;
     }
 
-    changeClass(".body", "scroll-off");
+    document.body.classList.add("scroll-off");
     document
       .querySelector(".banner-wrong")
       .classList.remove("fields-banner-active");
-    changeClass(".request-menu-bg", "request-menu-closed");
-    changeClass(".request-menu-screen", "request-menu-closed");
+
+    dialogRef.current.showModal();
   }
 
   function changeFillState(e) {
@@ -102,11 +104,15 @@ export default function Request() {
             </select>
           </div>
           <div className="request-date">
-            <label htmlFor="pickDate">{requestSvg(20).calendar}Pick-up date</label>
+            <label htmlFor="pickDate">
+              {requestSvg(20).calendar}Pick-up date
+            </label>
             <input id="pickDate" type="date" onChange={changeFillState}></input>
           </div>
           <div className="request-date">
-            <label htmlFor="dropDate">{requestSvg(20).calendar}Drop-off date</label>
+            <label htmlFor="dropDate">
+              {requestSvg(20).calendar}Drop-off date
+            </label>
             <input id="dropDate" type="date" onChange={changeFillState}></input>
           </div>
           <button type="submit" children="Search" value />

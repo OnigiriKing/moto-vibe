@@ -39,20 +39,22 @@ export default function RequestMenu({ info, dialogRef }) {
   }, [info.bikeType]);
 
   function closeMenu(e = "") {
-    setTimeError("");
-    changeClass(".body", "scroll-off");
-    changeClass(".request-menu-bg", "request-menu-closed");
-    changeClass(".request-menu-screen", "request-menu-closed");
+    dialogRef.current.close();
+
     if (e === "reserved") {
       changeClass(".banner-right", "fields-banner-active", false);
     }
+  }
+  function handleDialogClose() {
+    document.body.classList.remove("scroll-off");
+    setTimeError("");
   }
 
   function handleSubmit(event) {
     event.preventDefault();
     if (info.pickDate === info.dropDate && times.dropTime <= times.pickTime) {
       setTimeError(
-        "Drop-off time must be later than pick-up time on the same day."
+        "Drop-off time must be later than pick-up time on the same day.",
       );
       event.currentTarget.elements.dropTime.focus();
       return;
@@ -67,12 +69,13 @@ export default function RequestMenu({ info, dialogRef }) {
 
   return (
     <>
-      <div
-      ref={dialogRef}
-        className="request-menu-bg request-menu-closed"
-        onClick={() => closeMenu()}
-      />
-      <div className="request-menu-screen request-menu-closed">
+      <h2 id="reservation-title">DEMO RESERVATION</h2>
+      <dialog
+        ref={dialogRef}
+        className="request-menu-screen request-menu-closed"
+        aria-labelledby="reservation-title"
+        onClose={handleDialogClose}
+      >
         <form className="request-menu-des" onSubmit={handleSubmit}>
           <div className="request-menu-wrapp">
             <div className="request-menu-top">
@@ -88,12 +91,10 @@ export default function RequestMenu({ info, dialogRef }) {
           </div>
           <div className="request-menu-wrapp">
             <div className="request-menu-mid">
-              <h3>
-                Try the booking form
-              </h3>
+              <h3>Try the booking form</h3>
               <p>
-                Use sample details to try this frontend demo. No booking is saved
-                and no confirmation email is sent.
+                Use sample details to try this frontend demo. No booking is
+                saved and no confirmation email is sent.
               </p>
             </div>
           </div>
@@ -105,7 +106,9 @@ export default function RequestMenu({ info, dialogRef }) {
                     <h3>Location & Date</h3>
                   </span>
                   {timeError && (
-                    <p id="booking-time-error" role="alert">{timeError}</p>
+                    <p id="booking-time-error" role="alert">
+                      {timeError}
+                    </p>
                   )}
                   <div className="location-info">
                     {requestSvg(20).calendar}
@@ -213,7 +216,7 @@ export default function RequestMenu({ info, dialogRef }) {
             </div>
           </div>
         </form>
-      </div>
+      </dialog>
     </>
   );
 }
