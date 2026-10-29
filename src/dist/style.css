@@ -520,8 +520,21 @@ button, input, select, textarea {
   margin-bottom: 0.5rem;
   padding: 0.3rem;
 }
-.fields-banner div {
+.fields-banner button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
   cursor: pointer;
+}
+.fields-banner button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 .banner-wrong {
@@ -1065,15 +1078,6 @@ button, input, select, textarea {
   background-color: #333;
 }
 
-.request-menu-bg {
-  background-color: rgba(0, 0, 0, 0.3137254902);
-  width: 110%;
-  height: 100%;
-  position: fixed;
-  z-index: 4;
-  top: 0;
-}
-
 .request-menu-screen {
   width: 50rem;
   height: 90vh;
@@ -1259,10 +1263,6 @@ dialog.request-menu-screen::backdrop {
 .request-menu-des .menu-main-complete button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
   background-color: #3776cd;
-}
-
-.request-menu-closed {
-  display: none;
 }
 
 #about-page {

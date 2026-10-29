@@ -251,8 +251,22 @@
   margin-bottom: 0.5rem;
   padding: 0.3rem;
 
-  div {
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 2rem;
+    min-height: 2rem;
+    border: 0;
+    background: transparent;
+    color: inherit;
     cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
   }
 }
 .banner-wrong {
@@ -818,15 +832,6 @@
 }
 
 //! Requst Menu
-.request-menu-bg {
-  background-color: #00000050;
-  width: 110%;
-  height: 100%;
-  position: fixed;
-  z-index: 4;
-  top: 0;
-}
-
 .request-menu-screen {
   width: 50rem;
   height: 90vh;
@@ -1024,8 +1029,4 @@ dialog.request-menu-screen {
       font-size: $h3-size;
     }
   }
-}
-
-.request-menu-closed {
-  display: none;
 }

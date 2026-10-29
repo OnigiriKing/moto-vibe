@@ -57,23 +57,27 @@ export default function Request() {
         <h2>Book a bike</h2>
         <div className="fields-banner banner-wrong">
           <h3>{errorMessage}</h3>
-          <div
+          <button
+            type="button"
+            aria-label="Dismiss booking error"
             onClick={() => {
               changeClass(".banner-wrong", "fields-banner-active");
             }}
           >
-            {navSvg(20).closeBtn}
-          </div>
+            <span aria-hidden="true">{navSvg(20).closeBtn}</span>
+          </button>
         </div>
         <div className="fields-banner banner-right">
           <h3>Demo completed. No reservation was made.</h3>
-          <div
+          <button
+            type="button"
+            aria-label="Dismiss booking confirmation"
             onClick={() => {
               changeClass(".banner-right", "fields-banner-active");
             }}
           >
-            {navSvg(20).closeBtn}
-          </div>
+            <span aria-hidden="true">{navSvg(20).closeBtn}</span>
+          </button>
         </div>
         <form className="request-form" onSubmit={handleSubmit}>
           <div className="request-select">
