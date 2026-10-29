@@ -69,17 +69,16 @@ export default function RequestMenu({ info, dialogRef }) {
 
   return (
     <>
-      <h2 id="reservation-title">DEMO RESERVATION</h2>
       <dialog
         ref={dialogRef}
-        className="request-menu-screen request-menu-closed"
+        className="request-menu-screen"
         aria-labelledby="reservation-title"
         onClose={handleDialogClose}
       >
         <form className="request-menu-des" onSubmit={handleSubmit}>
           <div className="request-menu-wrapp">
             <div className="request-menu-top">
-              <h2>DEMO RESERVATION</h2>
+              <h2 id="reservation-title">DEMO RESERVATION</h2>
               <button
                 type="button"
                 aria-label="Close reservation"
