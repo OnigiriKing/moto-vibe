@@ -18,16 +18,19 @@
   }
 
   @include mediumWidth {
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     img {
       width: 25rem;
+      max-width: 100%;
 
-       @media (max-width: 420px) {
-    width: 20rem;
-  }
+      @media (max-width: 420px) {
+        width: 20rem;
+      }
     }
   }
 }
@@ -36,6 +39,7 @@
   width: 25rem;
 
   @include mediumWidth {
+    max-width: 100%;
     text-align: center;
   }
 
@@ -49,7 +53,8 @@
   gap: 1rem;
   margin-top: 1.5rem;
 
-    @include mediumWidth {
+  @include mediumWidth {
+    flex-wrap: wrap;
     justify-content: center;
   }
 

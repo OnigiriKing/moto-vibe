@@ -19,18 +19,20 @@
   }
 
   @media (max-width: 750px) {
+    width: calc(100% - 2rem);
+    min-width: 0;
+    margin: 0 1rem;
     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .bike-des-wrapper {
   border: 1px solid rgb(205, 205, 205);
   width: 20rem;
+  max-width: calc(100% - 2px);
   margin-bottom: 2rem;
 }
 
@@ -42,6 +44,8 @@
   
   img {
     width: 16rem;
+    max-width: calc(100% - 2rem);
+    height: auto;
     margin: 1rem;
   }
 }
