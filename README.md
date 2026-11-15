@@ -1,42 +1,38 @@
-<div align='center'><img src='https://github.com/OnigiriKing/moto-vibe/blob/main/public/icon.png'/></div>
+# Moto Vibe
 
-<h2>About the project</h2>
+[Open the live demo](https://moto-vibe.netlify.app/)
 
-<p>Moto Vibe is a straightforward and practical website for renting motorbikes in Bangkok. 
-It offers an easy-to-use platform for users to browse, select, and book motorbikes conveniently.</p>
+A React project for a fictional motorbike rental shop in Bangkok. Browse five bikes, compare their specs, and try the booking flow with sample details.
 
-Live Demo: <a href='https://moto-vibe.netlify.app'>MotoVibe</a>
+![Moto Vibe homepage with the Bangkok rental demo and a blue scooter](docs/screenshots/home.jpg)
 
-<h3>Build with:</h3>
+## What you can try
 
-» SCSS <br>
-» React JS
+- Compare daily rates, weight, and fuel or battery capacity in the bike catalog.
+- Pick a bike, locations, and dates to open the booking form. The form checks the rental dates and times, and you can close it with Escape.
+- Try the sample contact and newsletter forms.
 
-<h2>Screenshots of the Project 📸</h2>
-<br>
-<h3 align='center'>Home Page</h3>
+Moto Vibe has no backend. It does not save bookings, send messages or emails, or create subscriptions.
 
-<div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe.webp'/>
-</div>
+## Run it locally
 
-<br><br>
-<h3 align='center'>About</h3>
+With Node.js and npm installed, run:
 
-<div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe-about.png'/>
+```sh
+git clone https://github.com/OnigiriKing/moto-vibe.git
+cd moto-vibe
+npm ci
+npm start
+```
 
-<br>
-<br>
-<h3 align='center'>Bike Models</h3>
+Open [http://localhost:3000](http://localhost:3000). Run `npm run build` to create the production build.
 
-<div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe-bikes.png'/>
+Built with React, React Router, and Sass. If you edit the SCSS, regenerate the checked-in CSS with:
 
-<br>
-<br>
-<h3 align='center'>Contact</h3>
+```sh
+npx --yes sass@1.77.8 src/styles/style.scss src/dist/style.css
+```
 
-<div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/motoVibe/motoVibe-contact.png'/>
-</div>
+## Bike catalog on mobile
+
+![Honda Click catalog card on a phone showing its photo, daily rate, and specifications](docs/screenshots/bike-models-mobile.jpg)
