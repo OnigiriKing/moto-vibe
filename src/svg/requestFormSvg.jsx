@@ -54,9 +54,9 @@ export function requestSvg(width) {
           />
           <path
             fill="currentColor"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M3 15h9v-4H3v4Zm6-2H6v-1h3v1Z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           />
           <path fill="currentColor" d="M12 10V8H3v2h9Z" />
         </svg>
@@ -85,9 +85,9 @@ export function requestSvg(width) {
           <g
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
           >
             <path d="M3 7h3m-3 4h2m4.02-2.199l-.6 6A2 2 0 0 0 10.41 17h7.98a2 2 0 0 0 1.99-1.801l.6-6A2 2 0 0 0 18.99 7h-7.98a2 2 0 0 0-1.99 1.801z" />
             <path d="m9.8 7.5l2.982 3.28a3 3 0 0 0 4.238.202L20.3 8" />

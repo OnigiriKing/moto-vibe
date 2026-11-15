@@ -35,10 +35,10 @@ export function navSvg(width) {
         <g
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-width="4"
+          strokeLinecap="round"
+          strokeWidth="4"
         >
-          <path stroke-linejoin="round" d="M40 28L24 40L8 28" />
+          <path strokeLinejoin="round" d="M40 28L24 40L8 28" />
           <path d="M8 10H40" />
           <path d="M8 18H40" />
         </g>
