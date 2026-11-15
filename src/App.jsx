@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import "./dist/style.css";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import AllPagesStart from "components/AllPagesStart";
 import NavBarPage from "pages/navBar/NavBarPage";
 import HomePage from "pages/homePage/HomePage";
 import FooterPage from "pages/footerPage/FooterPage";
@@ -34,6 +35,16 @@ export default function App() {
           <Route path="/About" element={<AboutPage />} />
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/Models" element={<BikePage />} />
+          <Route
+            path="*"
+            element={
+              <main>
+                <AllPagesStart page="Page not found">
+                  <Link to="/">Back to home</Link>
+                </AllPagesStart>
+              </main>
+            }
+          />
         </Routes>
       </Suspense>
       <FooterPage />
