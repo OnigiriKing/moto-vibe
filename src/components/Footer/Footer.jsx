@@ -21,14 +21,12 @@ export default function Footer() {
         <li className="footer-des">
           <div className="des-name">{nameLogo}</div>
           <p className="des-words">
-            Experience the Thrill. Explore the open road with our
-            high-performance motorcycles for rent.
+            A motorbike rental demo set in Bangkok.
           </p>
           <div className="footer-number-email">
-            <a href="tel:09999999">{footerSvg(20).phone} (09)-999-999</a>
-            <a href="mailto: motovibe@gmail.com">
-              {footerSvg(20).email} motovibe@gmail.com
-            </a>
+            <Link to="/Contact" onClick={handleNavigation}>
+              {footerSvg(20).email} Try the contact form
+            </Link>
           </div>
         </li>
         <li className="footer-about">
@@ -49,7 +47,7 @@ export default function Footer() {
           </ul>
         </li>
         <li className="footer-work-time">
-          <h3>WORKING HOURS</h3>
+          <h3>SAMPLE OPENING HOURS</h3>
           <p>Mon - Fri: 9:00AM - 9:00PM</p>
           <p>Sat: 9:00AM - 3:00PM</p>
           <p>Sun: Closed</p>

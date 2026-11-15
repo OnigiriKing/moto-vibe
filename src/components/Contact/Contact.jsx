@@ -1,6 +1,5 @@
 import AllPagesStart from "components/AllPagesStart";
 import AllPagesFooter from "components/AllPagesFooter";
-import { footerSvg } from "svg/footerSvg";
 import { requestSvg } from "svg/requestFormSvg";
 import { useState } from "react";
 
@@ -22,15 +21,9 @@ export default function Contact() {
               <h1>Try the contact form</h1>
               <p>
                 Use sample details to try this contact form. This demo does not
-                send messages. The contact details shown here are examples.
+                send messages.
               </p>
               <div className="footer-number-email">
-                <a href="tel:09999999" rel="noreferrer">
-                  {footerSvg(20).phone} (09)-999-999
-                </a>
-                <a href="mailto: motovibe@gmail.com" rel="noreferrer">
-                  {footerSvg(20).email} motovibe@gmail.com
-                </a>
                 <a
                   href="https://www.google.com/maps/place/Bangkok"
                   target="_blank"

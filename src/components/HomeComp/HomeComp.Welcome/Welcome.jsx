@@ -40,8 +40,7 @@ export default function Welcome() {
             Ride, <strong>Explore</strong>, and Embrace Bangkok
           </h1>
           <p>
-            Ride the Streets of Bangkok with us - Your Ultimate Motorbike Rental
-            Hub
+            Browse bikes and try booking one in this Bangkok rental demo.
           </p>
           <div className="welcome-links">
             <a href="#home-request">Book Bike {homeSvg(20).check}</a>

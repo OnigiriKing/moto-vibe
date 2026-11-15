@@ -13,14 +13,12 @@ export default function About() {
           <img src={bikeRent} alt="bikeRent" />
           <div className="about-page-des">
             <div className="about-page-text">
-              <h2>About Company</h2>
+              <h2>About Moto Vibe</h2>
               <h1>Discover Bangkok on Two Wheels</h1>
               <p>
-                We offer top-notch motorbikes for rent, providing you with a
-                thrilling and convenient way to navigate the city's bustling
-                streets and discover its hidden gems. Whether you're a seasoned
-                rider or a novice explorer, our reliable fleet and exceptional
-                service ensure an unforgettable and safe experience.
+                Moto Vibe is a demo for a fictional motorbike rental shop in
+                Bangkok. You can browse the bikes and try a booking. The fleet
+                and shop figures below are examples.
               </p>
             </div>
             <div className="about-page-adv">
@@ -42,7 +40,7 @@ export default function About() {
                 <div>{requestSvg(50).garage}</div>
                 <span>
                   <h1>5</h1>
-                  <p>Repair Shop</p>
+                  <p>Repair shops</p>
                 </span>
               </div>
             </div>
